@@ -1,0 +1,700 @@
+/* ========================================================================================================================================
+   Bootstrap Overriders (Author's Version of Normalization)
+   ========================================================================================================================================= */
+
+/* Default Row
+-------------------------------------------------- */
+
+.row {
+  margin-right: -10px; /* Originally 15 */
+  margin-left: -10px; /* Originally 15 */
+}
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px; /* Originally 15 */
+  padding-left: 10px; /* Originally 15 */
+}
+
+/* Row / Col Variations
+-------------------------------------------------- */
+
+.row-0.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.row-0 .col-xs-1,.row-n .col-xs-2,.row-n .col-xs-3,.row-n .col-xs-4,.row-n .col-xs-5,.row-n .col-xs-6,.row-n .col-xs-7,.row-n .col-xs-8,.row-n .col-xs-9,.row-n .col-xs-10,.row-n .col-xs-11,.row-n .col-xs-12,.row-n .col-sm-1,.row-n .col-sm-2,.row-n .col-sm-3,.row-n .col-sm-4,.row-n .col-sm-5,.row-n .col-sm-6,.row-n .col-sm-7,.row-n .col-sm-8,.row-n .col-sm-9,.row-n .col-sm-10,.row-n .col-sm-11,.row-n .col-sm-12,.row-n .col-md-1,.row-n .col-md-2,.row-n .col-md-3,.row-n .col-md-4,.row-n .col-md-5,.row-n .col-md-6,.row-n .col-md-7,.row-n .col-md-8,.row-n .col-md-9,.row-n .col-md-10,.row-n .col-md-11,.row-n .col-md-12,.row-n .col-lg-1,.row-n .col-lg-2,.row-n .col-lg-3,.row-n .col-lg-4,.row-n .col-lg-5,.row-n .col-lg-6,.row-n .col-lg-7,.row-n .col-lg-8,.row-n .col-lg-9,.row-n .col-lg-10,.row-n .col-lg-11,.row-n .col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row-5.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.row-5 .col-xs-1,.row-5 .col-xs-2,.row-5 .col-xs-3,.row-5 .col-xs-4,.row-5 .col-xs-5,.row-5 .col-xs-6,.row-5 .col-xs-7,.row-5 .col-xs-8,.row-5 .col-xs-9,.row-5 .col-xs-10,.row-5 .col-xs-11,.row-5 .col-xs-12,.row-5 .col-sm-1,.row-5 .col-sm-2,.row-5 .col-sm-3,.row-5 .col-sm-4,.row-5 .col-sm-5,.row-5 .col-sm-6,.row-5 .col-sm-7,.row-5 .col-sm-8,.row-5 .col-sm-9,.row-5 .col-sm-10,.row-5 .col-sm-11,.row-5 .col-sm-12,.row-5 .col-md-1,.row-5 .col-md-2,.row-5 .col-md-3,.row-5 .col-md-4,.row-5 .col-md-5,.row-5 .col-md-6,.row-5 .col-md-7,.row-5 .col-md-8,.row-5 .col-md-9,.row-5 .col-md-10,.row-5 .col-md-11,.row-5 .col-md-12,.row-5 .col-lg-1,.row-5 .col-lg-2,.row-5 .col-lg-3,.row-5 .col-lg-4,.row-5 .col-lg-5,.row-5 .col-lg-6,.row-5 .col-lg-7,.row-5 .col-lg-8,.row-5 .col-lg-9,.row-5 .col-lg-10,.row-5 .col-lg-11,.row-5 .col-lg-12 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.row-10.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.row-10 .col-xs-1,.row-10 .col-xs-2,.row-10 .col-xs-3,.row-10 .col-xs-4,.row-10 .col-xs-5,.row-10 .col-xs-6,.row-10 .col-xs-7,.row-10 .col-xs-8,.row-10 .col-xs-9,.row-10 .col-xs-10,.row-10 .col-xs-11,.row-10 .col-xs-12,.row-10 .col-sm-1,.row-10 .col-sm-2,.row-10 .col-sm-3,.row-10 .col-sm-4,.row-10 .col-sm-5,.row-10 .col-sm-6,.row-10 .col-sm-7,.row-10 .col-sm-8,.row-10 .col-sm-9,.row-10 .col-sm-10,.row-10 .col-sm-11,.row-10 .col-sm-12,.row-10 .col-md-1,.row-10 .col-md-2,.row-10 .col-md-3,.row-10 .col-md-4,.row-10 .col-md-5,.row-10 .col-md-6,.row-10 .col-md-7,.row-10 .col-md-8,.row-10 .col-md-9,.row-10 .col-md-10,.row-10 .col-md-11,.row-10 .col-md-12,.row-10 .col-lg-1,.row-10 .col-lg-2,.row-10 .col-lg-3,.row-10 .col-lg-4,.row-10 .col-lg-5,.row-10 .col-lg-6,.row-10 .col-lg-7,.row-10 .col-lg-8,.row-10 .col-lg-9,.row-10 .col-lg-10,.row-10 .col-lg-11,.row-10 .col-lg-12 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row-15.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row-15 .col-xs-1,.row-15 .col-xs-2,.row-15 .col-xs-3,.row-15 .col-xs-4,.row-15 .col-xs-5,.row-15 .col-xs-6,.row-15 .col-xs-7,.row-15 .col-xs-8,.row-15 .col-xs-9,.row-15 .col-xs-10,.row-15 .col-xs-11,.row-15 .col-xs-12,.row-15 .col-sm-1,.row-15 .col-sm-2,.row-15 .col-sm-3,.row-15 .col-sm-4,.row-15 .col-sm-5,.row-15 .col-sm-6,.row-15 .col-sm-7,.row-15 .col-sm-8,.row-15 .col-sm-9,.row-15 .col-sm-10,.row-15 .col-sm-11,.row-15 .col-sm-12,.row-15 .col-md-1,.row-15 .col-md-2,.row-15 .col-md-3,.row-15 .col-md-4,.row-15 .col-md-5,.row-15 .col-md-6,.row-15 .col-md-7,.row-15 .col-md-8,.row-15 .col-md-9,.row-15 .col-md-10,.row-15 .col-md-11,.row-15 .col-md-12,.row-15 .col-lg-1,.row-15 .col-lg-2,.row-15 .col-lg-3,.row-15 .col-lg-4,.row-15 .col-lg-5,.row-15 .col-lg-6,.row-15 .col-lg-7,.row-15 .col-lg-8,.row-15 .col-lg-9,.row-15 .col-lg-10,.row-15 .col-lg-11,.row-15 .col-lg-12 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row-20.row {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.row-20 .col-xs-1,.row-20 .col-xs-2,.row-20 .col-xs-3,.row-20 .col-xs-4,.row-20 .col-xs-5,.row-20 .col-xs-6,.row-20 .col-xs-7,.row-20 .col-xs-8,.row-20 .col-xs-9,.row-20 .col-xs-10,.row-20 .col-xs-11,.row-20 .col-xs-12,.row-20 .col-sm-1,.row-20 .col-sm-2,.row-20 .col-sm-3,.row-20 .col-sm-4,.row-20 .col-sm-5,.row-20 .col-sm-6,.row-20 .col-sm-7,.row-20 .col-sm-8,.row-20 .col-sm-9,.row-20 .col-sm-10,.row-20 .col-sm-11,.row-20 .col-sm-12,.row-20 .col-md-1,.row-20 .col-md-2,.row-20 .col-md-3,.row-20 .col-md-4,.row-20 .col-md-5,.row-20 .col-md-6,.row-20 .col-md-7,.row-20 .col-md-8,.row-20 .col-md-9,.row-20 .col-md-10,.row-20 .col-md-11,.row-20 .col-md-12,.row-20 .col-lg-1,.row-20 .col-lg-2,.row-20 .col-lg-3,.row-20 .col-lg-4,.row-20 .col-lg-5,.row-20 .col-lg-6,.row-20 .col-lg-7,.row-20 .col-lg-8,.row-20 .col-lg-9,.row-20 .col-lg-10,.row-20 .col-lg-11,.row-20 .col-lg-12 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row-25.row {
+  margin-right: -25px;
+  margin-left: -25px;
+}
+.row-25 .col-xs-1,.row-25 .col-xs-2,.row-25 .col-xs-3,.row-25 .col-xs-4,.row-25 .col-xs-5,.row-25 .col-xs-6,.row-25 .col-xs-7,.row-25 .col-xs-8,.row-25 .col-xs-9,.row-25 .col-xs-10,.row-25 .col-xs-11,.row-25 .col-xs-12,.row-25 .col-sm-1,.row-25 .col-sm-2,.row-25 .col-sm-3,.row-25 .col-sm-4,.row-25 .col-sm-5,.row-25 .col-sm-6,.row-25 .col-sm-7,.row-25 .col-sm-8,.row-25 .col-sm-9,.row-25 .col-sm-10,.row-25 .col-sm-11,.row-25 .col-sm-12,.row-25 .col-md-1,.row-25 .col-md-2,.row-25 .col-md-3,.row-25 .col-md-4,.row-25 .col-md-5,.row-25 .col-md-6,.row-25 .col-md-7,.row-25 .col-md-8,.row-25 .col-md-9,.row-25 .col-md-10,.row-25 .col-md-11,.row-25 .col-md-12,.row-25 .col-lg-1,.row-25 .col-lg-2,.row-25 .col-lg-3,.row-25 .col-lg-4,.row-25 .col-lg-5,.row-25 .col-lg-6,.row-25 .col-lg-7,.row-25 .col-lg-8,.row-25 .col-lg-9,.row-25 .col-lg-10,.row-25 .col-lg-11,.row-25 .col-lg-12 {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.row-30.row {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+.row-30 .col-xs-1,.row-30 .col-xs-2,.row-30 .col-xs-3,.row-30 .col-xs-4,.row-30 .col-xs-5,.row-30 .col-xs-6,.row-30 .col-xs-7,.row-30 .col-xs-8,.row-30 .col-xs-9,.row-30 .col-xs-10,.row-30 .col-xs-11,.row-30 .col-xs-12,.row-30 .col-sm-1,.row-30 .col-sm-2,.row-30 .col-sm-3,.row-30 .col-sm-4,.row-30 .col-sm-5,.row-30 .col-sm-6,.row-30 .col-sm-7,.row-30 .col-sm-8,.row-30 .col-sm-9,.row-30 .col-sm-10,.row-30 .col-sm-11,.row-30 .col-sm-12,.row-30 .col-md-1,.row-30 .col-md-2,.row-30 .col-md-3,.row-30 .col-md-4,.row-30 .col-md-5,.row-30 .col-md-6,.row-30 .col-md-7,.row-30 .col-md-8,.row-30 .col-md-9,.row-30 .col-md-10,.row-30 .col-md-11,.row-30 .col-md-12,.row-30 .col-lg-1,.row-30 .col-lg-2,.row-30 .col-lg-3,.row-30 .col-lg-4,.row-30 .col-lg-5,.row-30 .col-lg-6,.row-30 .col-lg-7,.row-30 .col-lg-8,.row-30 .col-lg-9,.row-30 .col-lg-10,.row-30 .col-lg-11,.row-30 .col-lg-12 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* Global Overriders
+-------------------------------------------------- */
+
+p {
+  margin: 0;
+}
+
+/*a {
+  color: #999;
+  transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}*/
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  outline-offset: -2px;
+}
+
+label {
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+tbody tr td.no-record {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #999;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading {
+  background: #fff url(../../assets/img/loading.gif) center no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  position: absolute;
+}
+
+/* Color
+-------------------------------------------------- */
+
+.color {
+  color: #fff;
+}
+
+
+/* Media Query Killer (Make sure setting max-width in Bootstrap.css as none !important)
+----------------------------------------------------------------------------------------  
+
+.container {
+  width: 970px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+
+
+ /* ========================================================================================================================================
+   Author's Custom Styles
+   ========================================================================================================================================= */
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+/* Body
+-------------------------------------------------- */
+
+html {
+  background: #000 url(../../assets/img/bg_wall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+body {
+  background: url(../../assets/img/bg_dot-pattern.png);
+}
+
+
+/* Global Overriders
+-------------------------------------------------- */
+
+.container {
+  padding-left: 10px; /* originally 15 */
+  padding-right: 10px; /* originally 15 */
+}
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+/* Navbar General
+-------------------------------------------------- */
+
+.logo {
+  padding-top: 20px;
+  height: 150px;
+  width: 130px;
+  margin: auto;
+  display: block;
+}
+
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+h1.heading {
+  font-family: 'Bell Gothic Light', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.clients .container {
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+.da-thumbs li {
+ position: relative;
+ padding: 0 5px;
+}
+
+.da-thumbs li a {
+  background: url(../files/common/img-loading.gif) no-repeat center center;
+}
+
+.da-thumbs li a,
+.da-thumbs li a img {
+ display: block;
+ position: relative;
+}
+
+.da-thumbs li a {
+ overflow: hidden;
+}
+
+.da-thumbs li a div {
+ position: absolute;
+ background: url(../../assets/img/bg_black70.png) repeat;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+}
+
+.da-thumbs h4 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 95px;
+}
+
+.da-thumbs p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 11px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.btn.btn-black {
+  font-family: 'Bell Gothic Bold', Helvetica, Arial, sans-serif;
+  background: #000;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #fff;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+  display: block;
+  margin: auto;
+  width: 300px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.btn.btn-black:hover {
+  color: #000;
+  background: #fff;
+}
+
+.help {
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn.btn-primary,
+.btn.btn-default,
+.btn.btn-success {
+  outline: none;
+}
+
+ /* ========================================================================================================================================
+   Chrome Frame Support
+   ========================================================================================================================================= */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+ /* ========================================================================================================================================
+   Fonts
+   ========================================================================================================================================= */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../../assets/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Bell Gothic Bold';
+  src: url('../../assets/fonts/bellgothicstd-bold-webfont.eot');
+  src: url('../../assets/fonts/bellgothicstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/bellgothicstd-bold-webfont.woff') format('woff'),
+       url('../../assets/fonts/bellgothicstd-bold-webfont.ttf') format('truetype'),
+       url('../../assets/fonts/bellgothicstd-bold-webfont.svg#bell_gothic_std_lightbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bell Gothic Light';
+  src: url('../../assets/fonts/bellgothicstd-light-webfont.eot');
+  src: url('../../assets/fonts/bellgothicstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/bellgothicstd-light-webfont.woff') format('woff'),
+       url('../../assets/fonts/bellgothicstd-light-webfont.ttf') format('truetype'),
+       url('../../assets/fonts/bellgothicstd-light-webfont.svg#bell_gothic_std_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontName';
+  src: url('../../assets/fonts/FontName.eot');
+  src: url('../../assets/fonts/FontName.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/FontName.woff') format('woff'),
+       url('../../assets/fonts/FontName.ttf') format('truetype'),
+       url('../../assets/fonts/FontName.svg') format('svg'),
+       url('../../assets/fonts/FontName.svg#FontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+
+ /* ========================================================================================================================================
+   Helper Class
+   ========================================================================================================================================= */
+
+/*
+* Fonts
+*/
+
+.font6 {font-size: 6px;}
+.font7 {font-size: 7px;}
+.font8 {font-size: 8px;}
+.font9 {font-size: 9px;}
+.font10 {font-size: 10px;}
+.font11 {font-size: 10px;}
+.font12 {font-size: 10px;}
+.font13 {font-size: 10px;}
+.font14 {font-size: 10px;}
+
+
+/*
+* Margins & Padding
+*/
+
+.m_t_0 {margin-top:0px;}
+.m_r_0 {margin-right:0px;}
+.m_b_0 {margin-bottom:0px;}
+.m_l_0 {margin-left:0px;}
+
+.m_t_5 {margin-top:5px;}
+.m_r_5 {margin-right:5px;}
+.m_b_5 {margin-bottom:5px;}
+.m_l_5 {margin-left:5px;}
+
+.m_t_10 {margin-top:10px;}
+.m_r_10 {margin-right:10px;}
+.m_b_10 {margin-bottom:10px;}
+.m_l_10 {margin-left:10px;}
+
+.m_t_15 {margin-top:15px;}
+.m_r_15 {margin-right:15px;}
+.m_b_15 {margin-bottom:15px;}
+.m_l_15 {margin-left:15px;}
+
+.m_t_20 {margin-top:20px;}
+.m_r_20 {margin-right:20px;}
+.m_b_20 {margin-bottom:20px;}
+.m_l_20 {margin-left:20px;}
+
+.p_t_5 {padding-top:5px;}
+.p_r_5 {padding-right:5px;}
+.p_b_5 {padding-bottom:5px;}
+.p_l_5 {padding-left:5px;}
+
+.p_t_10 {padding-top:10px;}
+.p_r_10 {padding-right:10px;}
+.p_b_10 {padding-bottom:10px;}
+.p_l_10 {padding-left:10px;}
+
+.p_t_15 {padding-top:15px;}
+.p_r_15 {padding-right:15px;}
+.p_b_15 {padding-bottom:15px;}
+.p_l_15 {padding-left:15px;}
+
+.p_t_20 {padding-top:20px;}
+.p_r_20 {padding-right:20px;}
+.p_b_20 {padding-bottom:20px;}
+.p_l_20 {padding-left:20px;}
+
+.p_rl_5 {padding-right:5px;padding-left:5px;}
+.p_rl_10 {padding-right:10px;padding-left:10px;}
+.p_rl_15 {padding-right:15px;padding-left:15px;}
+.p_rl_20 {padding-right:20px;padding-left:20px;}
+
+.m_rl_-5 {margin-right:-5px;margin-left:-5px;}
+.m_rl_5 {margin-right:5px;margin-left:5px;}
+.m_rl_10 {margin-right:10px;margin-left:10px;}
+.m_rl_15 {margin-right:15px;margin-left:15px;}
+.m_rl_20 {margin-right:20px;margin-left:20px;}
+
+.p_tb_5 {padding-top:5px;padding-bottom:5px;}
+.p_tb_10 {padding-top:10px;padding-bottom:10px;}
+.p_tb_15 {padding-top:15px;padding-bottom:15px;}
+.p_tb_20 {padding-top:20px;padding-bottom:20px;}
+
+.m_tb_5 {margin-top:5px;margin-bottom:5px;}
+.m_tb_10 {margin-top:10px;margin-bottom:10px;}
+.m_tb_15 {margin-top:15px;margin-bottom:15px;}
+.m_tb_20 {margin-top:20px;margin-bottom:20px;}
+
+.p_0 {padding:0px}
+.p_5 {padding:5px}
+.p_10 {padding:10px}
+.p_15 {padding:15px}
+.p_20 {padding:20px}
+.p_25 {padding:25px}
+.p_30 {padding:30px}
+
+
+/* 
+ * Set div in the middle
+ */
+
+.outer-center {
+  float: right;
+  right: 50%;
+  position: relative;
+}
+.inner-center {
+  float: right;
+  right: -50%;
+  position: relative;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow:none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
