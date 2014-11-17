@@ -153,48 +153,95 @@ $data_cordinate  = get_location();
 
 
                 <!-- ******WHY****** --> 
-                <section id="why" class="why section">
+                <section id="why" class="why section" style="margin-bottom: 40px">
                     <div class="container">
-                        <h2 class="title text-center">Locations</h2>
+                        <h2 class="title text-center" style="margin-bottom: 50px">Locations</h2>
                         <div class="row">
-                            <div class="testimonials col-sm-9 col-xs-12 hidden-xs">
-                                <div id="controls" class="hidden"></div>
-                                <div id="gmap-menu" style="height:610px;"></div>
-                            </div>       
-                            <div class="benefits col-sm-3 col-xs-12 col-xs-offset-0 custom-scroll">  
-                                
-                                <div class="item hidden-xs" style="margin-bottom:20px;" onclick="selectLocation('all')">
-                                    <div class="content col-xs-12 loc-item active">
-                                        <h3 class="title">View All</h3>
-                                    </div><!--//content-->                            
-                                </div><!--//item-->                  
-                                
-                                <?php
-                                if($count_location['rows'] < 1){
-                                   echo 'No Location found';
-                                }else{
-                                   
-                                   $row = 1;
-                                   foreach($data_location as $data_location){
-                                      
-                                ?>
-                                
-                                <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;" onclick="selectLocation('<?php echo $row;?>')">
-                                    <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" onclick="activeItem('<?php echo $row;?>')">
-                                        <h3 class="title" style="margin-bottom: 10px"><?php echo $data_location['name'];?></h3>
-                                        <p class="desc"><?php echo preg_replace("/\n/","\n<br>",$data_location['description']);?></p>
-                                    </div><!--//content-->                            
-                                </div><!--//item-->
-                                
-                                <?php
-                                      $row++;
-                                   }
-                                }
-                                ?>
-                                
-                                <div class="clearfix"></div>
-                            </div> 
-                                        
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    Jl. Puri Anjasmoro EE II No. 7A <br>
+                                    Semarang 50144  <br>
+                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
+                                    F: (62-24) 760 7927, 761 1669 <br>
+                                    E: rcisrg@ritra.com
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>  
+
                         </div><!--//row-->
                     </div><!--//container-->
                 </section><!--//why-->

@@ -75,7 +75,7 @@ include('static/body_loader.php');
         <div class="container">
           <div class="row">
             <div class="footer-col col-sm-9 col-sm-12 about">
-              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-saka_white.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
+              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-ritra-abadi_white.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
                 <p>Ritra Cargo offers tailored solutions to your freight forwarding needs, from sea and air shipments to customized logistics project. Ritra Cargo is a wholly owned subsidiary of Ritra Logistics.</p>
@@ -84,7 +84,7 @@ include('static/body_loader.php');
             
             <div class="footer-col col-sm-3 col-sm-12 contact">
               <div class="footer-col-inner">
-                <h3 class="title">Contact Saka Trans</h3>
+                <h3 class="title">Contact Ritra Abadi</h3>
                 <div class="row">
                   <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
                   <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>  
