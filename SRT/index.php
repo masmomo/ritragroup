@@ -2,13 +2,14 @@
 include('admin/custom/static/general.php');
 include('admin/static/general.php');
 include('static/body_loader.php');
+include('static/page-title.php');
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title><?php echo $general['website_title'];?></title>
+    <title><?php echo PAGE_TITLE;?></title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

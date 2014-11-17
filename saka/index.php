@@ -8,7 +8,7 @@ include('static/body_loader.php');
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Ritra Logistics</title>
+    <title>Saka Trans</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -127,33 +127,6 @@ include('static/body_loader.php');
     <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
     <script src="<?php echo $prefix_url;?>script/map.js"></script>
     <script>
-	var LocsB = [
-        {
-                lat: 45.9,
-                lon: 10.9,
-                title: 'Title A1',
-                html: '<h3>Content A1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerA.png'
-        },
-        {
-                lat: 44.8,
-                lon: 1.7,
-                title: 'Title B1',
-                html: '<h3>Content B1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerB.png',
-                show_infowindow: false
-        },
-        {
-                lat: 51.5,
-                lon: -1.1,
-                title: 'Title C1',
-                html: [
-                        '<h3>Content C1</h3>',
-                        '<p>Lorem Ipsum..</p>'
-                ].join(''),
-                icon: 'http://maps.google.com/mapfiles/markerC.png'
-        }
-    ];
 	new Maplace({
       locations: LocsA,
        map_div: '#gmap-menu',
