@@ -36,7 +36,7 @@ if($act == ''){
             <div class="container">            
                 <h1 class="logo pull-left">
                     <a href="<?php echo $prefix_url;?>">
-                        <img src="<?php echo $prefix_url;?>assets/img/img_logo-cargo.png" height="40">
+                        <img src="<?php echo $prefix_url;?>assets/img/logo-srt.png" height="40">
                         <!--<span class="logo-title">Ritra</span>-->
                     </a>
                 </h1><!--//logo-->              
@@ -52,10 +52,10 @@ if($act == ''){
                     <div class="navbar-collapse collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="<?php echo $nav_home;?> nav-item"><a href="<?php echo $prefix_url;?>">Home</a></li>
-                            <li class="<?php echo $nav_services;?> nav-item"><a href="<?php echo $prefix_url;?>#services">Services</a></li>
-                            <li class="<?php echo $nav_company;?> nav-item"><a href="<?php echo $prefix_url;?>about">Company</a></li>
+                            <!--<li class="<?php echo $nav_services;?> nav-item"><a href="<?php echo $prefix_url;?>#services">Services</a></li>
+                            <li class="<?php echo $nav_company;?> nav-item"><a href="<?php echo $prefix_url;?>about">Company</a></li>-->
                             <li class="<?php echo $nav_locations;?> nav-item"><a href="<?php echo $prefix_url;?>locations">Locations</a></li>
-                            <li class="<?php echo $nav_contact;?> nav-item"><a href="<?php echo $prefix_url.'contact';?>">Contact</a></li>
+                            <!--<li class="<?php echo $nav_contact;?> nav-item"><a href="<?php echo $prefix_url.'contact';?>">Contact</a></li>-->
                             
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->

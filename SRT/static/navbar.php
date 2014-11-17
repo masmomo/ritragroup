@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
       </button>-->
       <a href="http://www.ritra.com/home" class="navbar-brand">
-        <img src="<?php echo $prefix;?>assets/img/img_logo-cargo.png" alt="logo">
+        <img src="<?php echo $prefix;?>assets/img/logo-srt.png" alt="logo">
       </a>
 
     <!--<div class="navbar-collapse collapse navbar-data" role="navigation">
