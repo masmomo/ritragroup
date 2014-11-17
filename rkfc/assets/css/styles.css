@@ -14,7 +14,7 @@
 
 .btn.btn-primary {
   font-family: 'MyriadPro Regular', Helvetica, arial, sans-serif;
-  background-color: #6dbd63;
+  background-color: #23408f;
   color: #fff;
   border: none;
   border-radius: 2px;
@@ -63,7 +63,7 @@ p {
   font-size: 16px;
 }
 a {
-  color: #6dbd63;
+  color: #23408f;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -89,8 +89,8 @@ a.btn .fa {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #6dbd63;
-  border: 2px solid #6dbd63;
+  background: #23408f;
+  border: 2px solid #23408f;
   color: #fff;
   text-transform: uppercase;
 }
@@ -103,13 +103,13 @@ a.btn-cta-primary:hover,
 a.btn-cta-secondary,
 .btn-cta-secondary {
   background: #fff;
-  border: 2px solid #6dbd63;
-  color: #6dbd63;
+  border: 2px solid #23408f;
+  color: #23408f;
 }
 a.btn-cta-secondary .fa,
 .btn-cta-secondary .fa {
   margin-left: 5px;
-  color: #6dbd63;
+  color: #23408f;
 }
 a.btn-cta-secondary:hover,
 .btn-cta-secondary:hover {
@@ -129,7 +129,7 @@ a.btn-cta-secondary:hover .fa,
   border-color: #d9d9d9;
 }
 .form-control:focus {
-  border-color: #6dbd63;
+  border-color: #23408f;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -141,7 +141,7 @@ blockquote {
   color: #2e5f28;
 }
 #topcontrol {
-  background: #8fcc87;
+  background: #22852a;
   color: #fff;
   text-align: center;
   display: inline-block;
@@ -162,7 +162,7 @@ blockquote {
   -o-transition: all 0.4s ease-in-out;
 }
 #topcontrol:hover {
-  background: #6dbd63;
+  background: #23408f;
 }
 #topcontrol .fa {
   position: relative;
@@ -313,10 +313,11 @@ blockquote {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 28px;
-  max-height: 50px;
+  max-height: 100px;
+  text-align: center;
 }
 .header h1.logo a:hover {
-  color: #6dbd63;
+  color: #23408f;
 }
 .header h1.logo .logo-title {
   vertical-align: middle;
@@ -341,7 +342,7 @@ blockquote {
   outline: none;
 }
 .header .main-nav button:hover {
-  background: #6dbd63;
+  background: #23408f;
 }
 .header .main-nav button .icon-bar {
   background-color: #fff;
@@ -390,7 +391,7 @@ blockquote {
   -o-transition: none;
 }
 .header .main-nav .nav .nav-item a:hover {
-  color: #6dbd63;
+  color: #23408f;
   background: none;
 }
 .header .main-nav .nav .nav-item a:focus {
@@ -402,14 +403,14 @@ blockquote {
   background: none;
 }
 .header .main-nav .nav .nav-item.active {
-  color: #6dbd63;
+  color: #23408f;
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
 }
 /* ======= Footer ======= */
 .footer {
-  background: #6dbd63;
+  background: #23408f;
   color: #fff;
   padding: 15px 0;
 }
@@ -425,11 +426,11 @@ blockquote {
   margin-bottom: 10px;
 }
 .footer .footer-col.contact p {
-  color: #377130;
+  color: #4cc355;
 }
 .footer .footer-col.contact .fa {
   margin-right: 10px;
-  color: #377130;
+  color: #4cc355;
 }
 .footer .footer-col .title {
   color: #fff;
@@ -440,13 +441,13 @@ blockquote {
   color: #fff;
 }
 .footer .footer-col a {
-  color: #377130;
+  color: #4cc355;
 }
 .footer .footer-col a:hover {
-  color: #1d3b19;
+  color: #4cc355;
 }
 .footer .bottom-bar {
-  background: #0555a0;
+  background: #40ae49;
   color: #fff;
   font-size: 14px;
   padding: 10px 0;
@@ -469,7 +470,7 @@ blockquote {
   font-size: 20px;
 }
 .footer .bottom-bar .social li a:hover .fa {
-  color: #6dbd63;
+  color: #23408f;
 }
 /* ======= Signup Section ======= */
 .signup {
@@ -530,7 +531,7 @@ blockquote {
   background-clip: padding-box;
   border: none;
   margin-right: 5px;
-  color: #6dbd63;
+  color: #23408f;
 }
 .pagination li a:hover {
   color: #377130;
@@ -541,7 +542,7 @@ blockquote {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #6dbd63;
+  background-color: #23408f;
   border: none;
 }
 .pagination > li > a:hover,
@@ -568,7 +569,7 @@ blockquote {
 /* ======= Promo Section ======= */
 .promo {
   position: relative;
-  background: #6dbd63 url('../images/background/img_banner.jpg') no-repeat center center;
+  background: #23408f url('../images/background/img_banner.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -600,7 +601,7 @@ blockquote {
 }
 .promo .signup {
   /*background: rgba(0, 0, 0, 0.2);*/
-  background: rgba(109,189,99,0.8);
+  background: rgba(35,64,143,0.9);
   padding: 30px 0;
   color: #fff;
   /*border-bottom: 10px solid #0f4b83;*/
@@ -618,7 +619,7 @@ blockquote {
   margin-bottom: 0;
 }
 .promo .social {
-  background: #6dbd63;
+  background: #23408f;
   padding: 8px 0;
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
@@ -680,7 +681,7 @@ blockquote {
   padding: 40px 0 0 0;
 }
 .why .title {
-  color: #154a97;
+  color: #40ae49;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
@@ -705,7 +706,7 @@ blockquote {
 .why .benefits .item .title {
   margin-bottom: 15px;
   font-size: 24px;
-  color: #6dbd63;
+  color: #23408f;
 }
 .why .benefits .item .desc {
   color: #666666;
@@ -806,7 +807,7 @@ blockquote {
 .video {
   padding: 80px 0;
   position: relative;
-  background: #6dbd63 url('../images/background/video-bg.jpg') no-repeat center center;
+  background: #23408f url('../images/background/video-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -914,7 +915,7 @@ blockquote {
 }
 .faq .panel .panel-title .panel-toggle .fa {
   margin-right: 10px;
-  color: #6dbd63;
+  color: #23408f;
 }
 .faq .more {
   margin-top: 60px;
@@ -928,7 +929,7 @@ blockquote {
 /* ======= Feature Promo Section ======= */
 .features-promo {
   position: relative;
-  background: #6dbd63 url('../images/background/tour-bg.jpg') no-repeat center bottom;
+  background: #23408f url('../images/background/tour-bg.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -936,7 +937,7 @@ blockquote {
   min-height: 500px;
 }
 .features-promo .bg-mask {
-  background: #6dbd63;
+  background: #23408f;
   -webkit-opacity: 0.9;
   -moz-opacity: 0.9;
   opacity: 0.9;
@@ -982,7 +983,7 @@ blockquote {
 }
 .features .item .title {
   font-size: 22px;
-  color: #6dbd63;
+  color: #23408f;
   margin-top: 0;
 }
 .features .item .content p {
@@ -1040,7 +1041,7 @@ blockquote {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #6dbd63;
+  background: #23408f;
   color: #fff;
   font-size: 12px;
   position: absolute;
@@ -1108,7 +1109,7 @@ blockquote {
   color: #999999;
 }
 .blog .meta .post-author a:hover {
-  color: #6dbd63;
+  color: #23408f;
 }
 .blog .meta .post-comments-link {
   float: right;
@@ -1142,7 +1143,7 @@ blockquote {
   color: #999999;
 }
 .blog-sidebar .widget.social a:hover .fa {
-  color: #6dbd63;
+  color: #23408f;
 }
 .blog-sidebar .search-blog-form .form-group {
   display: inline-block;
@@ -1197,7 +1198,7 @@ blockquote {
 }
 .blog-entry .custom-list-style li .fa {
   margin-right: 5px;
-  color: #6dbd63;
+  color: #23408f;
 }
 .blog-entry p {
   margin-bottom: 30px;
@@ -1219,7 +1220,7 @@ blockquote {
   line-height: 1.6;
 }
 .custom-quote .fa {
-  color: #6dbd63;
+  color: #23408f;
   margin-right: 10px;
 }
 .custom-quote .source {
@@ -1266,7 +1267,7 @@ blockquote {
   position: relative;
   width: 90px;
   height: 90px;
-  border: 3px solid #6dbd63;
+  border: 3px solid #23408f;
   background: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1284,7 +1285,7 @@ blockquote {
   margin-bottom: 30px;
 }
 .contact-main .item .icon:hover {
-  background: #6dbd63;
+  background: #23408f;
   color: #fff;
 }
 .contact-main .item .icon:hover .fa {
@@ -1295,7 +1296,7 @@ blockquote {
   -o-transform: scale(0.93);
 }
 .contact-main .item .icon .fa {
-  color: #6dbd63;
+  color: #23408f;
   font-size: 48px;
   display: table-cell;
   text-align: center;
@@ -1408,7 +1409,7 @@ blockquote {
   border: 2px solid #fff;
 }
 .config-panel #color-options li.theme-1 a {
-  background: #6dbd63;
+  background: #23408f;
 }
 .config-panel #color-options li.theme-2 a {
   background-color: #28a5a8;
@@ -1635,10 +1636,10 @@ blockquote {
   .main-nav {
     float: right !important;
   }
-  .header h1.logo {
+  /*.header h1.logo {
     float: left !important;
     text-align: left;
-  }
+  }*/
   .main-nav {
     float: right !important;
   }
@@ -1751,11 +1752,11 @@ blockquote {
 }
  
 .custom-scroll::-webkit-scrollbar-thumb {
-    background: #6dbd63;
+    background: #23408f;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb:window-inactive {
-    background: #6dbd63; 
+    background: #23408f; 
 }
 
 @media (min-width: 768px) {
