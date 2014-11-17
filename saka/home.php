@@ -101,34 +101,53 @@ $data_service_warehouse  = get_service('warehouse');
                 </div><!--//row-->
             </div><!--//container-->
         </section><!--//why-->
-        
-        
-        <!-- ******SIGNUP****** --> 
-        <!--<section id="signup" class="signup">
-            <div class="container text-center">
-                <h2 class="title">Ready to kickstart your business with Tempo?</h2>
-                <p class="summary">Sign up to try Tempo FREE for 30 days! No credit card needed.</p>
-                <form class="signup-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter your email address">
-                    </div>
-                    <button type="submit" class="btn btn-cta btn-cta-primary">SIGN UP</button>
-                </form>
-            </div>
-        </section>-->
-            
-    </div><!--//wrapper-->
 
-    <!-- ******PRESS****** --> 
-    <div class="press hidden">
-        <div class="container text-center">
-            <div class="row">
-                <ul class="list-unstyled">
-                    <li class="col-sm-3 col-xs-6"><a href="#"><img class="img-responsive" src="<?php echo $prefix_url;?>assets/images/logo/img_logo.png" alt=""></a></li>
-                    <li class="col-sm-3 col-xs-6"><a href="#"><img class="img-responsive" src="<?php echo $prefix_url;?>assets/images/logo/img_logo.png" alt=""></a></li>
-                    <li class="col-sm-3 col-xs-6 xs-break"><a href="#"><img class="img-responsive" src="<?php echo $prefix_url;?>assets/images/logo/img_logo.png" alt=""></a></li>                    
-                    <li class="col-sm-3 col-xs-6 sm-break"><a href="#"><img class="img-responsive" src="<?php echo $prefix_url;?>assets/images/logo/img_logo.png" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div><!--//press-->  
+
+                <!-- ******WHY****** --> 
+                <section id="why" class="why section">
+                    <div class="container">
+                        <h2 class="title text-center">Locations</h2>
+                        <div class="row">
+                            <div class="testimonials col-sm-9 col-xs-12 hidden-xs">
+                                <div id="controls" class="hidden"></div>
+                                <div id="gmap-menu" style="height:610px;"></div>
+                            </div>       
+                            <div class="benefits col-sm-3 col-xs-12 col-xs-offset-0 custom-scroll">  
+                                
+                                <div class="item hidden-xs" style="margin-bottom:20px;" onclick="selectLocation('all')">
+                                    <div class="content col-xs-12 loc-item active">
+                                        <h3 class="title">View All</h3>
+                                    </div><!--//content-->                            
+                                </div><!--//item-->                  
+                                
+                                <?php
+                                if($count_location['rows'] < 1){
+                                   echo 'No Location found';
+                                }else{
+                                   
+                                   $row = 1;
+                                   foreach($data_location as $data_location){
+                                      
+                                ?>
+                                
+                                <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;" onclick="selectLocation('<?php echo $row;?>')">
+                                    <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" onclick="activeItem('<?php echo $row;?>')">
+                                        <h3 class="title" style="margin-bottom: 10px"><?php echo $data_location['name'];?></h3>
+                                        <p class="desc"><?php echo preg_replace("/\n/","\n<br>",$data_location['description']);?></p>
+                                    </div><!--//content-->                            
+                                </div><!--//item-->
+                                
+                                <?php
+                                      $row++;
+                                   }
+                                }
+                                ?>
+                                
+                                <div class="clearfix"></div>
+                            </div> 
+                                        
+                        </div><!--//row-->
+                    </div><!--//container-->
+                </section><!--//why-->
+
+            </div><!--//wrapper-->
