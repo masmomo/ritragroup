@@ -581,6 +581,7 @@ RewriteRule ^admin/logout$                                                      
 # ----------------------------------------------------------------------
 # CUSTOMS
 # ----------------------------------------------------------------------
+RewriteRule ^admin/page-service$             									admin/index.php?act=pages/service/index
 
 
 

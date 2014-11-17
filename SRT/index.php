@@ -8,13 +8,15 @@ include('static/body_loader.php');
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Ritra Logistics</title>
+    <title><?php echo $general['website_title'];?></title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="<?php echo $general['website_description'];?>">
     <meta name="author" content="<?php echo $general['website_title'];?>">
+    
     <meta name="keywords" content="<?php echo $general['website_keywords'];?>">       
     <link rel="shortcut icon" href="<?php echo $prefix_url;?>favicon.ico"> 
     <!-- 
