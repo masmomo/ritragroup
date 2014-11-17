@@ -36,7 +36,7 @@ if($act == ''){
             <div class="container">            
                 <h1 class="logo" style="margin: auto;">
                     <a href="<?php echo $prefix_url;?>">
-                        <img src="<?php echo $prefix_url;?>assets/img/logo-saka.png" height="80">
+                        <img src="<?php echo $prefix_url;?>assets/img/logo-rkfc.png" height="100">
                         <!--<span class="logo-title">Ritra</span>-->
                     </a>
                 </h1><!--//logo-->              
