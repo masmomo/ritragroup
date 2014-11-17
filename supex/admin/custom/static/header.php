@@ -47,6 +47,7 @@ if(empty($act) ||
             <li class="hidden"><a href="<?php echo $prefix_url;?>faq">FAQ</a></li>
           </ul>
         </li>
+        <li <?php echo $header_location;?>><a href="<?php echo $prefix_url;?>page-service">Service</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right" role="navigation">

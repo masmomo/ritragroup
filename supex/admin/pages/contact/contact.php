@@ -15,12 +15,17 @@ include("custom/pages/contact/control.php");
     </div>
 
     <?php
-      if(!empty($_SESSION['alert'])){?>
-      
-        <div class="alert <?php echo $_SESSION['alert'];?>">
-        <div class="container"><?php echo $_SESSION['msg'];?></div>
-      </div>
-      <?php }?>
+	if(!empty($_SESSION['alert'])){
+	   echo '<div class="alert '.$_SESSION['alert'].'">';
+	   echo '  <div class="container">'.$_SESSION['msg'].'</div>';
+	   echo '</div>';
+	}
+	
+	if($_POST['btn-infos'] == ""){
+	   unset($_SESSION['alert']);
+	   unset($_SESSION['msg']);
+	}
+	?>
 
     <div class="container main">
             
@@ -36,14 +41,20 @@ include("custom/pages/contact/control.php");
             <li class="form-group row underlined">
               <label class="col-xs-3">Email to <span>*</span></label>
               <div class="col-xs-9">
-                <input type="text" class="form-control" value="<?php echo $get_info['email'];?>" name="email">
+                <input type="email" class="form-control" value="<?php echo $get_info['email'];?>" name="email">
                 <p class="help-block">Message from Contact Us page will be sent here.</p>
+              </div>
+            </li>
+            <li class="form-group row">
+              <label class="col-xs-3">Email cc <span>*</span></label>
+              <div class="col-xs-9">
+                <input type="email" class="form-control" value="<?php echo $get_info['email_cc'];?>" name="email_cc">
               </div>
             </li>
             <li class="form-group row">
               <label class="col-xs-3">Email</label>
               <div class="col-xs-9">
-                <input type="text" class="form-control" value="<?php echo $get_info['email_display'];?>" name="email_display">
+                <input type="email" class="form-control" value="<?php echo $get_info['email_display'];?>" name="email_display">
               </div>
             </li>
             <li class="form-group row">
@@ -70,20 +81,6 @@ include("custom/pages/contact/control.php");
       </div><!--box-->
 
     </div><!--container main-->
-
 </form>
-
-<?php
-if($_POST['btn-infos'] == ""){
-unset($_SESSION['alert']);
-unset($_SESSION['msg']);
-}
-?>
-
-<script>
-function cancelInfo(){
-   location.href = "http://<?php echo $_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF']);?>"
-}
-</script>
 
 <?php include("custom/pages/contact/contact.php");?>       

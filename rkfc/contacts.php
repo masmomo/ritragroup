@@ -3,41 +3,23 @@
 # CONTROL
 # ----------------------------------------------------------------------
 if(isset($_POST['btn_contact'])){
+   $_POST['message'] = removeHtmlTags($_POST['message']);
    
-   //if($_POST['btn_contact'] == "Submit"){
+   $name      = $_POST['contact_name']; 
+   $email     = $_POST['email']; 
+   $recipient = $info['email']; 
+   $mail_body = preg_replace("/\n/","\n<br>",$_POST['message']);;
+   $subject   = "[".$general['website_title']."] ".$_POST['subject']; 
+   $headers   = "Content-Type: text/html; charset=ISO-8859-1\r\n".
+   $headers  .= "From: ". $name . " <" . $email . ">\r\n";
+   $headers  .= "CC: ".$info['email_cc']."\r\n";
    
-      //send mail
-      $_POST['message'] = removeHtmlTags($_POST['message']);
-
-      $name      = $_POST['contact_name']; 
-      $email     = $_POST['email']; 
-      $recipient = $info['email']; 
-      $mail_body = preg_replace("/\n/","\n<br>",$_POST['message']);;
-      $subject   = "[".$general['website_title']."] ".$_POST['subject']; 
-      $headers   = "Content-Type: text/html; charset=ISO-8859-1\r\n".
-      $headers  .= "From: ". $name . " <" . $email . ">\r\n";
-	  $headers  .= "CC: dimas.nuhputra@gmail.com"."\r\n";
-
-      mail($recipient, $subject, $mail_body, $headers);
-	  
-	  $_SESSION['alert'] = "success";
-	  $_SESSION['msg']   = "Thank you! We will review your email as soon as possible.";
-   //}
+   mail($recipient, $subject, $mail_body, $headers);
+   
+   $_SESSION['alert'] = "success";
+   $_SESSION['msg']   = "Thank you! We will review your email as soon as possible.";
    
 }
-
-/*
-echo '<br>';
-echo 'Message: '.$_POST['message'];
-echo '<br>';
-echo 'Contact Name: '.$_POST['contact_name'];
-echo '<br>';
-echo 'Email: '.$_POST['email'];
-echo '<br>';
-echo 'Subject: '.$_POST['subject'];
-echo '<br>';
-echo 'Email To: '.$info['email'];
-*/
 ?>
 
 <style>

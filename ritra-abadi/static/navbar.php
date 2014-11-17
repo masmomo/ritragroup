@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>-->
-      <a href="<?php echo $prefix;?>home/index.php" class="navbar-brand">
+      <a href="http://www.ritra.com/home" class="navbar-brand">
         <img src="<?php echo $prefix;?>assets/img/img_logo-cargo.png" alt="logo">
       </a>
 

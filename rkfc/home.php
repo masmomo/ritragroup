@@ -1,10 +1,45 @@
 <?php
+# ----------------------------------------------------------------------
+# FUNCTIONS
+# ----------------------------------------------------------------------
+function count_service($name){
+   $conn   = connDB();
+   $sql    = "SELECT COUNT(*) AS rows FROM tbl_services WHERE `service_name` = '$name' AND `service_descriptions` != ''";
+   $query  = mysql_query($sql, $conn);
+   $result = mysql_fetch_array($query);
+   
+   return $result;
+}
+
+
+function get_service($name){
+   $conn   = connDB();
+   $sql    = "SELECT * FROM tbl_services WHERE `service_name` = '$name'";
+   $query  = mysql_query($sql, $conn);
+   $result = mysql_fetch_array($query);
+   
+   return $result;
+}
+
+
+/* --- CALL FUNCTION --- */
+$count_service_sea       = count_service('sea_freight');
+$data_service_sea        = get_service('sea_freight');
+
+$count_service_air       = count_service('air_freight');
+$data_service_air        = get_service('air_freight');
+
+$count_service_project   = count_service('project');
+$data_service_project    = get_service('project');
+
+$count_service_warehouse = count_service('warehouse');
+$data_service_warehouse  = get_service('warehouse');
 ?>
 
 <style>
-    .desc {
-        text-align: left;
-    }
+.desc {
+   text-align: left;
+}
 </style>
 
 <!-- ******WHY****** --> 
@@ -22,7 +57,8 @@
           <div class="content col-sm-9 col-xs-12">
             <h3 class="title">Sea Freight</h3>
             <h4>No-Hassle Shipment by Sea</h4>
-            <p class="desc" style="text-align: left">Ritra Cargo provides comprehensive full container load (FCL) and less than container load (LCL) basis shipment to virtually any port in the world. Shipment movement is efficiently managed through our well-maintained and secured Container Freight Stations (CFS) in Indonesia’s principal ports. Our customers have the privilege to choose from a variety of dependable carriers, thereby enable optimum transit times and considerable savings.</p>
+            
+            <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_sea['service_descriptions']);?></p>
           </div><!--//content-->                            
         </div><!--//item-->
         
@@ -33,7 +69,7 @@
             <div class="content col-sm-9 col-xs-12">
                 <h3 class="title">Air Freight</h3>
                 <h4>Reliability in the Air</h4>
-                <p class="desc" style="text-align: left">With our long-established reputation in the transportation industry, Ritra Cargo has managed to work closely with reputable airlines, allowing us to propose the advantage of competitive pricing and above standard service in speed, security and space allocation.</p>
+                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_air['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
         <div class="item clearfix">
@@ -43,7 +79,7 @@
             <div class="content col-sm-9 col-xs-12">
                 <h3 class="title">Project Management</h3>
                 <h4>Worry-free Delivery at Your Destination</h4>
-                <p class="desc" style="text-align: left">Whether the job involves moving one large piece of heavy equipment or an entire factory full of machinery, our experts will plan and supervise the whole project closely. It is part of our service to conduct feasibility studies, verify packaging and explore available insurance options. You can rest assured that Ritra Cargo will effectively handle your project from initial pick-up to final delivery.</p>
+                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_project['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
         <div class="item last clearfix">
@@ -53,7 +89,7 @@
             <div class="content col-sm-9 col-xs-12">
                 <h3 class="title">Warehouse Service</h3>
                 <h4>Customizing Your Storage Needs</h4>
-                <p class="desc" style="text-align: left">Ritra Cargo manages quality and secured warehousing space in various locations in Indonesia’s main industrial cities. With our integrated Warehouse Management System (WMS), we offer storage according to your requirements, optimizing our renowned services to customers. </p>
+                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
         <div class="clearfix"></div>

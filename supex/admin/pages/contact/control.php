@@ -1,18 +1,19 @@
 <?php
 include("get.php");
 include("update.php");
-/*--------------------*/
-/*       CONTACT      */
-/*--------------------*/
 
+
+/* --- CALL FUNCTION --- */
 $get_info      = get_infos();
 $check_info    = check_info();
 
 
+/* --- CONTROL --- */
 if(isset($_POST['btn-infos'])){
 
 $email         = $_POST['email'];
 $email_display = $_POST['email_display'];
+$email_cc      = $_POST['email_cc'];
 $phone         = $_POST['telephone'];
 $fax           = $_POST['fax'];
 $handphone     = $_POST['handphone'];
@@ -20,7 +21,7 @@ $handphone     = $_POST['handphone'];
    if($_POST['btn-infos'] == "Save Changes" || $_POST['btn-infos'] == "Save Changes & Exit"){
       
 	  if($check_info['rows'] != 0){
-	     update_contact($email, $email_display, $phone, $fax, $handphone);
+	     update_contact($email, $email_display, $email_cc, $phone, $fax, $handphone);
 		 
 		 $_SESSION['alert'] = "success";
 		 $_SESSION['msg']   = "Changes has successfully changed";
@@ -48,5 +49,5 @@ $handphone     = $_POST['handphone'];
    }
 	
 	
-}// END ISSET
+}
 ?>

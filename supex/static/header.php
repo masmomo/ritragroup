@@ -35,7 +35,7 @@ if($act == ''){
         <header id="header" class="header">  
             <div class="container">            
                 <h1 class="logo pull-left">
-                    <a href="home/index.html">
+                    <a href="<?php echo $prefix_url;?>">
                         <img src="<?php echo $prefix_url;?>assets/img/img_logo-cargo.png" height="40">
                         <!--<span class="logo-title">Ritra</span>-->
                     </a>

@@ -333,7 +333,7 @@ FileETag None
   Options +FollowSymlinks
 # Options +SymLinksIfOwnerMatch
   RewriteEngine On
- RewriteBase /~ritra/ritracargo
+# RewriteBase /
 </IfModule>
 
 
@@ -541,13 +541,13 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 
 
 
-
 RewriteEngine On
 RewriteCond %{QUERY_STRING} (.*)(http|https|ftp)://(.*)
 RewriteRule ^(.+)$ - [F,L]
 
+
 RewriteRule ^home$                               index.php?act=pages_/home/index
-RewriteRule ^services$                    index.php?act=service [B]
+RewriteRule ^services$                           index.php?act=service
 RewriteRule ^locations$                          index.php?act=map
 RewriteRule ^about$                              index.php?act=company
 RewriteRule ^contact$                            index.php?act=contacts

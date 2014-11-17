@@ -283,4 +283,15 @@ else if(isset($_POST['btn_lang_detail_category'])){
 else if(isset($_POST['btn_product_lang'])){
    header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/".$_SESSION['lang_admin']."-product-details-".$_POST['product_alias']);
 }
+
+
+
+/*
+* ----------------------------------------------------------------------
+* SERVICES
+* ----------------------------------------------------------------------
+*/
+else if(isset($_POST['btn-services'])){
+   header('location:http://'.$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF']).'/page-service');
+}
 ?>
