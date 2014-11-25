@@ -96,8 +96,23 @@ $data_cordinate  = get_location();
   <div class="container">
     <h2 class="title text-center">Services</h2>
     <div class="row">
-      <div class="benefits col-md-7 col-xs-12"> 
+      <div class="benefits col-md-7 col-xs-12">
       
+      
+        
+        
+        <div class="item last clearfix">
+            <div class="icon col-sm-3  col-xs-12 text-center">
+                <i class="fa fa-cubes"></i>
+            </div><!--//icon-->
+            <div class="content col-sm-9 col-xs-12">
+                <h3 class="title hidden">Warehouse Service</h3>
+                <h4 class="hidden">Customizing Your Storage Needs</h4>
+                <p class="desc" style="text-align:justify">We will make your export and import activities easy and predictable, even if you are establishing your first shipment overseas, we can guide you throughout the process.</p>
+            </div><!--//content-->
+        </div><!--//item--> 
+        
+        <div class="hidden">
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
             <i class="fa fa-life-ring"></i>
@@ -141,6 +156,7 @@ $data_cordinate  = get_location();
                 <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
+        </div>
         <div class="clearfix"></div>
     </div> 
                     <div class="testimonials col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0 hidden-xs hidden-sm">

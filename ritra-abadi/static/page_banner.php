@@ -124,8 +124,8 @@ if($count_page_banner['rows'] > 0){
   <div class="fixed-container">
     <div class="signup">
       <div class="container text-center">
-        <h2 class="title"><?php echo $data_page_banner['name'];?></h2>
-        <p class="summary"><?php echo $data_page_banner['description'];?></p>
+        <h2 class="title">In and Out Seamlessly</h2>
+        <p class="summary">Making sure your goods goes in and out of the country with no hassle</p>
       </div><!--//contianer-->
     </div><!--//signup-->
   </div> 

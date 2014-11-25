@@ -78,16 +78,25 @@ include('static/body_loader.php');
               <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-ritra-abadi_white.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
-                <p>Ritra Cargo offers tailored solutions to your freight forwarding needs, from sea and air shipments to customized logistics project. Ritra Cargo is a wholly owned subsidiary of Ritra Logistics.</p>
+                <p>PT. Ritra Abadi was established in 1974. Having more than 25 years of experience in Indonesia, Ritra Abadi has become one of the leading and most reliable customs brokerage companies. Our system is well connected with the Electronic Data Interchange (EDI) system to the recent application of National Single Window (NSW). 
+ <br><br>
+Complemented with offices in main seaports and airports in Indonesia, we will ensure excellent customer service in terms of speed and accuracy.
+</p>
                 </div><!--//footer-col-inner-->
             </div><!--//foooter-col--> 
             
             <div class="footer-col col-sm-3 col-sm-12 contact">
               <div class="footer-col-inner">
-                <h3 class="title">Contact RKFC</h3>
+                <h3 class="title">PT RITRA ABADI</h3>
                 <div class="row">
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
-                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>  
+                <p class="col-sm-12">Kompleks Ruko Enggano Megah <br>
+                Blok B No. 9C<br>
+Jl. Enggano Raya, Tanjung Priok<br>
+Jakarta Utara 14310
+</p>
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+6221 43905040 </p>
+                  <p class="tel col-sm-12"><i class="fa fa-fax"></i>+6221 43905041 </p>
+                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:export.ritra.abadi@ritra.com">export.ritra.abadi@ritra.com</a></p>  
                 </div> 
               </div><!--//footer-col-inner-->            
             </div><!--//foooter-col-->   
