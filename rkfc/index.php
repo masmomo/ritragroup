@@ -78,16 +78,20 @@ include('static/body_loader.php');
               <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-rkfc_white.png" width="100" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 0px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
-                <p>Ritra Cargo offers tailored solutions to your freight forwarding needs, from sea and air shipments to customized logistics project. Ritra Cargo is a wholly owned subsidiary of Ritra Logistics.</p>
+                <p>PT Ritra Konnas Freight Centre  (RKFC) is a joint-venture company established by Ritra Logistics, Blue Bird Group, and Kontena Nasional Berhad, in 1996, with core business of warehouse and empty container depot.</p>
                 </div><!--//footer-col-inner-->
             </div><!--//foooter-col--> 
             
             <div class="footer-col col-sm-3 col-sm-12 contact">
               <div class="footer-col-inner">
-                <h3 class="title">Contact Saka Trans</h3>
+                <h3 class="title">PT Ritra Konnas Freight Center</h3>
                 <div class="row">
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
-                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>  
+                  <p class="tel col-sm-12">Jl. KIR DLLAJ No. 20 Cakung <br>
+                                           Cilincing Raya KM. 5, <br>
+                                           Jakarta 14130, Indonesia.</p>
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 4416630</p>
+                  <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 4416631</p>
+                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:rkfc_ops@indo.net.id">rkfc_ops@indo.net.id</a></p>  
                 </div> 
               </div><!--//footer-col-inner-->            
             </div><!--//foooter-col-->   

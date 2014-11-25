@@ -124,8 +124,8 @@ if($count_page_banner['rows'] > 0){
   <div class="fixed-container">
     <div class="signup">
       <div class="container text-center">
-        <h2 class="title"><?php echo $data_page_banner['name'];?></h2>
-        <p class="summary"><?php echo $data_page_banner['description'];?></p>
+        <h2 class="title">Solution to your space problem</h2>
+        <p class="summary">Ready to cater to your storage and container needs</p>
       </div><!--//contianer-->
     </div><!--//signup-->
   </div> 

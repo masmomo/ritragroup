@@ -97,7 +97,8 @@ $data_cordinate  = get_location();
     <h2 class="title text-center">Services</h2>
     <div class="row">
       <div class="benefits col-md-7 col-xs-12"> 
-      
+        
+        <div class="hidden">
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
             <i class="fa fa-life-ring"></i>
@@ -141,6 +142,32 @@ $data_cordinate  = get_location();
                 <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
+        </div>
+        
+        
+        <div class="item last clearfix">
+            <div class="icon col-sm-3  col-xs-12 text-center">
+                <i class="fa fa-cubes"></i>
+            </div><!--//icon-->
+            <div class="content col-sm-9 col-xs-12">
+                <h3 class="title hidden">Warehouse Service</h3>
+                <h4 class="hidden">Customizing Your Storage Needs</h4>
+                <p class="desc" style="text-align:justify">
+				The container depot occupies a fairly large area within 58,000 square meters paved with interlocking blocks.<br />
+The container depot services provide:<br />
+•               6.000 TEUS containers storage <br />
+•               Container handling<br />
+•               Container repair and maintenance<br />
+•               Container cleaning services<br />
+•               Garment on hanger services<br />
+•               Electric plug for reefer containers <br /><br />
+ 
+A 5,000 square meter warehouse space is utilized for warehousing and distribution services. These services are supported by Ritra Logistics with its extensive experience in handling logistics and distribution management.
+                </p>
+            </div><!--//content-->
+        </div><!--//item-->
+
+        
         <div class="clearfix"></div>
     </div> 
                     <div class="testimonials col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0 hidden-xs hidden-sm">
@@ -156,6 +183,21 @@ $data_cordinate  = get_location();
                 <section id="why" class="why section" style="margin-bottom: 40px">
                     <div class="container">
                         <h2 class="title text-center" style="margin-bottom: 50px">Locations</h2>
+                        
+                        
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-xs-12" style="padding: 20px 0"> 
+                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                  <h3 class="title hidden" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <p class="desc">
+                                    RKFC is located in the district of Cakung Cilincing, which is strategically within 5 kilometers radius from Tanjung Priok Port (Jakarta International Container Terminal – JICT) and only 500 meters from freeway access that links to industrial areas surrounding Jakarta.
+                                  </p>
+                                </div><!--//content-->                            
+                              </div><!--//item-->
+                            </div>
+                        
+                        <div class="hidden">
                         <div class="row">
                             <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
                               <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
@@ -240,6 +282,7 @@ $data_cordinate  = get_location();
                                   </p>
                                 </div><!--//content-->                            
                               </div><!--//item-->
+                              </div>
                             </div>  
 
                         </div><!--//row-->
