@@ -35,24 +35,24 @@ include("control.php");
         <div class="content col-xs-9">
           <ul class="form-set">
             <li class="form-group row">
-              <label class="col-xs-3">Sea Frieght</label>
+              <label class="col-xs-3">Removals</label>
               <div class="col-xs-9">
-                <textarea id="id_sea_freight" class="form-control" rows="5" name="service_sea_freight"><?php echo preg_replace("/\n/","\n<br>",$data_service_sea['service_descriptions']);?></textarea>
+                <textarea id="id_sea_freight" class="form-control" rows="5" name="service_sea_freight"><?php echo $data_service_sea['service_descriptions'];?></textarea>
               </div>
             </li>
             <li class="form-group row">
-              <label class="col-xs-3">Air Freight</label>
+              <label class="col-xs-3">Warehousing & Storage</label>
               <div class="col-xs-9">
-                <textarea id="id_air_freight" class="form-control" rows="5" name="service_air_freight"><?php echo preg_replace("/\n/","\n<br>",$data_service_air['service_descriptions']);?></textarea>
+                <textarea id="id_air_freight" class="form-control" rows="5" name="service_air_freight"><?php echo $data_service_air['service_descriptions'];?></textarea>
               </div>
             </li>
             <li class="form-group row">
-              <label class="col-xs-3">Project Management</label>
+              <label class="col-xs-3">Car towing</label>
               <div class="col-xs-9">
-                <textarea id="id_project" class="form-control" rows="5" name="service_project"><?php echo preg_replace("/\n/","\n<br>",$data_service_project['service_descriptions']);?></textarea>
+                <textarea id="id_project" class="form-control" rows="5" name="service_project"><?php echo $data_service_project['service_descriptions'];?></textarea>
               </div>
             </li>
-            <li class="form-group row">
+            <li class="form-group row hidden">
               <label class="col-xs-3">Warehouse Service</label>
               <div class="col-xs-9">
                 <textarea id="id_warehouse" class="form-control" rows="5" name="service_warehouse"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></textarea>

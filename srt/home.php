@@ -55,8 +55,8 @@ $data_service_warehouse  = get_service('warehouse');
           </div><!--//icon-->
           
           <div class="content col-sm-9 col-xs-12">
-            <h3 class="title">Sea Freight</h3>
-            <h4>No-Hassle Shipment by Sea</h4>
+            <h3 class="title">Removals</h3>
+            <h4 class="hidden">No-Hassle Shipment by Sea</h4>
             
             <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_sea['service_descriptions']);?></p>
           </div><!--//content-->                            
@@ -67,8 +67,8 @@ $data_service_warehouse  = get_service('warehouse');
                 <i class="fa fa-plane"></i>
             </div><!--//icon-->
             <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Air Freight</h3>
-                <h4>Reliability in the Air</h4>
+                <h3 class="title">Warehousing & Storage</h3>
+                <h4 class="hidden">Reliability in the Air</h4>
                 <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_air['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
@@ -77,12 +77,12 @@ $data_service_warehouse  = get_service('warehouse');
                 <i class="fa fa-dashboard"></i>
             </div><!--//icon-->
             <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Project Management</h3>
-                <h4>Worry-free Delivery at Your Destination</h4>
+                <h3 class="title">Car towing</h3>
+                <h4 class="hidden">Worry-free Delivery at Your Destination</h4>
                 <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_project['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
-        <div class="item last clearfix">
+        <div class="item last clearfix hidden">
             <div class="icon col-sm-3  col-xs-12 text-center">
                 <i class="fa fa-cubes"></i>
             </div><!--//icon-->
