@@ -127,7 +127,7 @@ if(empty($search_parameter)){
 
 
 /* -- STORED VALUE --*/
-echo "<input type=\"hidden\" name=\"url\" id=\"url\" class=\"hidden\" value=\"".$prefix_url."view-page-banner\">\n"; // Reset option
+echo "<input type=\"hidden\" name=\"url\" id=\"url\" class=\"hidden\" value=\"".$prefix_url."view-location\">\n"; // Reset option
 echo "<input type=\"hidden\" name=\"page\" id=\"page\" class=\"hidden\" value=\"".$page."\" /> \n";
 echo "<input type=\"hidden\" name=\"current_category\" id=\"current_category\" class=\"hidden\" value=\"";
 	if($cat == ''){

@@ -88,8 +88,10 @@ include('static/page-title.php');
               <div class="footer-col-inner">
                 <h3 class="title">Contact Supex</h3>
                 <div class="row">
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
-                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>  
+                  <p class="tel hidden col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 7970619</p>
+                  <p class="email hidden col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>
+                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:supex.jkt@supex.co.id">supex.jkt@supex.co.id</a></p>
                 </div> 
               </div><!--//footer-col-inner-->            
             </div><!--//foooter-col-->   

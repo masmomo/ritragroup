@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 27, 2014 at 08:52 AM
+-- Generation Time: Nov 28, 2014 at 05:57 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -516,7 +516,7 @@ INSERT INTO `tbl_location_image` (`inspiration_image_id`, `param_inspiration_id`
 (10, 10, '101.422836/0.501480', 1, 1, 1),
 (12, 12, '116.867621/-1.257747', 1, 1, 1),
 (15, 15, '112.729910/-7.228557', 1, 1, 1),
-(16, 16, '-6.974240/110.390391', 16, 1, 1);
+(16, 16, '110.390369/-6.974120', 1, 1, 1);
 
 -- --------------------------------------------------------
 

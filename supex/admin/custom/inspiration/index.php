@@ -19,7 +19,7 @@ include("control.php");
 				  ?>
                   
                 </select>
-                <div class="btn-placeholder">
+                <div class="btn-placeholder hidden">
                   <a href="<?php echo $prefix_url."add-page-banner";?>">
                     <input type="button" class="btn btn-success btn-sm" value="Add Page Banner">
                   </a>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 20, 2014 at 12:44 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.11
+-- Generation Time: Nov 28, 2014 at 05:58 AM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `anti_ristra`
+-- Database: `anti_ritra`
 --
 
 -- --------------------------------------------------------
@@ -27,11 +27,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `cities` (
-  `city_id` int(11) NOT NULL AUTO_INCREMENT,
+`city_id` int(11) NOT NULL,
   `city_name` varchar(50) NOT NULL,
   `country_id` varchar(50) NOT NULL,
-  `province` varchar(50) NOT NULL,
-  PRIMARY KEY (`city_id`)
+  `province` varchar(50) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=333 ;
 
 --
@@ -379,10 +378,9 @@ INSERT INTO `cities` (`city_id`, `city_name`, `country_id`, `province`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `countries` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `country_code` varchar(2) NOT NULL DEFAULT '',
-  `country_name` varchar(100) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
+  `country_name` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=240 ;
 
 --
@@ -628,11 +626,10 @@ INSERT INTO `countries` (`id`, `country_code`, `country_name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `delivery_city` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+`id` int(10) unsigned NOT NULL,
   `delivery_id` int(11) NOT NULL DEFAULT '0',
   `city` varchar(100) NOT NULL DEFAULT '',
-  `state` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  `state` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=555 ;
 
 --
@@ -1202,13 +1199,12 @@ INSERT INTO `delivery_city` (`id`, `delivery_id`, `city`, `state`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `delivery_cost` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+`id` int(11) unsigned NOT NULL,
   `delivery_city_id` int(11) NOT NULL DEFAULT '0',
   `type` varchar(20) NOT NULL DEFAULT '',
   `cost` int(11) NOT NULL DEFAULT '0',
   `express_cost` int(11) NOT NULL,
-  `weight` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
+  `weight` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=555 ;
 
 --
@@ -1777,10 +1773,9 @@ INSERT INTO `delivery_cost` (`id`, `delivery_city_id`, `type`, `cost`, `express_
 --
 
 CREATE TABLE IF NOT EXISTS `delivery_countries` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `code` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
 
 --
@@ -1798,10 +1793,9 @@ INSERT INTO `delivery_countries` (`id`, `code`, `name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `delivery_state` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `country_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  `country_id` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
@@ -1851,10 +1845,9 @@ INSERT INTO `delivery_state` (`id`, `name`, `country_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `province` (
-  `province_id` int(11) NOT NULL AUTO_INCREMENT,
+`province_id` int(11) NOT NULL,
   `country_id` varchar(50) NOT NULL,
-  `province_name` varchar(50) NOT NULL,
-  PRIMARY KEY (`province_id`)
+  `province_name` varchar(50) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
@@ -1904,10 +1897,9 @@ INSERT INTO `province` (`province_id`, `country_id`, `province_name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_about` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `fill` text NOT NULL,
-  `type` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `type` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
@@ -1916,7 +1908,7 @@ CREATE TABLE IF NOT EXISTS `tbl_about` (
 
 INSERT INTO `tbl_about` (`id`, `fill`, `type`) VALUES
 (1, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-activities.jpg" /><br />In our quest to raise the standard of surface coatings in Indonesia, a series of marketing programs such as exhibitions, product knowledge training and seminars are conducted on regular basis.<br /><br /><strong>Ultran, Impra and Propan</strong> are our leading brands. They serve professional painters, architects, contractors and house owners through our well trained project teams, <strong>Propan Service Centres (PSCs)</strong> and more than <strong>5000 outlets across Indonesia</strong>.<br /><br />We are building up the competence to be a specialist for High Performance Coatings, Environmental Friendly Coatings and Durable Exterior Coatings.</p>\r\n', 'description'),
-(2, '<p class="p1">\r\n	Ritra Logistics - legally known as PT. Ritra Cargo Indonesia has been established in 1974 as a customs broker. In 1979 Ritra Logistics extended its services to international sea and air freight forwarding. To compliment its services further Ritra Logistics&nbsp; started separate divisions for project forwarding, household removal,warehousing and physical distribution.<br /><br />Headquartered in Indonesia&rsquo;s bustling capital, the Ritra Logistics operation is offering a unique and complete menu of services to customers who range all the way from major multinational corporations to families moving from one home to another.&nbsp;Today our staff numbers more than 400 persons. The expanding Ritra Logistics Network now includes branch offices in such major Indonesia business centers as&nbsp;</p>\r\n', 'about'),
+(2, '<p class="p1" style="text-align: justify;">\r\n	Ritra Cargo was established in 1974 as a customs broker. In 1979, Ritra Cargo extended its services to international sea and air freight forwarding. To complement its services further, Ritra Cargo&nbsp;started separate divisions for project forwarding, household and business removal, as well as warehousing and physical distribution, which eventually developed into independent subsidiaries under Ritra Logistics. Today, Ritra Cargo is one of the most reputable and trusted name for freight forwarding in the country.<br /><br />With decades of experience in the industry, Ritra Cargo has developed a global coverage, supported by reputable agents and networks across the globe. Ritra Cargo offers tailored solutions to customer&rsquo;s freight forwarding needs, from sea and air shipments to customized logistics project, with broad range of transportation modes and prioritized space allocations in reputable carriers to support its services.</p>\r\n<p class="p1" style="text-align: justify;">\r\n	Headquartered in Indonesia&rsquo;s bustling capital Jakarta and with offices in major cities of Indonesia, Ritra Cargo always seeks to build a strong presence in the country and to be accessible to customers. Ritra Cargo is committed to fulfill customer&rsquo;s needs with our pro-active customer service and experienced team who is always in-line with the dynamic logistics industry.</p>\r\n<p class="p1">\r\n	<br />&nbsp;</p>\r\n', 'about'),
 (6, '', 'faq'),
 (4, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-vision.png" /></p>\r\n<p class="p1" style="text-align: justify;">\r\n	<strong>PT Propan Raya I.C.C</strong>&nbsp;adalah sebuah perusahaan manufaktur yang bergerak khusus di bidang chemical coating atau lebih dikenal dengan istilah &ldquo;CAT&rdquo;. Didirikan oleh DR. Hendra Adidarma Dipl. Chemiker pada tahun 1979 dengan konsentrasi pasar di bidang finishing kayu untuk kerajinan rotan dan mebel sehingga menjadikannya perusahaan cat no. 1 untuk wood finishing.<br /><br />Dengan visinya &ldquo;<strong>To Be The Most Innovative Surface Coating Company with World Class Quality</strong>&rdquo; PT Propan Raya I.C.C berhasil merambah ke bidang lain dan menguasai pasar decorative paint sehingga menjadikannya &ldquo;The Paint Specialist&rdquo;. Hal ini dibuktikan dengan keberhasilannya meraih sertifikat ISO 9001 yang menjamin mutu dan kualitas produknya.<br /><br />PT Propan Raya I.C.C pun mempunyai misi yang terdiri dari :<br />- Memberikan komitmen untuk menjaga mutu dan kualitas produk agar para pelanggannya selalu mendapatkan yang terbaik dengan tetap memperhatikan kualitas dari kesesuaian produk/warna, tahan uji, konsisten, serta kualitas pelayanan dan fungsi dari produk tsb.<br />- Mengembangkan seluruh karyawannya menjadi orang-orang yang berpengetahuan, kreatif dan inovatif.<br />- Menjadi pemain terdepan dalam bidang wood coatings di seluruh Asia Timur.<br />- Mengembangkan cat yang ramah lingkungan sesuai dengan standart Internasional.<br /><br />Didukung oleh lebih dari 2.000 orang karyawannya, PT Propan Raya I.C.C mampu menghasilkan produksi sampai dengan 30.000 miliTon per tahun dengan jaringan distribusi yang terdiri dari 18 cabang, 16 distributor, 23 PSC (Propan Service Centre), dan 9.000 outlet yang tersebar di seluruh Indonesia sehingga kami menjamin pengiriman yang cepat dan tepat. Bahkan sampai saat ini PT Propan Raya I.C.C telah merambah dunia Internasional yang dimulai dari Malaysia dan Vietnam.<br /><br /><strong>Ultran, Impra dan Propan</strong>&nbsp;merupakan merek-merek dari produk PT Propan Raya I.C.C yang sangat dikenal oleh kalangan professional, retail maupun industrial.<br /><br />Selain produk-produk di atas, PT Propan Raya I.C.C juga mengembangkan produk yang ramah lingkungan untuk mendukung gerakan peduli lingkungan sesuai dengan standar Internasional.<br /><br />Demi meraih kepuasan pelanggan dan menciptakan hubungan yang baik dengan para pelanggannya, PT Propan Raya I.C.C juga terus menerus menyelenggarakan berbagai pelatihan produk, pameran dan seminar agar merek-merek produknya semakin dikenal dan dapat membawanya menjadi perusahaan cat no.1 di Asia.</p>\r\n', 'facilities'),
 (5, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-quality.jpg" /><br />The management and employees are committed to achieve customer satisfactionthrough:<br />&bull; Understanding customer&#39;s need<br />&bull; Doing the right things right<br />&bull; Continuous improvement<br />&bull; Striving for the best quality</p>\r\n', 'quality');
@@ -1928,12 +1920,11 @@ INSERT INTO `tbl_about` (`id`, `fill`, `type`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_about_lang` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `fill` text NOT NULL,
   `type` varchar(20) NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -1952,11 +1943,10 @@ INSERT INTO `tbl_about_lang` (`id`, `id_param`, `fill`, `type`, `language_code`)
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_account` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `account_bank` text NOT NULL,
   `account_number` text NOT NULL,
-  `account_name` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `account_name` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
@@ -1974,13 +1964,12 @@ INSERT INTO `tbl_account` (`id`, `account_bank`, `account_number`, `account_name
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_admin` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `role` varchar(30) NOT NULL,
   `username` text NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` text NOT NULL,
-  `level` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `level` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -1997,13 +1986,12 @@ INSERT INTO `tbl_admin` (`id`, `role`, `username`, `email`, `password`, `level`)
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_career` (
-  `career_id` int(11) NOT NULL AUTO_INCREMENT,
+`career_id` int(11) NOT NULL,
   `career_name` varchar(50) NOT NULL,
   `category` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL,
-  `description` text NOT NULL,
-  PRIMARY KEY (`career_id`)
+  `description` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
@@ -2022,11 +2010,10 @@ INSERT INTO `tbl_career` (`career_id`, `career_name`, `category`, `active`, `vis
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_career_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
@@ -2047,14 +2034,13 @@ INSERT INTO `tbl_career_category` (`category_id`, `category_name`, `active`, `vi
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` text NOT NULL,
   `category_description` text,
   `category_level` int(11) NOT NULL,
   `category_order` int(11) DEFAULT NULL,
   `category_active_status` varchar(20) NOT NULL,
-  `category_visibility_status` varchar(20) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `category_visibility_status` varchar(20) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
@@ -2078,7 +2064,7 @@ INSERT INTO `tbl_category` (`category_id`, `category_name`, `category_descriptio
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_category_lang` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `category_name` text NOT NULL,
   `category_description` text NOT NULL,
@@ -2086,8 +2072,7 @@ CREATE TABLE IF NOT EXISTS `tbl_category_lang` (
   `category_order` int(11) NOT NULL,
   `active` varchar(20) NOT NULL,
   `visibility` varchar(20) NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
@@ -2109,11 +2094,10 @@ INSERT INTO `tbl_category_lang` (`id`, `id_param`, `category_name`, `category_de
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_category_relation` (
-  `relation_id` int(11) NOT NULL AUTO_INCREMENT,
+`relation_id` int(11) NOT NULL,
   `category_child` int(11) NOT NULL,
   `category_parent` text NOT NULL,
-  `relation_level` int(11) NOT NULL,
-  PRIMARY KEY (`relation_id`)
+  `relation_level` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=66 ;
 
 --
@@ -2151,14 +2135,13 @@ INSERT INTO `tbl_category_relation` (`relation_id`, `category_child`, `category_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_city` (
-  `career_id` int(11) NOT NULL AUTO_INCREMENT,
+`career_id` int(11) NOT NULL,
   `career_name` varchar(50) NOT NULL,
   `category` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL,
   `description` text NOT NULL,
-  `store_map` text NOT NULL,
-  PRIMARY KEY (`career_id`)
+  `store_map` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -2175,14 +2158,13 @@ INSERT INTO `tbl_city` (`career_id`, `career_name`, `category`, `active`, `visib
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_color` (
-  `color_id` int(11) NOT NULL AUTO_INCREMENT,
+`color_id` int(11) NOT NULL,
   `color_name` text NOT NULL,
   `color_image` text NOT NULL,
   `color_order` int(11) NOT NULL,
   `color_active_status` varchar(10) NOT NULL,
   `color_visibility_status` varchar(10) NOT NULL,
-  `color_delete` int(11) NOT NULL,
-  PRIMARY KEY (`color_id`)
+  `color_delete` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
@@ -2207,10 +2189,9 @@ INSERT INTO `tbl_color` (`color_id`, `color_name`, `color_image`, `color_order`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_contact` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `fill` text NOT NULL,
-  `type` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `type` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -2227,14 +2208,13 @@ INSERT INTO `tbl_contact` (`id`, `fill`, `type`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_courier` (
-  `courier_id` int(11) NOT NULL AUTO_INCREMENT,
+`courier_id` int(11) NOT NULL,
   `courier_name` varchar(50) NOT NULL,
   `courier_description` varchar(500) NOT NULL,
   `courier_track` text NOT NULL,
   `services` varchar(25) NOT NULL,
   `active_status` varchar(10) NOT NULL,
-  `weight_counter` float NOT NULL,
-  PRIMARY KEY (`courier_id`)
+  `weight_counter` float NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
@@ -2252,13 +2232,12 @@ INSERT INTO `tbl_courier` (`courier_id`, `courier_name`, `courier_description`, 
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_courier_rate` (
-  `courier_rate_id` int(11) NOT NULL AUTO_INCREMENT,
+`courier_rate_id` int(11) NOT NULL,
   `courier_name` varchar(50) NOT NULL,
   `courier_province` varchar(50) NOT NULL,
   `courier_city` varchar(50) NOT NULL,
   `courier_rate` float NOT NULL,
-  `courier_weight` float NOT NULL,
-  PRIMARY KEY (`courier_rate_id`)
+  `courier_weight` float NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19678 ;
 
 --
@@ -4630,10 +4609,9 @@ INSERT INTO `tbl_courier_rate` (`courier_rate_id`, `courier_name`, `courier_prov
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_featured` (
-  `featured_id` int(11) NOT NULL AUTO_INCREMENT,
+`featured_id` int(11) NOT NULL,
   `featured_alias_id` varchar(11) NOT NULL,
-  `featured_type_id` int(11) NOT NULL,
-  PRIMARY KEY (`featured_id`)
+  `featured_type_id` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
@@ -4657,12 +4635,11 @@ INSERT INTO `tbl_featured` (`featured_id`, `featured_alias_id`, `featured_type_i
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_filter` (
-  `filter_id` int(11) NOT NULL AUTO_INCREMENT,
+`filter_id` int(11) NOT NULL,
   `filter_name` varchar(100) NOT NULL,
   `filter_description` text NOT NULL,
   `image` varchar(100) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`filter_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -4681,10 +4658,9 @@ INSERT INTO `tbl_filter` (`filter_id`, `filter_name`, `filter_description`, `ima
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_filter_item` (
-  `item_id` int(11) NOT NULL AUTO_INCREMENT,
+`item_id` int(11) NOT NULL,
   `filter_param` int(11) NOT NULL,
-  `product_param` int(11) NOT NULL,
-  PRIMARY KEY (`item_id`)
+  `product_param` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
 
 -- --------------------------------------------------------
@@ -4694,12 +4670,11 @@ CREATE TABLE IF NOT EXISTS `tbl_filter_item` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_forgot_log` (
-  `log_id` int(11) NOT NULL AUTO_INCREMENT,
+`log_id` int(11) NOT NULL,
   `admin_id` int(11) NOT NULL,
   `admin_username` varchar(50) NOT NULL,
   `code` varchar(50) NOT NULL,
-  `status` varchar(50) NOT NULL,
-  PRIMARY KEY (`log_id`)
+  `status` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -4709,12 +4684,11 @@ CREATE TABLE IF NOT EXISTS `tbl_forgot_log` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_gallery` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `filename` varchar(100) NOT NULL,
   `link` varchar(100) NOT NULL,
   `order` int(11) NOT NULL,
-  `flag` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
+  `flag` varchar(100) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
@@ -4740,7 +4714,7 @@ INSERT INTO `tbl_gallery` (`id`, `filename`, `link`, `order`, `flag`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_general` (
-  `general_id` int(11) NOT NULL AUTO_INCREMENT,
+`general_id` int(11) NOT NULL,
   `url` varchar(50) NOT NULL,
   `website_title` varchar(100) NOT NULL,
   `website_description` text NOT NULL,
@@ -4755,8 +4729,7 @@ CREATE TABLE IF NOT EXISTS `tbl_general` (
   `company_facebook` text NOT NULL,
   `company_twitter` text NOT NULL,
   `currency_rate` int(11) NOT NULL,
-  `logo` varchar(100) NOT NULL,
-  PRIMARY KEY (`general_id`)
+  `logo` varchar(100) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
@@ -4764,7 +4737,7 @@ CREATE TABLE IF NOT EXISTS `tbl_general` (
 --
 
 INSERT INTO `tbl_general` (`general_id`, `url`, `website_title`, `website_description`, `website_keywords`, `analytics_code`, `company_phone`, `company_address`, `company_country`, `company_province`, `company_city`, `company_postal_code`, `company_facebook`, `company_twitter`, `currency_rate`, `logo`) VALUES
-(1, 'http://www.ritralogistics.com', 'Ritra Logistic', 'Logistic', 'logistic, courier, domestic, international. cargo', 'UA-40171222-1', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo.png');
+(1, 'http://www.ritralogistics.com', 'Supex', 'Logistic', 'logistic, courier, domestic, international. cargo', '', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo-supex-white.png');
 
 -- --------------------------------------------------------
 
@@ -4773,11 +4746,10 @@ INSERT INTO `tbl_general` (`general_id`, `url`, `website_title`, `website_descri
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_help` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `fill` text NOT NULL,
   `type` text NOT NULL,
-  `order_` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  `order_` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
@@ -4796,10 +4768,9 @@ INSERT INTO `tbl_help` (`id`, `fill`, `type`, `order_`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_info` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `parameter` text NOT NULL,
-  `value` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `value` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
@@ -4821,8 +4792,9 @@ INSERT INTO `tbl_info` (`id`, `parameter`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_infos` (
-  `info_id` int(11) NOT NULL AUTO_INCREMENT,
+`info_id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `email_cc` varchar(50) NOT NULL,
   `email_warehouse` varchar(100) NOT NULL,
   `email_display` varchar(50) NOT NULL,
   `telephone` varchar(100) NOT NULL,
@@ -4831,16 +4803,15 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
   `facebook` varchar(200) NOT NULL,
   `twitter` varchar(200) NOT NULL,
   `instagram` varchar(200) NOT NULL,
-  `pinterest` varchar(200) NOT NULL,
-  PRIMARY KEY (`info_id`)
+  `pinterest` varchar(200) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `tbl_infos`
 --
 
-INSERT INTO `tbl_infos` (`info_id`, `email`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
-(1, 'ritra.cargo@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '(62-21) 7970660, 7980660, 7980650 (21 lines)', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
+INSERT INTO `tbl_infos` (`info_id`, `email`, `email_cc`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
+(1, 'ritra.cargo@ritra.com', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '+62 21 797 0660', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
 
 -- --------------------------------------------------------
 
@@ -4849,27 +4820,25 @@ INSERT INTO `tbl_infos` (`info_id`, `email`, `email_warehouse`, `email_display`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
-  `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `description` text NOT NULL,
   `date_created` date NOT NULL,
   `active` int(11) NOT NULL,
   `inspiration_visibility` int(11) NOT NULL,
-  `category` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+  `category` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `tbl_inspiration`
 --
 
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(1, 'Your logistic partner', 'Providing various services such as sea and air freight, customs brokerage, logistics, transportation, and household removal.', '2014-07-16', 1, 1, 2),
-(2, 'Serve more than 10 years', 'Providing various services such as sea and air freight, customs brokerage, logistics, transportation, and household removal.', '2014-07-16', 1, 1, 1),
-(4, 'Heading service body', 'Banner service body', '2014-07-20', 1, 1, 6),
-(5, 'body', 'body', '2014-07-20', 1, 1, 7),
-(6, 'About Us', 'Ritra Logistics - legally known as PT. Ritra Cargo Indonesia has been established in 1974 as a customs broker', '2014-07-20', 1, 1, 3),
-(7, 'Location', 'Lorem ipsum dolor sit amet', '2014-07-20', 1, 1, 4);
+(1, 'On Time, Every Time', 'Providing on-time express delivery to meet your needs', '2014-08-16', 1, 1, 1),
+(3, 'Worry-free Connectivity', 'Ready to serve you with easy connectivity from our locations at major cities in Indonesia.', '2014-08-17', 1, 1, 4),
+(5, 'Services', 'Lorem ipsum dolor sit amet', '2014-08-18', 1, 1, 2),
+(8, 'Our little story', 'Our journey to serve you better', '2014-08-25', 1, 1, 3),
+(10, 'Service Banner', 'Service banner', '2014-08-25', 1, 1, 6);
 
 -- --------------------------------------------------------
 
@@ -4878,12 +4847,11 @@ INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_cr
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_inspiration_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `visibility` int(11) NOT NULL,
-  `category_order` int(11) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `category_order` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -4893,12 +4861,11 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_category` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_inspiration_featured` (
-  `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_featured_id` int(11) NOT NULL,
   `param_inspiration_id` int(11) NOT NULL,
   `product_type_id` int(11) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_featured_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -4908,26 +4875,24 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_featured` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
-  `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_image_id` int(11) NOT NULL,
   `param_inspiration_id` int(11) NOT NULL,
   `image` varchar(200) NOT NULL,
   `order` int(11) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_image_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+  `visibility` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `tbl_inspiration_image`
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, 'files/uploads/inspiration_image/inspiration-0-img-banner.jpg', 1, 1, 1),
-(2, 2, 'files/uploads/inspiration_image/inspiration-0-tour-bg.jpg', 1, 1, 1),
-(4, 4, 'files/uploads/inspiration_image/inspiration-0-ritra-service-body.jpg', 0, 1, 1),
-(5, 5, 'files/uploads/inspiration_image/inspiration-0-ritra-company-body.jpg', 0, 1, 1),
-(6, 6, 'files/uploads/inspiration_image/inspiration-6-ritra-company-big.jpg', 1, 1, 1),
-(7, 7, 'files/uploads/inspiration_image/inspiration-0-ritra-location-small.jpg', 0, 1, 1);
+(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-4873-copy.jpg', 1, 1, 1),
+(3, 3, 'files/uploads/inspiration_image/inspiration-0-img-location.jpg', 1, 1, 1),
+(5, 5, 'files/uploads/inspiration_image/inspiration-0-img-services.jpg', 1, 1, 1),
+(8, 8, 'files/uploads/inspiration_image/inspiration-8-company.jpg', 1, 1, 1),
+(10, 10, 'files/uploads/inspiration_image/inspiration-0-img-home.jpg', 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4936,11 +4901,10 @@ INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_inspiration_tag` (
-  `tag_id` int(11) NOT NULL AUTO_INCREMENT,
+`tag_id` int(11) NOT NULL,
   `tag_name` varchar(100) NOT NULL,
   `tag_description` text NOT NULL,
-  `param` int(11) NOT NULL,
-  PRIMARY KEY (`tag_id`)
+  `param` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -4950,12 +4914,11 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_tag` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_language` (
-  `id_language` int(11) NOT NULL AUTO_INCREMENT,
+`id_language` int(11) NOT NULL,
   `language_name` varchar(50) NOT NULL,
   `language_code` varchar(5) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`id_language`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -4972,24 +4935,25 @@ INSERT INTO `tbl_language` (`id_language`, `language_name`, `language_code`, `ac
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_location` (
-  `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `description` text NOT NULL,
   `date_created` date NOT NULL,
   `active` int(11) NOT NULL,
   `inspiration_visibility` int(11) NOT NULL,
-  `category` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+  `category` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `tbl_location`
 --
 
 INSERT INTO `tbl_location` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(1, 'Monstore Shop Embrio', 'Jalan Kemang Raya No.72\r\nJakarta\r\nKota Jakarta Selatan, DKI Jakarta 40115, Indonesia', '2014-07-20', 1, 1, 1),
-(2, 'Monstore HQ', 'Jalan Jurang Mangu Barat No.8\r\nTangerang Selatan\r\nKota Tangerang Selatan, Banten 15523, Indonesia', '2014-07-20', 1, 1, 1),
-(4, 'PT. Ritra Cargo Indonesia(Ritra Logistics)', 'JL Warung Buncit Raya No. 6, South Jakarta Wisma Ritra, 12740\r\nIndonesia', '2014-07-20', 1, 1, 1);
+(1, 'Jakarta Head Office', 'Wisma Ritra	\r\nJl. Warung Buncit Raya No.6\r\nJakarta 12740 â€“ Indonesia\r\nT  : (62-21) 797 0619\r\nF  : (62-21) 7919 2726\r\nE  : supex.jkt@supex.co.id', '2014-07-20', 1, 1, 1),
+(4, 'Semarang', 'Jl. Pemuda No. 23B \r\nSemarang\r\nT  : (62-24) 3565 713, 3565 714\r\nF  :  (62-24) 351 2284\r\n', '2014-07-20', 1, 1, 1),
+(5, 'Yogyakarta', 'Jl. Ganesha VI No. 8\r\nPerum APMD, Timoho, Yogyakarta\r\nT  :  (62-274) 7470 520\r\nF  :  (62-274) 545 405', '2014-08-17', 1, 1, 1),
+(7, 'Surabaya', 'Jl. Perak Barat No. 73 \r\nSurabaya 60177\r\nT  :  (62-31) 353 8783\r\nF  :  (62-31) 353 8784\r\nE  :  supex.sub@supex.co.id', '2014-08-17', 1, 1, 1),
+(8, 'Denpasar', 'Jl. By Pass Ngurah Rai 168 X\r\nKedonganan 80362, Jimbaran â€“ Tuban\r\nDenpasar â€“ Bali\r\nT  :  (62-361) 702 647\r\nF  :  (62-361) 702 648\r\nE  :  supex.dps@supex.co.id', '2014-08-17', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4998,12 +4962,11 @@ INSERT INTO `tbl_location` (`inspiration_id`, `name`, `description`, `date_creat
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_location_featured` (
-  `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_featured_id` int(11) NOT NULL,
   `param_inspiration_id` int(11) NOT NULL,
   `product_type_id` int(11) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_featured_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -5013,23 +4976,24 @@ CREATE TABLE IF NOT EXISTS `tbl_location_featured` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_location_image` (
-  `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,
+`inspiration_image_id` int(11) NOT NULL,
   `param_inspiration_id` int(11) NOT NULL,
   `image` varchar(200) NOT NULL,
   `order` int(11) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`inspiration_image_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+  `visibility` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `tbl_location_image`
 --
 
 INSERT INTO `tbl_location_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, '106.8156/-6.267222', 1, 1, 1),
-(2, 2, '106.724657/-6.269088', 2, 1, 1),
-(4, 4, '106.8310775/-6.264608', 4, 1, 1);
+(1, 1, '106.830900/-6.264488', 1, 1, 1),
+(4, 4, '110.421316/-6.972341', 1, 1, 1),
+(5, 5, '110.394201/-7.795623', 1, 1, 1),
+(7, 7, '112.729910/-7.228557', 1, 1, 1),
+(8, 8, '115.179133/-8.760041', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -5038,7 +5002,7 @@ INSERT INTO `tbl_location_image` (`inspiration_image_id`, `param_inspiration_id`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news` (
-  `news_id` int(11) NOT NULL AUTO_INCREMENT,
+`news_id` int(11) NOT NULL,
   `news_category` varchar(50) NOT NULL,
   `news_title` varchar(100) NOT NULL,
   `news_alias` text NOT NULL,
@@ -5046,8 +5010,7 @@ CREATE TABLE IF NOT EXISTS `tbl_news` (
   `news_image` varchar(100) NOT NULL,
   `news_content` text NOT NULL,
   `news_created_date` date NOT NULL,
-  `news_visibility` varchar(10) NOT NULL,
-  PRIMARY KEY (`news_id`)
+  `news_visibility` varchar(10) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
@@ -5067,11 +5030,10 @@ INSERT INTO `tbl_news` (`news_id`, `news_category`, `news_title`, `news_alias`, 
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
   `category_active` varchar(10) NOT NULL,
-  `category_visibility` varchar(10) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `category_visibility` varchar(10) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
@@ -5088,13 +5050,12 @@ INSERT INTO `tbl_news_category` (`category_id`, `category_name`, `category_activ
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news_category_lang` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
   `category_active` varchar(10) NOT NULL,
   `category_visibility` varchar(10) NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -5113,7 +5074,7 @@ INSERT INTO `tbl_news_category_lang` (`category_id`, `id_param`, `category_name`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news_lang` (
-  `news_id` int(11) NOT NULL AUTO_INCREMENT,
+`news_id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `news_category` varchar(50) NOT NULL,
   `news_title` varchar(100) NOT NULL,
@@ -5122,8 +5083,7 @@ CREATE TABLE IF NOT EXISTS `tbl_news_lang` (
   `news_content` text NOT NULL,
   `news_created_date` date NOT NULL,
   `news_visibility` varchar(10) NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`news_id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
@@ -5141,12 +5101,11 @@ INSERT INTO `tbl_news_lang` (`news_id`, `id_param`, `news_category`, `news_title
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_new_arrival` (
-  `new_id` int(11) NOT NULL AUTO_INCREMENT,
+`new_id` int(11) NOT NULL,
   `new_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `new_start` date NOT NULL,
   `new_end` date NOT NULL,
-  `new_type_id` int(11) NOT NULL,
-  PRIMARY KEY (`new_id`)
+  `new_type_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -5156,10 +5115,9 @@ CREATE TABLE IF NOT EXISTS `tbl_new_arrival` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_notification` (
-  `notification_id` int(11) NOT NULL AUTO_INCREMENT,
+`notification_id` int(11) NOT NULL,
   `email_order` varchar(100) NOT NULL,
-  `email_warehouse` varchar(100) NOT NULL,
-  PRIMARY KEY (`notification_id`)
+  `email_warehouse` varchar(100) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -5176,7 +5134,7 @@ INSERT INTO `tbl_notification` (`notification_id`, `email_order`, `email_warehou
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_order` (
-  `order_id` int(11) NOT NULL AUTO_INCREMENT,
+`order_id` int(11) NOT NULL,
   `order_number` varchar(20) NOT NULL,
   `order_billing_first_name` varchar(50) NOT NULL,
   `order_billing_last_name` varchar(50) NOT NULL,
@@ -5211,9 +5169,7 @@ CREATE TABLE IF NOT EXISTS `tbl_order` (
   `order_closed_date` datetime DEFAULT NULL,
   `order_confirm_bank` varchar(20) DEFAULT NULL,
   `order_confirm_name` varchar(100) DEFAULT NULL,
-  `order_confirm_amount` float DEFAULT NULL,
-  PRIMARY KEY (`order_id`),
-  UNIQUE KEY `order_number` (`order_number`)
+  `order_confirm_amount` float DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
@@ -5232,7 +5188,7 @@ INSERT INTO `tbl_order` (`order_id`, `order_number`, `order_billing_first_name`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_order_item` (
-  `item_id` int(11) NOT NULL AUTO_INCREMENT,
+`item_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   `stock_name` varchar(10) NOT NULL,
@@ -5242,8 +5198,7 @@ CREATE TABLE IF NOT EXISTS `tbl_order_item` (
   `fulfillment_date` datetime NOT NULL,
   `services` varchar(20) NOT NULL,
   `shipping_number` varchar(50) NOT NULL,
-  `item_gender` text NOT NULL,
-  PRIMARY KEY (`item_id`)
+  `item_gender` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
@@ -5262,12 +5217,11 @@ INSERT INTO `tbl_order_item` (`item_id`, `order_id`, `type_id`, `stock_name`, `i
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_payment` (
-  `payment_id` int(11) NOT NULL AUTO_INCREMENT,
+`payment_id` int(11) NOT NULL,
   `order_id` varchar(20) NOT NULL,
   `payment_date` datetime NOT NULL,
   `payment_amount` varchar(20) NOT NULL,
-  `payment_type` varchar(10) NOT NULL,
-  PRIMARY KEY (`payment_id`)
+  `payment_type` varchar(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -5277,7 +5231,7 @@ CREATE TABLE IF NOT EXISTS `tbl_payment` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `product_name` text NOT NULL,
   `product_sold_out` tinyint(1) NOT NULL DEFAULT '0',
   `product_category` text NOT NULL,
@@ -5289,8 +5243,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
   `product_delete` int(11) NOT NULL DEFAULT '0',
   `product_alias` varchar(100) NOT NULL,
   `page_title` varchar(255) NOT NULL,
-  `page_description` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `page_description` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
 
 --
@@ -5309,10 +5262,9 @@ INSERT INTO `tbl_product` (`id`, `product_name`, `product_sold_out`, `product_ca
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_color` (
-  `custom_id` int(11) NOT NULL AUTO_INCREMENT,
+`custom_id` int(11) NOT NULL,
   `tag_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  PRIMARY KEY (`custom_id`)
+  `product_id` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=237 ;
 
 --
@@ -5421,11 +5373,10 @@ INSERT INTO `tbl_product_color` (`custom_id`, `tag_id`, `product_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_custom` (
-  `custom_id` int(11) NOT NULL AUTO_INCREMENT,
+`custom_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `how` text NOT NULL,
-  `technical` text NOT NULL,
-  PRIMARY KEY (`custom_id`)
+  `technical` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -5444,10 +5395,9 @@ INSERT INTO `tbl_product_custom` (`custom_id`, `product_id`, `how`, `technical`)
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_files` (
-  `files_id` int(11) NOT NULL AUTO_INCREMENT,
+`files_id` int(11) NOT NULL,
   `files` text NOT NULL,
-  `product_id` int(11) NOT NULL,
-  PRIMARY KEY (`files_id`)
+  `product_id` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -5466,11 +5416,10 @@ INSERT INTO `tbl_product_files` (`files_id`, `files`, `product_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_image` (
-  `image_id` int(11) NOT NULL AUTO_INCREMENT,
+`image_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   `img_src` text NOT NULL,
-  `image_order` int(11) NOT NULL,
-  PRIMARY KEY (`image_id`)
+  `image_order` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=125 ;
 
 --
@@ -5493,7 +5442,7 @@ INSERT INTO `tbl_product_image` (`image_id`, `type_id`, `img_src`, `image_order`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_lang` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `product_name` text NOT NULL,
   `product_sold_out` tinyint(1) NOT NULL DEFAULT '0',
@@ -5507,8 +5456,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product_lang` (
   `product_alias` varchar(100) NOT NULL,
   `page_title` varchar(255) NOT NULL,
   `page_description` text NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=46 ;
 
 --
@@ -5569,13 +5517,12 @@ INSERT INTO `tbl_product_lang` (`id`, `id_param`, `product_name`, `product_sold_
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_stock` (
-  `stock_id` int(11) NOT NULL AUTO_INCREMENT,
+`stock_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   `size_id` int(11) NOT NULL,
   `stock_name` varchar(10) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `stock_quantity` int(11) NOT NULL,
-  `stock_sold_out` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`stock_id`)
+  `stock_sold_out` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=384 ;
 
 --
@@ -5594,7 +5541,7 @@ INSERT INTO `tbl_product_stock` (`stock_id`, `type_id`, `size_id`, `stock_name`,
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_type` (
-  `type_id` int(11) NOT NULL AUTO_INCREMENT,
+`type_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `type_code` text NOT NULL,
   `type_name` text NOT NULL,
@@ -5610,8 +5557,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product_type` (
   `type_delete` int(11) NOT NULL DEFAULT '0',
   `type_alias` varchar(100) NOT NULL,
   `page_title` text NOT NULL,
-  `page_description` text NOT NULL,
-  PRIMARY KEY (`type_id`)
+  `page_description` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=97 ;
 
 --
@@ -5630,7 +5576,7 @@ INSERT INTO `tbl_product_type` (`type_id`, `product_id`, `type_code`, `type_name
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_product_type_lang` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `id_param` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `type_code` text NOT NULL,
@@ -5648,8 +5594,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product_type_lang` (
   `type_alias` varchar(100) NOT NULL,
   `page_title` text NOT NULL,
   `page_description` text NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`id`)
+  `language_code` varchar(5) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
 
 --
@@ -5711,10 +5656,9 @@ INSERT INTO `tbl_product_type_lang` (`id`, `id_param`, `product_id`, `type_code`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_promo` (
-  `promo_id` int(11) NOT NULL AUTO_INCREMENT,
+`promo_id` int(11) NOT NULL,
   `promo_name` varchar(255) NOT NULL,
-  `promo_description` text NOT NULL,
-  PRIMARY KEY (`promo_id`)
+  `promo_description` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
@@ -5732,13 +5676,12 @@ INSERT INTO `tbl_promo` (`promo_id`, `promo_name`, `promo_description`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_promo_banner` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `name` text NOT NULL,
   `filename` varchar(100) NOT NULL,
   `link` varchar(100) NOT NULL,
   `order` int(11) NOT NULL,
-  `flag` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
+  `flag` varchar(100) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -5756,13 +5699,12 @@ INSERT INTO `tbl_promo_banner` (`id`, `name`, `filename`, `link`, `order`, `flag
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_promo_item` (
-  `promo_item_id` int(11) NOT NULL AUTO_INCREMENT,
+`promo_item_id` int(11) NOT NULL,
   `promo_id` int(11) NOT NULL,
   `product_type_id` int(11) NOT NULL,
   `promo_value` float NOT NULL,
   `promo_start_datetime` date NOT NULL,
-  `promo_end_datetime` date NOT NULL,
-  PRIMARY KEY (`promo_item_id`)
+  `promo_end_datetime` date NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -5780,14 +5722,13 @@ INSERT INTO `tbl_promo_item` (`promo_item_id`, `promo_id`, `product_type_id`, `p
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_service` (
-  `career_id` int(11) NOT NULL AUTO_INCREMENT,
+`career_id` int(11) NOT NULL,
   `career_name` varchar(50) NOT NULL,
   `category` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL,
   `description` text NOT NULL,
-  `category_maps` text NOT NULL,
-  PRIMARY KEY (`career_id`)
+  `category_maps` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -5800,15 +5741,36 @@ INSERT INTO `tbl_service` (`career_id`, `career_name`, `category`, `active`, `vi
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_services`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_services` (
+`services_id` int(11) NOT NULL,
+  `service_name` varchar(50) NOT NULL,
+  `service_descriptions` text NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_services`
+--
+
+INSERT INTO `tbl_services` (`services_id`, `service_name`, `service_descriptions`) VALUES
+(1, 'sea_freight', 'SUPEX offers door-to-door express delivery of documents and package to overseas destinations. SUPEX provides on-time international delivery in accordance with the promised transit time.'),
+(2, 'air_freight', 'SUPEX also provides door-to-door delivery services to various cities and regions throughout Indonesia. With professional handling of goods and supported by a network of branch offices and agents spread across the major cities in Indonesia, SUPEX is commited to provide secured, accurate, and on-time delivery.\r\n \r\nOur services are tailored to customer requirements in the form of:\r\nâ€¢ Normal Service (NS), normal delivery.\r\nâ€¢ One Day Service (ODS), one day delivery.\r\nâ€¢ Same Day Service (SDS), delivery on the same day.\r\nWith these options, customers can send and receive urgent things within just one day with ODS, and top urgent things on the same day with SDS.'),
+(3, 'project', 'SUPEX also offers City Courier service, which is a retrieve-and-deliver service within the city where teams of motorcycle couriers and car couriers stationed in several areas to simplify and speed up the pick up and delivery service within the city.'),
+(4, 'warehouse', 'Ritra Cargo manages quality and secured warehousing space in various locations in Indonesiaâ€™s main industrial cities. With our integrated Warehouse Management System (WMS), we offer storage according to your requirements, optimizing our renowned services to customers.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_service_category`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_service_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
@@ -5830,7 +5792,7 @@ INSERT INTO `tbl_service_category` (`category_id`, `category_name`, `active`, `v
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_shopping_bag` (
-  `bag_id` int(11) NOT NULL AUTO_INCREMENT,
+`bag_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `bag_billing_first_name` text,
   `bag_billing_last_name` text,
@@ -5852,8 +5814,7 @@ CREATE TABLE IF NOT EXISTS `tbl_shopping_bag` (
   `bag_shipping_amount` double DEFAULT NULL,
   `bag_total_amount` double DEFAULT NULL,
   `bag_date` datetime DEFAULT NULL,
-  `bag_counter` int(11) DEFAULT NULL,
-  PRIMARY KEY (`bag_id`)
+  `bag_counter` int(11) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=460 ;
 
 --
@@ -6019,14 +5980,13 @@ INSERT INTO `tbl_shopping_bag` (`bag_id`, `user_id`, `bag_billing_first_name`, `
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_shopping_bag_item` (
-  `item_id` int(11) NOT NULL AUTO_INCREMENT,
+`item_id` int(11) NOT NULL,
   `bag_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   `stock_name` text NOT NULL,
   `item_quantity` int(11) NOT NULL,
   `item_price` double NOT NULL,
-  `item_gender` text NOT NULL,
-  PRIMARY KEY (`item_id`)
+  `item_gender` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=656 ;
 
 --
@@ -6146,12 +6106,11 @@ INSERT INTO `tbl_shopping_bag_item` (`item_id`, `bag_id`, `type_id`, `stock_name
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_size` (
-  `size_id` int(11) NOT NULL AUTO_INCREMENT,
+`size_id` int(11) NOT NULL,
   `size_type_id` int(11) NOT NULL,
   `size_name` text CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `size_sku` varchar(10) NOT NULL,
-  `size_order` int(11) NOT NULL,
-  PRIMARY KEY (`size_id`)
+  `size_order` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=292 ;
 
 --
@@ -6178,12 +6137,11 @@ INSERT INTO `tbl_size` (`size_id`, `size_type_id`, `size_name`, `size_sku`, `siz
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_size_type` (
-  `size_type_id` int(11) NOT NULL AUTO_INCREMENT,
+`size_type_id` int(11) NOT NULL,
   `size_type_name` text NOT NULL,
   `size_type_order` int(11) NOT NULL,
   `size_type_active` varchar(10) NOT NULL,
-  `size_type_visibility` varchar(10) NOT NULL,
-  PRIMARY KEY (`size_type_id`)
+  `size_type_visibility` varchar(10) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=50 ;
 
 --
@@ -6201,12 +6159,11 @@ INSERT INTO `tbl_size_type` (`size_type_id`, `size_type_name`, `size_type_order`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_slideshow` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `filename` text NOT NULL,
   `link` text NOT NULL,
   `order_` int(11) NOT NULL,
-  `flag` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
+  `flag` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -6216,14 +6173,13 @@ CREATE TABLE IF NOT EXISTS `tbl_slideshow` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_store` (
-  `career_id` int(11) NOT NULL AUTO_INCREMENT,
+`career_id` int(11) NOT NULL,
   `career_name` varchar(50) NOT NULL,
   `category` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL,
   `description` text NOT NULL,
-  `category_maps` text NOT NULL,
-  PRIMARY KEY (`career_id`)
+  `category_maps` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
@@ -6242,11 +6198,10 @@ INSERT INTO `tbl_store` (`career_id`, `career_name`, `category`, `active`, `visi
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_store_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
   `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `visibility` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
@@ -6268,7 +6223,7 @@ INSERT INTO `tbl_store_category` (`category_id`, `category_name`, `active`, `vis
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tag` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` text NOT NULL,
   `category_description` text,
   `category_level` int(11) NOT NULL,
@@ -6277,8 +6232,7 @@ CREATE TABLE IF NOT EXISTS `tbl_tag` (
   `category_visibility_status` varchar(20) NOT NULL,
   `rgb_code` varchar(20) NOT NULL,
   `image` text NOT NULL,
-  `code` varchar(20) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `code` varchar(20) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
@@ -6307,7 +6261,7 @@ INSERT INTO `tbl_tag` (`category_id`, `category_name`, `category_description`, `
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tags` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+`category_id` int(11) NOT NULL,
   `category_name` text NOT NULL,
   `category_description` text,
   `category_level` int(11) NOT NULL,
@@ -6316,8 +6270,7 @@ CREATE TABLE IF NOT EXISTS `tbl_tags` (
   `category_visibility_status` varchar(20) NOT NULL,
   `rgb_code` varchar(20) NOT NULL,
   `image` text NOT NULL,
-  `code` varchar(20) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `code` varchar(20) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
@@ -6337,11 +6290,10 @@ INSERT INTO `tbl_tags` (`category_id`, `category_name`, `category_description`, 
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tags_relation` (
-  `relation_id` int(11) NOT NULL AUTO_INCREMENT,
+`relation_id` int(11) NOT NULL,
   `category_child` int(11) NOT NULL,
   `category_parent` text NOT NULL,
-  `relation_level` int(11) NOT NULL,
-  PRIMARY KEY (`relation_id`)
+  `relation_level` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
@@ -6362,11 +6314,10 @@ INSERT INTO `tbl_tags_relation` (`relation_id`, `category_child`, `category_pare
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tag_relation` (
-  `relation_id` int(11) NOT NULL AUTO_INCREMENT,
+`relation_id` int(11) NOT NULL,
   `category_child` int(11) NOT NULL,
   `category_parent` text NOT NULL,
-  `relation_level` int(11) NOT NULL,
-  PRIMARY KEY (`relation_id`)
+  `relation_level` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
@@ -6410,7 +6361,7 @@ INSERT INTO `tbl_tag_relation` (`relation_id`, `category_child`, `category_paren
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_user` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL,
   `user_email` text NOT NULL,
   `user_password` text NOT NULL,
   `user_first_name` text NOT NULL,
@@ -6424,8 +6375,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_postal_code` text NOT NULL,
   `user_created_date` date NOT NULL,
   `user_status` text NOT NULL,
-  `user_alias` varchar(100) NOT NULL,
-  PRIMARY KEY (`user_id`)
+  `user_alias` varchar(100) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
 
 --
@@ -6457,10 +6407,9 @@ INSERT INTO `tbl_user` (`user_id`, `user_email`, `user_password`, `user_first_na
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_user_purchase` (
-  `purchase_id` int(11) NOT NULL AUTO_INCREMENT,
+`purchase_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL,
-  PRIMARY KEY (`purchase_id`)
+  `order_id` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
@@ -6473,6 +6422,850 @@ INSERT INTO `tbl_user_purchase` (`purchase_id`, `user_id`, `order_id`) VALUES
 (3, 81, 3),
 (4, 0, 4);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cities`
+--
+ALTER TABLE `cities`
+ ADD PRIMARY KEY (`city_id`);
+
+--
+-- Indexes for table `countries`
+--
+ALTER TABLE `countries`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `delivery_city`
+--
+ALTER TABLE `delivery_city`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `delivery_cost`
+--
+ALTER TABLE `delivery_cost`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `delivery_countries`
+--
+ALTER TABLE `delivery_countries`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `delivery_state`
+--
+ALTER TABLE `delivery_state`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `province`
+--
+ALTER TABLE `province`
+ ADD PRIMARY KEY (`province_id`);
+
+--
+-- Indexes for table `tbl_about`
+--
+ALTER TABLE `tbl_about`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_about_lang`
+--
+ALTER TABLE `tbl_about_lang`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_account`
+--
+ALTER TABLE `tbl_account`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_admin`
+--
+ALTER TABLE `tbl_admin`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_career`
+--
+ALTER TABLE `tbl_career`
+ ADD PRIMARY KEY (`career_id`);
+
+--
+-- Indexes for table `tbl_career_category`
+--
+ALTER TABLE `tbl_career_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_category`
+--
+ALTER TABLE `tbl_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_category_lang`
+--
+ALTER TABLE `tbl_category_lang`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_category_relation`
+--
+ALTER TABLE `tbl_category_relation`
+ ADD PRIMARY KEY (`relation_id`);
+
+--
+-- Indexes for table `tbl_city`
+--
+ALTER TABLE `tbl_city`
+ ADD PRIMARY KEY (`career_id`);
+
+--
+-- Indexes for table `tbl_color`
+--
+ALTER TABLE `tbl_color`
+ ADD PRIMARY KEY (`color_id`);
+
+--
+-- Indexes for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_courier`
+--
+ALTER TABLE `tbl_courier`
+ ADD PRIMARY KEY (`courier_id`);
+
+--
+-- Indexes for table `tbl_courier_rate`
+--
+ALTER TABLE `tbl_courier_rate`
+ ADD PRIMARY KEY (`courier_rate_id`);
+
+--
+-- Indexes for table `tbl_featured`
+--
+ALTER TABLE `tbl_featured`
+ ADD PRIMARY KEY (`featured_id`);
+
+--
+-- Indexes for table `tbl_filter`
+--
+ALTER TABLE `tbl_filter`
+ ADD PRIMARY KEY (`filter_id`);
+
+--
+-- Indexes for table `tbl_filter_item`
+--
+ALTER TABLE `tbl_filter_item`
+ ADD PRIMARY KEY (`item_id`);
+
+--
+-- Indexes for table `tbl_forgot_log`
+--
+ALTER TABLE `tbl_forgot_log`
+ ADD PRIMARY KEY (`log_id`);
+
+--
+-- Indexes for table `tbl_gallery`
+--
+ALTER TABLE `tbl_gallery`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_general`
+--
+ALTER TABLE `tbl_general`
+ ADD PRIMARY KEY (`general_id`);
+
+--
+-- Indexes for table `tbl_help`
+--
+ALTER TABLE `tbl_help`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_info`
+--
+ALTER TABLE `tbl_info`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_infos`
+--
+ALTER TABLE `tbl_infos`
+ ADD PRIMARY KEY (`info_id`);
+
+--
+-- Indexes for table `tbl_inspiration`
+--
+ALTER TABLE `tbl_inspiration`
+ ADD PRIMARY KEY (`inspiration_id`);
+
+--
+-- Indexes for table `tbl_inspiration_category`
+--
+ALTER TABLE `tbl_inspiration_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_inspiration_featured`
+--
+ALTER TABLE `tbl_inspiration_featured`
+ ADD PRIMARY KEY (`inspiration_featured_id`);
+
+--
+-- Indexes for table `tbl_inspiration_image`
+--
+ALTER TABLE `tbl_inspiration_image`
+ ADD PRIMARY KEY (`inspiration_image_id`);
+
+--
+-- Indexes for table `tbl_inspiration_tag`
+--
+ALTER TABLE `tbl_inspiration_tag`
+ ADD PRIMARY KEY (`tag_id`);
+
+--
+-- Indexes for table `tbl_language`
+--
+ALTER TABLE `tbl_language`
+ ADD PRIMARY KEY (`id_language`);
+
+--
+-- Indexes for table `tbl_location`
+--
+ALTER TABLE `tbl_location`
+ ADD PRIMARY KEY (`inspiration_id`);
+
+--
+-- Indexes for table `tbl_location_featured`
+--
+ALTER TABLE `tbl_location_featured`
+ ADD PRIMARY KEY (`inspiration_featured_id`);
+
+--
+-- Indexes for table `tbl_location_image`
+--
+ALTER TABLE `tbl_location_image`
+ ADD PRIMARY KEY (`inspiration_image_id`);
+
+--
+-- Indexes for table `tbl_news`
+--
+ALTER TABLE `tbl_news`
+ ADD PRIMARY KEY (`news_id`);
+
+--
+-- Indexes for table `tbl_news_category`
+--
+ALTER TABLE `tbl_news_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_news_category_lang`
+--
+ALTER TABLE `tbl_news_category_lang`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_news_lang`
+--
+ALTER TABLE `tbl_news_lang`
+ ADD PRIMARY KEY (`news_id`);
+
+--
+-- Indexes for table `tbl_new_arrival`
+--
+ALTER TABLE `tbl_new_arrival`
+ ADD PRIMARY KEY (`new_id`);
+
+--
+-- Indexes for table `tbl_notification`
+--
+ALTER TABLE `tbl_notification`
+ ADD PRIMARY KEY (`notification_id`);
+
+--
+-- Indexes for table `tbl_order`
+--
+ALTER TABLE `tbl_order`
+ ADD PRIMARY KEY (`order_id`), ADD UNIQUE KEY `order_number` (`order_number`);
+
+--
+-- Indexes for table `tbl_order_item`
+--
+ALTER TABLE `tbl_order_item`
+ ADD PRIMARY KEY (`item_id`);
+
+--
+-- Indexes for table `tbl_payment`
+--
+ALTER TABLE `tbl_payment`
+ ADD PRIMARY KEY (`payment_id`);
+
+--
+-- Indexes for table `tbl_product`
+--
+ALTER TABLE `tbl_product`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_product_color`
+--
+ALTER TABLE `tbl_product_color`
+ ADD PRIMARY KEY (`custom_id`);
+
+--
+-- Indexes for table `tbl_product_custom`
+--
+ALTER TABLE `tbl_product_custom`
+ ADD PRIMARY KEY (`custom_id`);
+
+--
+-- Indexes for table `tbl_product_files`
+--
+ALTER TABLE `tbl_product_files`
+ ADD PRIMARY KEY (`files_id`);
+
+--
+-- Indexes for table `tbl_product_image`
+--
+ALTER TABLE `tbl_product_image`
+ ADD PRIMARY KEY (`image_id`);
+
+--
+-- Indexes for table `tbl_product_lang`
+--
+ALTER TABLE `tbl_product_lang`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_product_stock`
+--
+ALTER TABLE `tbl_product_stock`
+ ADD PRIMARY KEY (`stock_id`);
+
+--
+-- Indexes for table `tbl_product_type`
+--
+ALTER TABLE `tbl_product_type`
+ ADD PRIMARY KEY (`type_id`);
+
+--
+-- Indexes for table `tbl_product_type_lang`
+--
+ALTER TABLE `tbl_product_type_lang`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_promo`
+--
+ALTER TABLE `tbl_promo`
+ ADD PRIMARY KEY (`promo_id`);
+
+--
+-- Indexes for table `tbl_promo_banner`
+--
+ALTER TABLE `tbl_promo_banner`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_promo_item`
+--
+ALTER TABLE `tbl_promo_item`
+ ADD PRIMARY KEY (`promo_item_id`);
+
+--
+-- Indexes for table `tbl_service`
+--
+ALTER TABLE `tbl_service`
+ ADD PRIMARY KEY (`career_id`);
+
+--
+-- Indexes for table `tbl_services`
+--
+ALTER TABLE `tbl_services`
+ ADD PRIMARY KEY (`services_id`);
+
+--
+-- Indexes for table `tbl_service_category`
+--
+ALTER TABLE `tbl_service_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_shopping_bag`
+--
+ALTER TABLE `tbl_shopping_bag`
+ ADD PRIMARY KEY (`bag_id`);
+
+--
+-- Indexes for table `tbl_shopping_bag_item`
+--
+ALTER TABLE `tbl_shopping_bag_item`
+ ADD PRIMARY KEY (`item_id`);
+
+--
+-- Indexes for table `tbl_size`
+--
+ALTER TABLE `tbl_size`
+ ADD PRIMARY KEY (`size_id`);
+
+--
+-- Indexes for table `tbl_size_type`
+--
+ALTER TABLE `tbl_size_type`
+ ADD PRIMARY KEY (`size_type_id`);
+
+--
+-- Indexes for table `tbl_slideshow`
+--
+ALTER TABLE `tbl_slideshow`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_store`
+--
+ALTER TABLE `tbl_store`
+ ADD PRIMARY KEY (`career_id`);
+
+--
+-- Indexes for table `tbl_store_category`
+--
+ALTER TABLE `tbl_store_category`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_tag`
+--
+ALTER TABLE `tbl_tag`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_tags`
+--
+ALTER TABLE `tbl_tags`
+ ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `tbl_tags_relation`
+--
+ALTER TABLE `tbl_tags_relation`
+ ADD PRIMARY KEY (`relation_id`);
+
+--
+-- Indexes for table `tbl_tag_relation`
+--
+ALTER TABLE `tbl_tag_relation`
+ ADD PRIMARY KEY (`relation_id`);
+
+--
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+ ADD PRIMARY KEY (`user_id`);
+
+--
+-- Indexes for table `tbl_user_purchase`
+--
+ALTER TABLE `tbl_user_purchase`
+ ADD PRIMARY KEY (`purchase_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cities`
+--
+ALTER TABLE `cities`
+MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=333;
+--
+-- AUTO_INCREMENT for table `countries`
+--
+ALTER TABLE `countries`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=240;
+--
+-- AUTO_INCREMENT for table `delivery_city`
+--
+ALTER TABLE `delivery_city`
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=555;
+--
+-- AUTO_INCREMENT for table `delivery_cost`
+--
+ALTER TABLE `delivery_cost`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=555;
+--
+-- AUTO_INCREMENT for table `delivery_countries`
+--
+ALTER TABLE `delivery_countries`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `delivery_state`
+--
+ALTER TABLE `delivery_state`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+--
+-- AUTO_INCREMENT for table `province`
+--
+ALTER TABLE `province`
+MODIFY `province_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
+--
+-- AUTO_INCREMENT for table `tbl_about`
+--
+ALTER TABLE `tbl_about`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_about_lang`
+--
+ALTER TABLE `tbl_about_lang`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_account`
+--
+ALTER TABLE `tbl_account`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tbl_admin`
+--
+ALTER TABLE `tbl_admin`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_career`
+--
+ALTER TABLE `tbl_career`
+MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `tbl_career_category`
+--
+ALTER TABLE `tbl_career_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `tbl_category`
+--
+ALTER TABLE `tbl_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+--
+-- AUTO_INCREMENT for table `tbl_category_lang`
+--
+ALTER TABLE `tbl_category_lang`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_category_relation`
+--
+ALTER TABLE `tbl_category_relation`
+MODIFY `relation_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=66;
+--
+-- AUTO_INCREMENT for table `tbl_city`
+--
+ALTER TABLE `tbl_city`
+MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_color`
+--
+ALTER TABLE `tbl_color`
+MODIFY `color_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+--
+-- AUTO_INCREMENT for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_courier`
+--
+ALTER TABLE `tbl_courier`
+MODIFY `courier_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
+--
+-- AUTO_INCREMENT for table `tbl_courier_rate`
+--
+ALTER TABLE `tbl_courier_rate`
+MODIFY `courier_rate_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19678;
+--
+-- AUTO_INCREMENT for table `tbl_featured`
+--
+ALTER TABLE `tbl_featured`
+MODIFY `featured_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `tbl_filter`
+--
+ALTER TABLE `tbl_filter`
+MODIFY `filter_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_filter_item`
+--
+ALTER TABLE `tbl_filter_item`
+MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
+--
+-- AUTO_INCREMENT for table `tbl_forgot_log`
+--
+ALTER TABLE `tbl_forgot_log`
+MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_gallery`
+--
+ALTER TABLE `tbl_gallery`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `tbl_general`
+--
+ALTER TABLE `tbl_general`
+MODIFY `general_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `tbl_help`
+--
+ALTER TABLE `tbl_help`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `tbl_info`
+--
+ALTER TABLE `tbl_info`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_infos`
+--
+ALTER TABLE `tbl_infos`
+MODIFY `info_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_inspiration`
+--
+ALTER TABLE `tbl_inspiration`
+MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `tbl_inspiration_category`
+--
+ALTER TABLE `tbl_inspiration_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_inspiration_featured`
+--
+ALTER TABLE `tbl_inspiration_featured`
+MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_inspiration_image`
+--
+ALTER TABLE `tbl_inspiration_image`
+MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `tbl_inspiration_tag`
+--
+ALTER TABLE `tbl_inspiration_tag`
+MODIFY `tag_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_language`
+--
+ALTER TABLE `tbl_language`
+MODIFY `id_language` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_location`
+--
+ALTER TABLE `tbl_location`
+MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `tbl_location_featured`
+--
+ALTER TABLE `tbl_location_featured`
+MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_location_image`
+--
+ALTER TABLE `tbl_location_image`
+MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `tbl_news`
+--
+ALTER TABLE `tbl_news`
+MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `tbl_news_category`
+--
+ALTER TABLE `tbl_news_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `tbl_news_category_lang`
+--
+ALTER TABLE `tbl_news_category_lang`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_news_lang`
+--
+ALTER TABLE `tbl_news_lang`
+MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tbl_new_arrival`
+--
+ALTER TABLE `tbl_new_arrival`
+MODIFY `new_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_notification`
+--
+ALTER TABLE `tbl_notification`
+MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_order`
+--
+ALTER TABLE `tbl_order`
+MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `tbl_order_item`
+--
+ALTER TABLE `tbl_order_item`
+MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `tbl_payment`
+--
+ALTER TABLE `tbl_payment`
+MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_product`
+--
+ALTER TABLE `tbl_product`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=89;
+--
+-- AUTO_INCREMENT for table `tbl_product_color`
+--
+ALTER TABLE `tbl_product_color`
+MODIFY `custom_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=237;
+--
+-- AUTO_INCREMENT for table `tbl_product_custom`
+--
+ALTER TABLE `tbl_product_custom`
+MODIFY `custom_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_product_files`
+--
+ALTER TABLE `tbl_product_files`
+MODIFY `files_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_product_image`
+--
+ALTER TABLE `tbl_product_image`
+MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=125;
+--
+-- AUTO_INCREMENT for table `tbl_product_lang`
+--
+ALTER TABLE `tbl_product_lang`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=46;
+--
+-- AUTO_INCREMENT for table `tbl_product_stock`
+--
+ALTER TABLE `tbl_product_stock`
+MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=384;
+--
+-- AUTO_INCREMENT for table `tbl_product_type`
+--
+ALTER TABLE `tbl_product_type`
+MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=97;
+--
+-- AUTO_INCREMENT for table `tbl_product_type_lang`
+--
+ALTER TABLE `tbl_product_type_lang`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
+--
+-- AUTO_INCREMENT for table `tbl_promo`
+--
+ALTER TABLE `tbl_promo`
+MODIFY `promo_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tbl_promo_banner`
+--
+ALTER TABLE `tbl_promo_banner`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_promo_item`
+--
+ALTER TABLE `tbl_promo_item`
+MODIFY `promo_item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_service`
+--
+ALTER TABLE `tbl_service`
+MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_services`
+--
+ALTER TABLE `tbl_services`
+MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `tbl_service_category`
+--
+ALTER TABLE `tbl_service_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_shopping_bag`
+--
+ALTER TABLE `tbl_shopping_bag`
+MODIFY `bag_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=460;
+--
+-- AUTO_INCREMENT for table `tbl_shopping_bag_item`
+--
+ALTER TABLE `tbl_shopping_bag_item`
+MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=656;
+--
+-- AUTO_INCREMENT for table `tbl_size`
+--
+ALTER TABLE `tbl_size`
+MODIFY `size_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=292;
+--
+-- AUTO_INCREMENT for table `tbl_size_type`
+--
+ALTER TABLE `tbl_size_type`
+MODIFY `size_type_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+--
+-- AUTO_INCREMENT for table `tbl_slideshow`
+--
+ALTER TABLE `tbl_slideshow`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_store`
+--
+ALTER TABLE `tbl_store`
+MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `tbl_store_category`
+--
+ALTER TABLE `tbl_store_category`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_tag`
+--
+ALTER TABLE `tbl_tag`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `tbl_tags`
+--
+ALTER TABLE `tbl_tags`
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `tbl_tags_relation`
+--
+ALTER TABLE `tbl_tags_relation`
+MODIFY `relation_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `tbl_tag_relation`
+--
+ALTER TABLE `tbl_tag_relation`
+MODIFY `relation_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=83;
+--
+-- AUTO_INCREMENT for table `tbl_user_purchase`
+--
+ALTER TABLE `tbl_user_purchase`
+MODIFY `purchase_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
