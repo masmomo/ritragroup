@@ -124,8 +124,10 @@ if($count_page_banner['rows'] > 0){
   <div class="fixed-container">
     <div class="signup">
       <div class="container text-center">
-        <h2 class="title"><?php echo $data_page_banner['name'];?></h2>
-        <p class="summary"><?php echo $data_page_banner['description'];?></p>
+        <h2 class="title hidden"><?php echo $data_page_banner['name'];?></h2>
+        <h2 class="title">Shorten down your routes</h2>
+        <p class="summary hidden"><?php echo $data_page_banner['description'];?></p>
+        <p class="summary">Land transportation for your business needs made easy.</p>
       </div><!--//contianer-->
     </div><!--//signup-->
   </div> 

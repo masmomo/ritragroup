@@ -41,10 +41,10 @@ $data_cordinate  = get_location();
 ?>
 
 <style>
-	@media (max-width: 767px) {
-	.why .benefits .item .content p {
-		padding-top: 0;
-	}
+@media (max-width: 767px) {
+   .why .benefits .item .content p {
+      padding-top: 0;
+   }
 }
 </style>
 
@@ -76,10 +76,10 @@ $data_cordinate  = get_location();
 						?>
                         
                         <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;" onclick="selectLocation('<?php echo $row;?>')">
-                            <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" onclick="activeItem('<?php echo $row;?>')">
-                                <h3 class="title" style="margin-bottom: 10px"><?php echo $data_location['name'];?></h3>
-                                <p class="desc"><?php echo preg_replace("/\n/","\n<br>",$data_location['description']);?></p>
-                            </div><!--//content-->                            
+                          <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" onclick="activeItem('<?php echo $row;?>')">
+                            <h3 class="title" style="margin-bottom: 10px"><?php echo $data_location['name'];?></h3>
+                            <p class="desc"><?php echo preg_replace("/\n/","\n<br>",$data_location['description']);?></p>
+                          </div><!--//content-->                            
                         </div><!--//item-->
                         
                         <?php

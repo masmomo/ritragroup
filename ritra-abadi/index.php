@@ -89,11 +89,6 @@ Complemented with offices in main seaports and airports in Indonesia, we will en
               <div class="footer-col-inner">
                 <h3 class="title">PT RITRA ABADI</h3>
                 <div class="row">
-                <p class="col-sm-12">Kompleks Ruko Enggano Megah <br>
-                Blok B No. 9C<br>
-Jl. Enggano Raya, Tanjung Priok<br>
-Jakarta Utara 14310
-</p>
                   <p class="tel col-sm-12"><i class="fa fa-phone"></i>+6221 43905040 </p>
                   <p class="tel col-sm-12"><i class="fa fa-fax"></i>+6221 43905041 </p>
                   <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:export.ritra.abadi@ritra.com">export.ritra.abadi@ritra.com</a></p>  

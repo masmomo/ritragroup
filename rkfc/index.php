@@ -86,9 +86,6 @@ include('static/body_loader.php');
               <div class="footer-col-inner">
                 <h3 class="title">PT Ritra Konnas Freight Center</h3>
                 <div class="row">
-                  <p class="tel col-sm-12">Jl. KIR DLLAJ No. 20 Cakung <br>
-                                           Cilincing Raya KM. 5, <br>
-                                           Jakarta 14130, Indonesia.</p>
                   <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 4416630</p>
                   <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 4416631</p>
                   <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:rkfc_ops@indo.net.id">rkfc_ops@indo.net.id</a></p>  

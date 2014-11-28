@@ -100,17 +100,19 @@ $data_cordinate  = get_location();
       
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
-            <i class="fa fa-life-ring"></i>
+            <i class="fa fa-life-ring hidden"></i>
           </div><!--//icon-->
           
           <div class="content col-sm-9 col-xs-12">
-            <h3 class="title">Sea Freight</h3>
-            <h4>No-Hassle Shipment by Sea</h4>
+            <h3 class="title hidden">Sea Freight</h3>
+            <h4 class="hidden">No-Hassle Shipment by Sea</h4>
             
-            <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_sea['service_descriptions']);?></p>
+            <p class="desc hidden" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_sea['service_descriptions']);?></p>
+            <p class="desc" style="text-align:justify">With combined types of fleet, from CDE to wing-box trucks, Saka Trans will be able to cater most inquiries, from micro distribution to delivering goods inter cities. With branch offices in 6 major cities in Java and more than 150 staff, we are confident that we will we able to meet the customer requirements through customized services, delivered in a fast and cost-effective way.</p>
           </div><!--//content-->                            
         </div><!--//item-->
         
+        <div class="hidden">
         <div class="item clearfix">                            
           <div class="icon col-sm-3  col-xs-12 text-center">
                 <i class="fa fa-plane"></i>
@@ -141,6 +143,7 @@ $data_cordinate  = get_location();
                 <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
+        </div>
         <div class="clearfix"></div>
     </div> 
                     <div class="testimonials col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0 hidden-xs hidden-sm">

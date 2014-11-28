@@ -90,7 +90,8 @@ include('static/page-title.php');
               <div class="footer-col-inner">
                 <h3 class="title">Contact SRT</h3>
                 <div class="row">
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 798 2220, 798 2215</p>
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 7982220, 7982215</p>
+                  <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 7970227, 7982205, 7982188</p>
                   <p class="tel hidden col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
                   <p class="email hidden col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p> 
                   <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:srt-ho@srt.co.id">srt-ho@srt.co.id</a></p> 

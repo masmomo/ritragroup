@@ -167,92 +167,22 @@ $data_cordinate  = get_location();
             </div><!--//container-->
         </section><!--//why-->
 
-
                 <!-- ******WHY****** --> 
                 <section id="why" class="why section" style="margin-bottom: 40px">
                     <div class="container">
                         <h2 class="title text-center" style="margin-bottom: 50px">Locations</h2>
-                        <div class="row">
+                        <div class="row"> 
                             <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
                               <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
                                 <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Jakarta</h3>
                                   <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>  
-                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>  
-                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>  
-                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>  
-                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>  
-                            <div class="col-sm-6 col-md-4 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    Jl. Puri Anjasmoro EE II No. 7A <br>
-                                    Semarang 50144  <br>
-                                    T: (62-24) 761 3833, 760 7925, 760 7926 <br>
-                                    F: (62-24) 760 7927, 761 1669 <br>
-                                    E: rcisrg@ritra.com
+                                    Kompleks Ruko Enggano Megah Blok B No. 9C <br />
+                                    Jl. Enggano Raya, Tanjung Priok <br />
+                                    Jakarta Utara 14310<br />
+                                    T: (62-24) 4390 5040<br>
+                                    F: (62-24) 4390 5041<br>
+                                    E: export.ritra.abadi@ritra.com
                                   </p>
                                 </div><!--//content-->                            
                               </div><!--//item-->
