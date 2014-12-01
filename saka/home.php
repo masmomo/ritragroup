@@ -100,7 +100,7 @@ $data_cordinate  = get_location();
       
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
-            <i class="fa fa-life-ring hidden"></i>
+            <i class="fa fa-truck"></i>
           </div><!--//icon-->
           
           <div class="content col-sm-9 col-xs-12">
@@ -112,38 +112,7 @@ $data_cordinate  = get_location();
           </div><!--//content-->                            
         </div><!--//item-->
         
-        <div class="hidden">
-        <div class="item clearfix">                            
-          <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-plane"></i>
-            </div><!--//icon-->
-            <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Air Freight</h3>
-                <h4>Reliability in the Air</h4>
-                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_air['service_descriptions']);?></p>
-            </div><!--//content-->
-        </div><!--//item-->
-        <div class="item clearfix">
-            <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-dashboard"></i>
-            </div><!--//icon-->
-            <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Project Management</h3>
-                <h4>Worry-free Delivery at Your Destination</h4>
-                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_project['service_descriptions']);?></p>
-            </div><!--//content-->
-        </div><!--//item-->
-        <div class="item last clearfix">
-            <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-cubes"></i>
-            </div><!--//icon-->
-            <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Warehouse Service</h3>
-                <h4>Customizing Your Storage Needs</h4>
-                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
-            </div><!--//content-->
-        </div><!--//item-->
-        </div>
+       
         <div class="clearfix"></div>
     </div> 
                     <div class="testimonials col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0 hidden-xs hidden-sm">
