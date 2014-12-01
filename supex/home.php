@@ -51,7 +51,7 @@ $data_service_warehouse  = get_service('warehouse');
       
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
-            <i class="fa fa-life-ring"></i>
+            <i class="fa fa-globe"></i>
           </div><!--//icon-->
           
           <div class="content col-sm-9 col-xs-12">
@@ -64,7 +64,7 @@ $data_service_warehouse  = get_service('warehouse');
         
         <div class="item clearfix">                            
           <div class="icon col-sm-3  col-xs-12 text-center">
-            <i class="fa fa-plane"></i>
+            <i class="fa fa-truck"></i>
           </div><!--//icon-->
           <div class="content col-sm-9 col-xs-12">
             <h3 class="title">Domestic Express</h3>
@@ -74,22 +74,12 @@ $data_service_warehouse  = get_service('warehouse');
         </div><!--//item-->
         <div class="item clearfix">
             <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-dashboard"></i>
+                <i class="fa fa-car"></i>
             </div><!--//icon-->
             <div class="content col-sm-9 col-xs-12">
               <h3 class="title">City Courier</h3>
               <h4 class="hidden">Worry-free Delivery at Your Destination</h4>
               <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_project['service_descriptions']);?></p>
-            </div><!--//content-->
-        </div><!--//item-->
-        <div class="item last clearfix hidden">
-            <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-cubes"></i>
-            </div><!--//icon-->
-            <div class="content col-sm-9 col-xs-12">
-                <h3 class="title">Warehouse Service</h3>
-                <h4>Customizing Your Storage Needs</h4>
-                <p class="desc" style="text-align:justify"><?php echo preg_replace("/\n/","\n<br>",$data_service_warehouse['service_descriptions']);?></p>
             </div><!--//content-->
         </div><!--//item-->
         <div class="clearfix"></div>

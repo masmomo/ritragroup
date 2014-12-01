@@ -51,7 +51,7 @@ $data_service_warehouse  = get_service('warehouse');
       
         <div class="item clearfix">  
           <div class="icon col-sm-3 col-xs-12 text-center">
-            <i class="fa fa-life-ring"></i>
+            <i class="fa fa-truck"></i>
           </div><!--//icon-->
           
           <div class="content col-sm-9 col-xs-12">
@@ -64,7 +64,7 @@ $data_service_warehouse  = get_service('warehouse');
         
         <div class="item clearfix">                            
           <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-plane"></i>
+                <i class="fa fa-cubes"></i>
             </div><!--//icon-->
             <div class="content col-sm-9 col-xs-12">
                 <h3 class="title">Warehousing & Storage</h3>
@@ -74,7 +74,7 @@ $data_service_warehouse  = get_service('warehouse');
         </div><!--//item-->
         <div class="item clearfix">
             <div class="icon col-sm-3  col-xs-12 text-center">
-                <i class="fa fa-dashboard"></i>
+                <i class="fa fa-car"></i>
             </div><!--//icon-->
             <div class="content col-sm-9 col-xs-12">
                 <h3 class="title">Car towing</h3>

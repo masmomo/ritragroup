@@ -136,7 +136,7 @@ if($count_page_banner['rows'] > 0){
 
 
 <!-- ******VIDEO****** --> 
-<section id="video" class="video section" <?php echo $page_header;?> style="position: relative">
+<section id="video" class="video section" <?php echo $page_header;?> style="position: relative;">
   <div class="container" >
     <div style="background: rgba(0,0,0,0.5); padding: 1px 20px; width: 350px">
       <h2 class="title"><?php echo $data_page_banner['name'];?></h2>
