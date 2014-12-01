@@ -77,7 +77,7 @@ include("control.php");
                       </div>
                     </li>
                     <li class="form-group row" id="lbl_inspiration_name">
-                      <label for="brand" class="control-label col-xs-3">Inspiration Name <span>*</span></label>
+                      <label for="brand" class="control-label col-xs-3">Banner Name <span>*</span></label>
                       <div class="content col-xs-9">
                         <input type="text" class="form-control"name="inspiration_name" id="id_inspiration_name" value="<?php echo $inspiration['name'];?>">
                       </div>
