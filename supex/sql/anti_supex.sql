@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2014 at 07:37 AM
+-- Generation Time: Dec 01, 2014 at 05:56 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -4737,7 +4737,7 @@ CREATE TABLE IF NOT EXISTS `tbl_general` (
 --
 
 INSERT INTO `tbl_general` (`general_id`, `url`, `website_title`, `website_description`, `website_keywords`, `analytics_code`, `company_phone`, `company_address`, `company_country`, `company_province`, `company_city`, `company_postal_code`, `company_facebook`, `company_twitter`, `currency_rate`, `logo`) VALUES
-(1, 'http://www.ritralogistics.com', 'Supex', 'Logistic', 'logistic, courier, domestic, international. cargo', '', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo-supex-white.png');
+(1, 'http://www.ritralogistics.com', 'Supex', 'Logistic', 'logistic, courier, domestic, international. cargo', '', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo-supex.png');
 
 -- --------------------------------------------------------
 

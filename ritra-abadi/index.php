@@ -2,13 +2,28 @@
 include('admin/custom/static/general.php');
 include('admin/static/general.php');
 include('static/body_loader.php');
+
+function is_connected(){
+   $connected = @fsockopen("www.google.com", 80); 
+   
+   if ($connected){
+      $is_conn = true;
+	  fclose($connected);
+   }else{
+      $is_conn = false;
+   }
+   
+   return $is_conn;
+}
+
+$asd = is_connected();
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Ritra Abadi</title>
+    <title>Ritra Abadi <?php echo $asd;?></title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
