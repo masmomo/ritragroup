@@ -426,11 +426,11 @@ blockquote {
   margin-bottom: 10px;
 }
 .footer .footer-col.contact p {
-  color: #4cc355;
+  color: #fff;
 }
 .footer .footer-col.contact .fa {
   margin-right: 10px;
-  color: #4cc355;
+  color: #fff;
 }
 .footer .footer-col .title {
   color: #fff;
@@ -441,10 +441,10 @@ blockquote {
   color: #fff;
 }
 .footer .footer-col a {
-  color: #4cc355;
+  color: #fff;
 }
 .footer .footer-col a:hover {
-  color: #4cc355;
+  color: #fff;
 }
 .footer .bottom-bar {
   background: #4ba074;
