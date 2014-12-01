@@ -7,7 +7,7 @@
 
 /* --- DATABASE VARIABLE --- */
 define('DB_HOST', 'localhost');       // DATABASE HOST
-define('DB_NAME', 'anti_ritra');       // DATABASE NAME
+define('DB_NAME', 'anti_rkfc');       // DATABASE NAME
 define('DB_USER', 'root');  // DATABASE USERNAME
 define('DB_PASS', '');   // DATABASE PASSWORD
 
