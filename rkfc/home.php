@@ -91,6 +91,15 @@ $data_cordinate  = get_location();
 }
 </style>
 
+<section id="about" class="why section" style="margin-top: 30px">
+  <div class="container">
+    <h2 class="title text-center">About</h2>
+    <div class="row">
+      <div class="benefits col-xs-12 col-sm-offset-2 col-sm-8 text-center" style="font-size: 20px;"> 
+        PT Ritra Konnas Freight Centre (RKFC) is a joint-venture company established by Ritra Logistics, Blue Bird Group, and Kontena Nasional Berhad, in 1996, with core business of warehouse and empty container depot.</div><!--//row-->
+  </div><!--//container-->
+</section><!--//about-->
+
 <!-- ******WHY****** --> 
 <section id="services" class="why section">
   <div class="container">
@@ -177,29 +186,6 @@ A 5,000 square meter warehouse space is utilized for warehousing and distributio
                 </div><!--//row-->
             </div><!--//container-->
         </section><!--//why-->
-
-
-                <!-- ******WHY****** --> 
-                <section id="why" class="why section" style="margin-bottom: 40px">
-                    <div class="container">
-                        <h2 class="title text-center" style="margin-bottom: 50px">Locations</h2>
-                        
-                        
-                        <div class="row">
-                          <div class="col-sm-12 col-md-12 col-xs-12" style="padding: 20px 0"> 
-                            <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                              <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                <h3 class="title hidden" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                <p class="desc">
-                                  RKFC is located in the district of Cakung Cilincing, which is strategically within 5 kilometers radius from Tanjung Priok Port (Jakarta International Container Terminal – JICT) and only 500 meters from freeway access that links to industrial areas surrounding Jakarta.
-                                </p>
-                              </div><!--//content-->                            
-                            </div><!--//item-->
-                          </div>
-
-                        </div><!--//row-->
-                    </div><!--//container-->
-                </section><!--//why-->
 
             </div><!--//wrapper-->
 

@@ -314,6 +314,7 @@ blockquote {
   font-weight: bold;
   font-size: 28px;
   max-height: 100px;
+  float: left;
   text-align: center;
 }
 .header h1.logo a:hover {
@@ -323,8 +324,12 @@ blockquote {
   vertical-align: middle;
   line-height: 1.6;
 }
+.header .main-nav {
+  margin-top: 30px;
+}
 .header .main-nav .navbar-toggle {
   margin-right: 0;
+  margin-top: -1px;
 }
 .header .main-nav button {
   background: #51a746;

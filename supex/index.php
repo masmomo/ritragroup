@@ -76,7 +76,7 @@ include('static/page-title.php');
         <div class="container">
           <div class="row">
             <div class="footer-col col-sm-9 col-sm-12 about">
-              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-supex_white.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
+              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo_footer-ritralogistics.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
                 <p>provides a full range for Door to Door and Door to Port for International or Local Services which are supported by our professional employee.</p>

@@ -51,7 +51,9 @@ $data_cordinate  = get_location();
         <!-- ******WHY****** --> 
         <section id="why" class="why section">
             <div class="container">
-                <h2 class="title text-center">Locations</h2>
+                <h2 class="title text-center" style="margin-bottom: 40px; margin-top: 40px">Contact Us</h2>
+                <p>RKFC is located in the district of Cakung Cilincing, which is strategically within 5 kilometers radius from Tanjung Priok Port (Jakarta International Container Terminal – JICT) and only 500 meters from freeway access that links to industrial areas surrounding Jakarta.
+                                </p>
                 <div class="row">
                     <div class="testimonials col-sm-9 col-xs-12 hidden-xs">
                         <div id="controls" class="hidden"></div>

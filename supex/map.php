@@ -51,7 +51,7 @@ $data_cordinate  = get_location();
         <!-- ******WHY****** --> 
         <section id="why" class="why section">
             <div class="container">
-                <h2 class="title text-center">Locations</h2>
+                <h2 class="title text-center">Contact Us</h2>
                 <div class="row">
                     <div class="testimonials col-sm-9 col-xs-12 hidden-xs">
                         <div id="controls" class="hidden"></div>

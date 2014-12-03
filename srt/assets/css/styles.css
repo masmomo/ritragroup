@@ -676,6 +676,33 @@ blockquote {
   opacity: 1;
 }
 /* ======= Why Section ======= */
+#track-trace {
+  background: url(../../assets/img/bg_track-trace.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#track-trace {
+  color: #fff;
+}
+
+#track-trace h2 {
+  color: #fff;
+}
+
+#track-trace a:hover {
+  color: #0555a0;
+  background: #fff;
+}
+
+#track-trace a {
+  padding: 5px 10px;
+  background: #0555a0;
+  color: #fff;
+}
+
 .why {
   padding: 40px 0 0 0;
 }

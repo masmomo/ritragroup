@@ -42,6 +42,17 @@ $data_service_warehouse  = get_service('warehouse');
 }
 </style>
 
+<section id="about" class="why section" style="margin-top: 30px">
+  <div class="container">
+    <h2 class="title text-center">About</h2>
+    <div class="row">
+      <div class="benefits col-xs-12 col-sm-offset-2 col-sm-8 text-center" style="font-size: 20px;"> 
+        Provides a full range for Door to Door and Door to Port for International or Local Services which are supported by our professional employee.
+      </div><!--//benefits-->        
+    </div><!--//row-->
+  </div><!--//container-->
+</section><!--//about-->
+
 <!-- ******WHY****** --> 
 <section id="services" class="why section">
   <div class="container">

@@ -75,7 +75,7 @@ include('static/body_loader.php');
         <div class="container">
           <div class="row">
             <div class="footer-col col-sm-9 col-sm-12 about">
-              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-rkfc_white.png" width="100" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 0px"></a>
+              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo_footer-ritralogistics.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
                 <p>PT Ritra Konnas Freight Centre  (RKFC) is a joint-venture company established by Ritra Logistics, Blue Bird Group, and Kontena Nasional Berhad, in 1996, with core business of warehouse and empty container depot.</p>
@@ -86,9 +86,6 @@ include('static/body_loader.php');
               <div class="footer-col-inner">
                 <h3 class="title">PT Ritra Konnas Freight Center</h3>
                 <div class="row">
-                  <p class="col-sm-12">
-                    Jl. KIR DLLAJ No. 20 Cakung - Cilincing Raya KM. 5, Jakarta 14130, Indonesia.
-                  </p>
                   <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 4416630</p>
                   <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 4416631</p>
                   <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:rkfc_ops@indo.net.id">rkfc_ops@indo.net.id</a></p>  

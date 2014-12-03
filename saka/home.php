@@ -91,6 +91,16 @@ $data_cordinate  = get_location();
 }
 </style>
 
+<section id="about" class="why section" style="margin-top: 30px">
+  <div class="container">
+    <h2 class="title text-center">About</h2>
+    <div class="row">
+      <div class="benefits col-xs-12 col-sm-offset-2 col-sm-8 text-center" style="font-size: 20px;"> 
+        Saka Trans (PT Saka Pratama) was established in 1995. Starting from the center of business in Jakarta, Saka Trans has grown into a trusted name in land transportation, with focus on the area of Java. Our land network connects major cities in Indonesia, establishing a solid and reliable trucking service. Saka Trans always strive to provide our clients with the best route and lead time/schedule that will make the transportation matters manageable and predictable.</div><!--//benefits-->        
+    </div><!--//row-->
+  </div><!--//container-->
+</section><!--//about-->
+
 <!-- ******WHY****** --> 
 <section id="services" class="why section">
   <div class="container">
@@ -123,53 +133,6 @@ $data_cordinate  = get_location();
             </div><!--//container-->
         </section><!--//why-->
 
-
-                <!-- ******WHY****** --> 
-                <section id="why" class="why section">
-                    <div class="container">
-                        <h2 class="title text-center">Locations</h2>
-                        <div class="row">
-                            <div class="testimonials col-sm-9 col-xs-12 hidden-xs">
-                                <div id="controls" class="hidden"></div>
-                                <div id="gmap-menu" style="height:610px;"></div>
-                            </div>       
-                            <div class="benefits col-sm-3 col-xs-12 col-xs-offset-0 custom-scroll">  
-                                
-                                <div class="item hidden-xs" style="margin-bottom:20px;" onclick="selectLocation('all')">
-                                    <div class="content col-xs-12 loc-item active">
-                                        <h3 class="title">View All</h3>
-                                    </div><!--//content-->                            
-                                </div><!--//item-->                  
-                                
-                                <?php
-                                if($count_location['rows'] < 1){
-                                   echo 'No Location found';
-                                }else{
-                                   
-                                   $row = 1;
-                                   foreach($data_location as $data_location){
-                                      
-                                ?>
-                                
-                                <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;" onclick="selectLocation('<?php echo $row;?>')">
-                                    <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" onclick="activeItem('<?php echo $row;?>')">
-                                        <h3 class="title" style="margin-bottom: 10px"><?php echo $data_location['name'];?></h3>
-                                        <p class="desc"><?php echo preg_replace("/\n/","\n<br>",$data_location['description']);?></p>
-                                    </div><!--//content-->                            
-                                </div><!--//item-->
-                                
-                                <?php
-                                      $row++;
-                                   }
-                                }
-                                ?>
-                                
-                                <div class="clearfix"></div>
-                            </div> 
-                                        
-                        </div><!--//row-->
-                    </div><!--//container-->
-                </section><!--//why-->
 
             </div><!--//wrapper-->
 

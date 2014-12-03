@@ -127,6 +127,18 @@ $data_service_warehouse  = get_service('warehouse');
                 </form>
             </div>
         </section>-->
+
+        <section id="track-trace" class="why section">
+          <div class="container">
+            <h2 class="title text-center">Track &amp; Trace</h2>
+            <div class="row">
+              <div class="benefits col-xs-12 col-sm-offset-2 col-sm-8 text-center" style="font-size: 20px; margin-top: -30px"> 
+                Track your SRT delivery by going to:<br>
+                <a href="" >Link here</a>
+              </div><!--//benefits-->        
+            </div><!--//row-->
+          </div><!--//container-->
+        </section><!--//about-->
             
     </div><!--//wrapper-->
 

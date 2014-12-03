@@ -91,16 +91,23 @@ $data_cordinate  = get_location();
 }
 </style>
 
+<section id="about" class="why section" style="margin-top: 30px">
+  <div class="container">
+    <h2 class="title text-center">About</h2>
+    <div class="row">
+      <div class="benefits col-xs-12 col-sm-offset-2 col-sm-8 text-center" style="font-size: 20px;"> 
+        PT. Ritra Abadi was established in 1974. Having more than 25 years of experience in Indonesia, Ritra Abadi has become one of the leading and most reliable customs brokerage companies. Our system is well connected with the Electronic Data Interchange (EDI) system to the recent application of National Single Window (NSW). 
+      </div><!--//row-->
+  </div><!--//container-->
+</section><!--//about-->
+
 <!-- ******WHY****** --> 
 <section id="services" class="why section">
   <div class="container">
     <h2 class="title text-center">Services</h2>
     <div class="row">
       <div class="benefits col-md-7 col-xs-12">
-      
-      
-        
-        
+
         <div class="item last clearfix">
             <div class="icon col-sm-3  col-xs-12 text-center">
                 <i class="fa fa-pencil"></i>
