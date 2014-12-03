@@ -78,7 +78,7 @@ include('static/page-title.php');
         <div class="container">
           <div class="row">
             <div class="footer-col col-sm-9 col-sm-12 about">
-              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo-srt_white.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
+              <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo_footer-ritralogistics.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
                 <p>SRT offers a complete range of relocation and logistic services from air, sea, and land transportation to packing, warehousing, and custom brokerage.</p>

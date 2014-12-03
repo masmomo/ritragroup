@@ -186,18 +186,16 @@ A 5,000 square meter warehouse space is utilized for warehousing and distributio
                         
                         
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-xs-12" style="padding: 20px 0"> 
-                              <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
-                                  <h3 class="title hidden" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
-                                  <p class="desc">
-                                    RKFC is located in the district of Cakung Cilincing, which is strategically within 5 kilometers radius from Tanjung Priok Port (Jakarta International Container Terminal – JICT) and only 500 meters from freeway access that links to industrial areas surrounding Jakarta.
-                                  </p>
-                                </div><!--//content-->                            
-                              </div><!--//item-->
-                            </div>
-                        
-                        
+                          <div class="col-sm-12 col-md-12 col-xs-12" style="padding: 20px 0"> 
+                            <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;">
+                              <div class="content col-xs-12 loc-item" id="item-location-<?php echo $row;?>" >
+                                <h3 class="title hidden" style="margin-bottom: 10px; font-size: 20px">Semarang</h3>
+                                <p class="desc">
+                                  RKFC is located in the district of Cakung Cilincing, which is strategically within 5 kilometers radius from Tanjung Priok Port (Jakarta International Container Terminal – JICT) and only 500 meters from freeway access that links to industrial areas surrounding Jakarta.
+                                </p>
+                              </div><!--//content-->                            
+                            </div><!--//item-->
+                          </div>
 
                         </div><!--//row-->
                     </div><!--//container-->
