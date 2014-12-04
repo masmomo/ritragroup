@@ -73,6 +73,24 @@ include('static/page-title.php');
         
     
     <!-- ******FOOTER****** --> 
+    <?php
+    /*
+	# ----------------------------------------------------------------------
+	# ABOUT
+	# ----------------------------------------------------------------------
+	*/
+	
+	function get_about($type){
+	   $conn   = conndB();
+	   $sql    = "SELECT * FROM tbl_about WHERE `type` = '$type'";
+	   $query  = mysql_query($sql, $conn);
+	   $result = mysql_fetch_array($query);
+	   
+	   return $result;
+	}
+	
+	$data_about = get_about('about');
+	?>
     <footer class="footer">
       <div class="footer-content">
         <div class="container">
@@ -81,7 +99,8 @@ include('static/page-title.php');
               <a href="http://www.ritra.com"><img src="<?php echo $prefix_url;?>assets/img/logo_footer-ritralogistics.png" width="200" class="pull-left hidden-xs hidden-sm" style="margin-top: 20px; margin-bottom: 60px"></a>
               <div class="footer-col-inner">
                 <h3 class="title">About Us</h3>
-                <p>SRT offers a complete range of relocation and logistic services from air, sea, and land transportation to packing, warehousing, and custom brokerage.</p>
+                <p class="hidden">SRT offers a complete range of relocation and logistic services from air, sea, and land transportation to packing, warehousing, and custom brokerage.</p>
+                <p><?php echo $data_about['fill'];?></p>
                 <!--<p><a class="more" href="<?php echo $prefix_url;?>about">Learn more <i class="fa fa-long-arrow-right"></i></a></p>-->
               </div><!--//footer-col-inner-->
             </div><!--//foooter-col--> 
@@ -90,12 +109,9 @@ include('static/page-title.php');
               <div class="footer-col-inner">
                 <h3 class="title">Contact SRT</h3>
                 <div class="row">
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 7982220, 7982215</p>
-                  <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 7970227, 7982205, 7982188</p>
-                  <p class="tel hidden col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
-                  <p class="email hidden col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p> 
-                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:srt-ho@srt.co.id">srt-ho@srt.co.id</a></p> 
- 
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
+                  <p class="tel col-sm-12"><i class="fa fa-fax"></i><?php echo $info['fax'];?></p>
+                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p> 
                 </div> 
               </div><!--//footer-col-inner-->            
             </div><!--//foooter-col-->   
@@ -135,33 +151,30 @@ include('static/page-title.php');
     <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
     <script src="<?php echo $prefix_url;?>script/map.js"></script>
     <script>
-	var LocsB = [
-        {
-                lat: 45.9,
-                lon: 10.9,
-                title: 'Title A1',
-                html: '<h3>Content A1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerA.png'
-        },
-        {
-                lat: 44.8,
-                lon: 1.7,
-                title: 'Title B1',
-                html: '<h3>Content B1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerB.png',
-                show_infowindow: false
-        },
-        {
-                lat: 51.5,
-                lon: -1.1,
-                title: 'Title C1',
-                html: [
-                        '<h3>Content C1</h3>',
-                        '<p>Lorem Ipsum..</p>'
-                ].join(''),
-                icon: 'http://maps.google.com/mapfiles/markerC.png'
-        }
-    ];
+	$(window).load(function(){
+	   var url   = window.location.href;
+	   var asd   = url.indexOf('#services');
+	   
+	   if(asd != -1){
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $('#nav-service').addClass('active');
+	   }
+	   
+	   $('#nav-service').on('click', function(){
+	      
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $(this).addClass('active');
+	   });
+	   
+	});
+	
+	
 	new Maplace({
       locations: LocsA,
        map_div: '#gmap-menu',

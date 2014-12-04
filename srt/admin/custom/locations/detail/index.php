@@ -310,5 +310,6 @@ function update_category(x){
 
 $(document).ready(function(e) {
    selectedCategory(<?php echo $inspiration['category'];?>);
+   navbarActive('location');
 });
 </script>

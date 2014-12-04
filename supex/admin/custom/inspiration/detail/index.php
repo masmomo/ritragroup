@@ -167,7 +167,9 @@ include("control.php");
 						  ?>
                           
                         </div> <!--row-->
-                        <p class="help-block" style="padding-top: 10px">Recommended dimensions of 1600 x 300 px.</p>
+                        <p class="help-block" style="padding-top: 10px"><strong>Home Banner:</strong> 1600 x 600 px</p>
+                        <p class="help-block" style="padding-top: 0px"><strong>Other Pages Banner:</strong> 1600 x 300 px</p>
+                        <p class="help-block" style="padding-top: 0px"><strong>Side Banner:</strong> 390 x (free) px</p>
                     </div> <!--content col-xs-9-->
                   </li>
                 </ul>
@@ -313,5 +315,6 @@ function update_category(x){
 
 $(document).ready(function(e) {
    selectedCategory(<?php echo $inspiration['category'];?>);
+   navbarActive('banner');
 });
 </script>

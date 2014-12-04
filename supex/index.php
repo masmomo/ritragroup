@@ -88,11 +88,9 @@ include('static/page-title.php');
               <div class="footer-col-inner">
                 <h3 class="title">Contact Supex</h3>
                 <div class="row">
-                  <p class="tel hidden col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
-                  <p class="tel col-sm-12"><i class="fa fa-phone"></i>+62 21 7970619</p>
-                  <p class="tel col-sm-12"><i class="fa fa-fax"></i>+62 21 79192726</p>
-                  <p class="email hidden col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>
-                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:supex.jkt@supex.co.id">supex.jkt@supex.co.id</a></p>
+                  <p class="tel col-sm-12"><i class="fa fa-phone"></i><?php echo $info['telephone'];?></p>
+                  <p class="tel col-sm-12"><i class="fa fa-fax"></i><?php echo $info['fax'];?></p>
+                  <p class="email col-sm-12"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $info['email'];?>"><?php echo $info['email_display'];?></a></p>
                 </div> 
               </div><!--//footer-col-inner-->            
             </div><!--//foooter-col-->   
@@ -132,33 +130,30 @@ include('static/page-title.php');
     <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
     <script src="<?php echo $prefix_url;?>script/map.js"></script>
     <script>
-	var LocsB = [
-        {
-                lat: 45.9,
-                lon: 10.9,
-                title: 'Title A1',
-                html: '<h3>Content A1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerA.png'
-        },
-        {
-                lat: 44.8,
-                lon: 1.7,
-                title: 'Title B1',
-                html: '<h3>Content B1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerB.png',
-                show_infowindow: false
-        },
-        {
-                lat: 51.5,
-                lon: -1.1,
-                title: 'Title C1',
-                html: [
-                        '<h3>Content C1</h3>',
-                        '<p>Lorem Ipsum..</p>'
-                ].join(''),
-                icon: 'http://maps.google.com/mapfiles/markerC.png'
-        }
-    ];
+	$(window).load(function(){
+	   var url   = window.location.href;
+	   var asd   = url.indexOf('#services');
+	   
+	   if(asd != -1){
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $('#nav-service').addClass('active');
+	   }
+	   
+	   $('#nav-service').on('click', function(){
+	      
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $(this).addClass('active');
+	   });
+	   
+	});
+	
+	
 	new Maplace({
       locations: LocsA,
        map_div: '#gmap-menu',

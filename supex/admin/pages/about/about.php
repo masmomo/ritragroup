@@ -124,6 +124,10 @@ include("custom/pages/about/control.php");
 
     </div><!--container-main-->
             
-</form>
+</form>    
+
+<script>
+navbarActive('pages');
+</script>
 
 <?php include("custom/pages/about/about.php");?>         

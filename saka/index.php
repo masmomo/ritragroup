@@ -130,6 +130,30 @@ include('static/body_loader.php');
     <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
     <script src="<?php echo $prefix_url;?>script/map.js"></script>
     <script>
+	$(window).load(function(){
+	   var url   = window.location.href;
+	   var asd   = url.indexOf('#services');
+	   
+	   if(asd != -1){
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $('#nav-service').addClass('active');
+	   }
+	   
+	   $('#nav-service').on('click', function(){
+	      
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $(this).addClass('active');
+	   });
+	   
+	});
+	
+	
 	new Maplace({
       locations: LocsA,
        map_div: '#gmap-menu',

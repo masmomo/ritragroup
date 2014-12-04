@@ -217,4 +217,6 @@ function validate(i){
    }
    
 }
+
+navbarActive('banner');
 </script>

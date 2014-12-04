@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 01, 2014 at 10:44 AM
+-- Generation Time: Dec 04, 2014 at 10:37 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -1908,7 +1908,7 @@ CREATE TABLE IF NOT EXISTS `tbl_about` (
 
 INSERT INTO `tbl_about` (`id`, `fill`, `type`) VALUES
 (1, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-activities.jpg" /><br />In our quest to raise the standard of surface coatings in Indonesia, a series of marketing programs such as exhibitions, product knowledge training and seminars are conducted on regular basis.<br /><br /><strong>Ultran, Impra and Propan</strong> are our leading brands. They serve professional painters, architects, contractors and house owners through our well trained project teams, <strong>Propan Service Centres (PSCs)</strong> and more than <strong>5000 outlets across Indonesia</strong>.<br /><br />We are building up the competence to be a specialist for High Performance Coatings, Environmental Friendly Coatings and Durable Exterior Coatings.</p>\r\n', 'description'),
-(2, '<p class="p1" style="text-align: justify;">\r\n	Ritra Cargo was established in 1974 as a customs broker. In 1979, Ritra Cargo extended its services to international sea and air freight forwarding. To complement its services further, Ritra Cargo&nbsp;started separate divisions for project forwarding, household and business removal, as well as warehousing and physical distribution, which eventually developed into independent subsidiaries under Ritra Logistics. Today, Ritra Cargo is one of the most reputable and trusted name for freight forwarding in the country.<br /><br />With decades of experience in the industry, Ritra Cargo has developed a global coverage, supported by reputable agents and networks across the globe. Ritra Cargo offers tailored solutions to customer&rsquo;s freight forwarding needs, from sea and air shipments to customized logistics project, with broad range of transportation modes and prioritized space allocations in reputable carriers to support its services.</p>\r\n<p class="p1" style="text-align: justify;">\r\n	Headquartered in Indonesia&rsquo;s bustling capital Jakarta and with offices in major cities of Indonesia, Ritra Cargo always seeks to build a strong presence in the country and to be accessible to customers. Ritra Cargo is committed to fulfill customer&rsquo;s needs with our pro-active customer service and experienced team who is always in-line with the dynamic logistics industry.</p>\r\n<p class="p1">\r\n	<br />&nbsp;</p>\r\n', 'about'),
+(2, '<p class="p1">\r\n	Ritra Logistics - legally known as PT. Ritra Cargo Indonesia has been established in 1974 as a customs broker. In 1979 Ritra Logistics extended its services to international sea and air freight forwarding. To compliment its services further Ritra Logistics&nbsp; started separate divisions for project forwarding, household removal,warehousing and physical distribution.<br /><br />Headquartered in Indonesia&rsquo;s bustling capital, the Ritra Logistics operation is offering a unique and complete menu of services to customers who range all the way from major multinational corporations to families moving from one home to another.&nbsp;Today our staff numbers more than 400 persons. The expanding Ritra Logistics Network now includes branch offices in such major Indonesia business centers as&nbsp;</p>\r\n', 'about'),
 (6, '', 'faq'),
 (4, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-vision.png" /></p>\r\n<p class="p1" style="text-align: justify;">\r\n	<strong>PT Propan Raya I.C.C</strong>&nbsp;adalah sebuah perusahaan manufaktur yang bergerak khusus di bidang chemical coating atau lebih dikenal dengan istilah &ldquo;CAT&rdquo;. Didirikan oleh DR. Hendra Adidarma Dipl. Chemiker pada tahun 1979 dengan konsentrasi pasar di bidang finishing kayu untuk kerajinan rotan dan mebel sehingga menjadikannya perusahaan cat no. 1 untuk wood finishing.<br /><br />Dengan visinya &ldquo;<strong>To Be The Most Innovative Surface Coating Company with World Class Quality</strong>&rdquo; PT Propan Raya I.C.C berhasil merambah ke bidang lain dan menguasai pasar decorative paint sehingga menjadikannya &ldquo;The Paint Specialist&rdquo;. Hal ini dibuktikan dengan keberhasilannya meraih sertifikat ISO 9001 yang menjamin mutu dan kualitas produknya.<br /><br />PT Propan Raya I.C.C pun mempunyai misi yang terdiri dari :<br />- Memberikan komitmen untuk menjaga mutu dan kualitas produk agar para pelanggannya selalu mendapatkan yang terbaik dengan tetap memperhatikan kualitas dari kesesuaian produk/warna, tahan uji, konsisten, serta kualitas pelayanan dan fungsi dari produk tsb.<br />- Mengembangkan seluruh karyawannya menjadi orang-orang yang berpengetahuan, kreatif dan inovatif.<br />- Menjadi pemain terdepan dalam bidang wood coatings di seluruh Asia Timur.<br />- Mengembangkan cat yang ramah lingkungan sesuai dengan standart Internasional.<br /><br />Didukung oleh lebih dari 2.000 orang karyawannya, PT Propan Raya I.C.C mampu menghasilkan produksi sampai dengan 30.000 miliTon per tahun dengan jaringan distribusi yang terdiri dari 18 cabang, 16 distributor, 23 PSC (Propan Service Centre), dan 9.000 outlet yang tersebar di seluruh Indonesia sehingga kami menjamin pengiriman yang cepat dan tepat. Bahkan sampai saat ini PT Propan Raya I.C.C telah merambah dunia Internasional yang dimulai dari Malaysia dan Vietnam.<br /><br /><strong>Ultran, Impra dan Propan</strong>&nbsp;merupakan merek-merek dari produk PT Propan Raya I.C.C yang sangat dikenal oleh kalangan professional, retail maupun industrial.<br /><br />Selain produk-produk di atas, PT Propan Raya I.C.C juga mengembangkan produk yang ramah lingkungan untuk mendukung gerakan peduli lingkungan sesuai dengan standar Internasional.<br /><br />Demi meraih kepuasan pelanggan dan menciptakan hubungan yang baik dengan para pelanggannya, PT Propan Raya I.C.C juga terus menerus menyelenggarakan berbagai pelatihan produk, pameran dan seminar agar merek-merek produknya semakin dikenal dan dapat membawanya menjadi perusahaan cat no.1 di Asia.</p>\r\n', 'facilities'),
 (5, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-quality.jpg" /><br />The management and employees are committed to achieve customer satisfactionthrough:<br />&bull; Understanding customer&#39;s need<br />&bull; Doing the right things right<br />&bull; Continuous improvement<br />&bull; Striving for the best quality</p>\r\n', 'quality');
@@ -4737,7 +4737,7 @@ CREATE TABLE IF NOT EXISTS `tbl_general` (
 --
 
 INSERT INTO `tbl_general` (`general_id`, `url`, `website_title`, `website_description`, `website_keywords`, `analytics_code`, `company_phone`, `company_address`, `company_country`, `company_province`, `company_city`, `company_postal_code`, `company_facebook`, `company_twitter`, `currency_rate`, `logo`) VALUES
-(1, 'http://www.ritralogistics.com', 'RKFC', 'Logistic', 'logistic, courier, domestic, international. cargo', '', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo-rkfc.png');
+(1, 'http://www.ritralogistics.com', 'RKFC', 'Logistic', 'logistic, courier, domestic, international. cargo', 'UA-40171222-1', '021 888 999', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'http://www.facebook.com', 'http://www.twitter.com', 9230, 'files/common/logo-logo.png');
 
 -- --------------------------------------------------------
 
@@ -4794,7 +4794,6 @@ INSERT INTO `tbl_info` (`id`, `parameter`, `value`) VALUES
 CREATE TABLE IF NOT EXISTS `tbl_infos` (
 `info_id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `email_cc` varchar(50) NOT NULL,
   `email_warehouse` varchar(100) NOT NULL,
   `email_display` varchar(50) NOT NULL,
   `telephone` varchar(100) NOT NULL,
@@ -4810,8 +4809,8 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
 -- Dumping data for table `tbl_infos`
 --
 
-INSERT INTO `tbl_infos` (`info_id`, `email`, `email_cc`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
-(1, 'ritra.cargo@ritra.com', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '+62 21 797 0660', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
+INSERT INTO `tbl_infos` (`info_id`, `email`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
+(1, 'ritra.cargo@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '(62-21) 7970660, 7980660, 7980650 (21 lines)', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
 
 -- --------------------------------------------------------
 
@@ -4827,18 +4826,15 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
   `active` int(11) NOT NULL,
   `inspiration_visibility` int(11) NOT NULL,
   `category` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `tbl_inspiration`
 --
 
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(1, 'On Time, Every Time', 'Providing on-time express delivery to meet your needs', '2014-08-16', 1, 1, 1),
-(3, 'Worry-free Connectivity', 'Ready to serve you with easy connectivity from our locations at major cities in Indonesia.', '2014-08-17', 1, 1, 4),
-(5, 'Services', 'Lorem ipsum dolor sit amet', '2014-08-18', 1, 1, 2),
-(8, 'Our little story', 'Our journey to serve you better', '2014-08-25', 1, 1, 3),
-(10, 'Service Banner', 'Service banner', '2014-08-25', 1, 1, 6);
+(2, 'Serve more than 10 years', 'Providing various services such as sea and air freight, customs brokerage, logistics, transportation, and household removal.', '2014-07-16', 1, 1, 1),
+(4, 'Heading service body', 'Banner service body', '2014-07-20', 1, 1, 6);
 
 -- --------------------------------------------------------
 
@@ -4881,18 +4877,15 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
   `order` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `tbl_inspiration_image`
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-4873-copy.jpg', 1, 1, 1),
-(3, 3, 'files/uploads/inspiration_image/inspiration-0-img-location.jpg', 1, 1, 1),
-(5, 5, 'files/uploads/inspiration_image/inspiration-0-img-services.jpg', 1, 1, 1),
-(8, 8, 'files/uploads/inspiration_image/inspiration-8-company.jpg', 1, 1, 1),
-(10, 10, 'files/uploads/inspiration_image/inspiration-0-img-home.jpg', 0, 1, 1);
+(2, 2, 'files/uploads/inspiration_image/inspiration-2--mg-4957-copy.jpg', 1, 1, 1),
+(4, 4, 'files/uploads/inspiration_image/inspiration-4-rkfc.jpg', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4942,18 +4935,7 @@ CREATE TABLE IF NOT EXISTS `tbl_location` (
   `active` int(11) NOT NULL,
   `inspiration_visibility` int(11) NOT NULL,
   `category` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
-
---
--- Dumping data for table `tbl_location`
---
-
-INSERT INTO `tbl_location` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(1, 'Jakarta Head Office', 'Wisma Ritra	\r\nJl. Warung Buncit Raya No.6\r\nJakarta 12740 â€“ Indonesia\r\nT  : (62-21) 797 0619\r\nF  : (62-21) 7919 2726\r\nE  : supex.jkt@supex.co.id', '2014-07-20', 1, 1, 1),
-(4, 'Semarang', 'Jl. Pemuda No. 23B \r\nSemarang\r\nT  : (62-24) 3565 713, 3565 714\r\nF  :  (62-24) 351 2284\r\n', '2014-07-20', 1, 1, 1),
-(5, 'Yogyakarta', 'Jl. Ganesha VI No. 8\r\nPerum APMD, Timoho, Yogyakarta\r\nT  :  (62-274) 7470 520\r\nF  :  (62-274) 545 405', '2014-08-17', 1, 1, 1),
-(7, 'Surabaya', 'Jl. Perak Barat No. 73 \r\nSurabaya 60177\r\nT  :  (62-31) 353 8783\r\nF  :  (62-31) 353 8784\r\nE  :  supex.sub@supex.co.id', '2014-08-17', 1, 1, 1),
-(8, 'Denpasar', 'Jl. By Pass Ngurah Rai 168 X\r\nKedonganan 80362, Jimbaran â€“ Tuban\r\nDenpasar â€“ Bali\r\nT  :  (62-361) 702 647\r\nF  :  (62-361) 702 648\r\nE  :  supex.dps@supex.co.id', '2014-08-17', 1, 1, 1);
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -4982,18 +4964,7 @@ CREATE TABLE IF NOT EXISTS `tbl_location_image` (
   `order` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
-
---
--- Dumping data for table `tbl_location_image`
---
-
-INSERT INTO `tbl_location_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, '106.830900/-6.264488', 1, 1, 1),
-(4, 4, '110.421316/-6.972341', 1, 1, 1),
-(5, 5, '110.394201/-7.795623', 1, 1, 1),
-(7, 7, '112.729910/-7.228557', 1, 1, 1),
-(8, 8, '115.179133/-8.760041', 1, 1, 1);
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -5737,28 +5708,6 @@ CREATE TABLE IF NOT EXISTS `tbl_service` (
 
 INSERT INTO `tbl_service` (`career_id`, `career_name`, `category`, `active`, `visibility`, `description`, `category_maps`) VALUES
 (1, 'Ace Hardware Pondok Indah', 1, 1, 1, 'JL. Sultan Iskandar Muda No. 223 \r\nArteri Pondok Indah Kebayoran Lama (PIM)\r\nJakarta Selatan, Indonesia \r\n+62 21 7227635', 'https://maps.google.com/maps?q=ace+hardware+pondok+indah&hl=en&sll=-6.193579,106.586308&sspn=0.006037,0.009645&hq=ace+hardware+pondok+indah&t=m&z=12');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_services`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_services` (
-`services_id` int(11) NOT NULL,
-  `service_name` varchar(50) NOT NULL,
-  `service_descriptions` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `tbl_services`
---
-
-INSERT INTO `tbl_services` (`services_id`, `service_name`, `service_descriptions`) VALUES
-(1, 'sea_freight', 'SUPEX offers door-to-door express delivery of documents and package to overseas destinations. SUPEX provides on-time international delivery in accordance with the promised transit time.'),
-(2, 'air_freight', 'SUPEX also provides door-to-door delivery services to various cities and regions throughout Indonesia. With professional handling of goods and supported by a network of branch offices and agents spread across the major cities in Indonesia, SUPEX is commited to provide secured, accurate, and on-time delivery.\r\n \r\nOur services are tailored to customer requirements in the form of:\r\nâ€¢ Normal Service (NS), normal delivery.\r\nâ€¢ One Day Service (ODS), one day delivery.\r\nâ€¢ Same Day Service (SDS), delivery on the same day.\r\nWith these options, customers can send and receive urgent things within just one day with ODS, and top urgent things on the same day with SDS.'),
-(3, 'project', 'SUPEX also offers City Courier service, which is a retrieve-and-deliver service within the city where teams of motorcycle couriers and car couriers stationed in several areas to simplify and speed up the pick up and delivery service within the city.'),
-(4, 'warehouse', 'Ritra Cargo manages quality and secured warehousing space in various locations in Indonesiaâ€™s main industrial cities. With our integrated Warehouse Management System (WMS), we offer storage according to your requirements, optimizing our renowned services to customers.');
 
 -- --------------------------------------------------------
 
@@ -6793,12 +6742,6 @@ ALTER TABLE `tbl_service`
  ADD PRIMARY KEY (`career_id`);
 
 --
--- Indexes for table `tbl_services`
---
-ALTER TABLE `tbl_services`
- ADD PRIMARY KEY (`services_id`);
-
---
 -- Indexes for table `tbl_service_category`
 --
 ALTER TABLE `tbl_service_category`
@@ -7040,7 +6983,7 @@ MODIFY `info_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `tbl_inspiration`
 --
 ALTER TABLE `tbl_inspiration`
-MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `tbl_inspiration_category`
 --
@@ -7055,7 +6998,7 @@ MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `tbl_inspiration_image`
 --
 ALTER TABLE `tbl_inspiration_image`
-MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `tbl_inspiration_tag`
 --
@@ -7070,7 +7013,7 @@ MODIFY `id_language` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `tbl_location`
 --
 ALTER TABLE `tbl_location`
-MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `inspiration_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_location_featured`
 --
@@ -7080,7 +7023,7 @@ MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `tbl_location_image`
 --
 ALTER TABLE `tbl_location_image`
-MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_news`
 --
@@ -7191,11 +7134,6 @@ MODIFY `promo_item_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 ALTER TABLE `tbl_service`
 MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tbl_services`
---
-ALTER TABLE `tbl_services`
-MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_service_category`
 --

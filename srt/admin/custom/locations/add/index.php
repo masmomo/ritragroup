@@ -222,4 +222,6 @@ function validate(i){
    }
    
 }
+
+navbarActive('location');
 </script>

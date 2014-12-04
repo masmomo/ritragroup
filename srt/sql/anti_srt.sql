@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2014 at 05:57 AM
+-- Generation Time: Dec 04, 2014 at 10:24 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -38,33 +38,10 @@ CREATE TABLE IF NOT EXISTS `tbl_about` (
 
 INSERT INTO `tbl_about` (`id`, `fill`, `type`) VALUES
 (1, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-activities.jpg" /><br />In our quest to raise the standard of surface coatings in Indonesia, a series of marketing programs such as exhibitions, product knowledge training and seminars are conducted on regular basis.<br /><br /><strong>Ultran, Impra and Propan</strong> are our leading brands. They serve professional painters, architects, contractors and house owners through our well trained project teams, <strong>Propan Service Centres (PSCs)</strong> and more than <strong>5000 outlets across Indonesia</strong>.<br /><br />We are building up the competence to be a specialist for High Performance Coatings, Environmental Friendly Coatings and Durable Exterior Coatings.</p>\r\n', 'description'),
-(2, '<p class="p1" style="text-align: justify;">\r\n	Ritra Cargo was established in 1974 as a customs broker. In 1979, Ritra Cargo extended its services to international sea and air freight forwarding. To complement its services further, Ritra Cargo&nbsp;started separate divisions for project forwarding, household and business removal, as well as warehousing and physical distribution, which eventually developed into independent subsidiaries under Ritra Logistics. Today, Ritra Cargo is one of the most reputable and trusted name for freight forwarding in the country.<br /><br />With decades of experience in the industry, Ritra Cargo has developed a global coverage, supported by reputable agents and networks across the globe. Ritra Cargo offers tailored solutions to customer&rsquo;s freight forwarding needs, from sea and air shipments to customized logistics project, with broad range of transportation modes and prioritized space allocations in reputable carriers to support its services.</p>\r\n<p class="p1" style="text-align: justify;">\r\n	Headquartered in Indonesia&rsquo;s bustling capital Jakarta and with offices in major cities of Indonesia, Ritra Cargo always seeks to build a strong presence in the country and to be accessible to customers. Ritra Cargo is committed to fulfill customer&rsquo;s needs with our pro-active customer service and experienced team who is always in-line with the dynamic logistics industry.</p>\r\n<p class="p1">\r\n	<br />&nbsp;</p>\r\n', 'about'),
+(2, '<p class="p1" style="text-align: justify;">\r\n	SRT offers a complete range of relocation and logistic services from air, sea, and land transportation to packing, warehousing, and custom brokerage.</p>\r\n', 'about'),
 (6, '', 'faq'),
 (4, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-vision.png" /></p>\r\n<p class="p1" style="text-align: justify;">\r\n	<strong>PT Propan Raya I.C.C</strong>&nbsp;adalah sebuah perusahaan manufaktur yang bergerak khusus di bidang chemical coating atau lebih dikenal dengan istilah &ldquo;CAT&rdquo;. Didirikan oleh DR. Hendra Adidarma Dipl. Chemiker pada tahun 1979 dengan konsentrasi pasar di bidang finishing kayu untuk kerajinan rotan dan mebel sehingga menjadikannya perusahaan cat no. 1 untuk wood finishing.<br /><br />Dengan visinya &ldquo;<strong>To Be The Most Innovative Surface Coating Company with World Class Quality</strong>&rdquo; PT Propan Raya I.C.C berhasil merambah ke bidang lain dan menguasai pasar decorative paint sehingga menjadikannya &ldquo;The Paint Specialist&rdquo;. Hal ini dibuktikan dengan keberhasilannya meraih sertifikat ISO 9001 yang menjamin mutu dan kualitas produknya.<br /><br />PT Propan Raya I.C.C pun mempunyai misi yang terdiri dari :<br />- Memberikan komitmen untuk menjaga mutu dan kualitas produk agar para pelanggannya selalu mendapatkan yang terbaik dengan tetap memperhatikan kualitas dari kesesuaian produk/warna, tahan uji, konsisten, serta kualitas pelayanan dan fungsi dari produk tsb.<br />- Mengembangkan seluruh karyawannya menjadi orang-orang yang berpengetahuan, kreatif dan inovatif.<br />- Menjadi pemain terdepan dalam bidang wood coatings di seluruh Asia Timur.<br />- Mengembangkan cat yang ramah lingkungan sesuai dengan standart Internasional.<br /><br />Didukung oleh lebih dari 2.000 orang karyawannya, PT Propan Raya I.C.C mampu menghasilkan produksi sampai dengan 30.000 miliTon per tahun dengan jaringan distribusi yang terdiri dari 18 cabang, 16 distributor, 23 PSC (Propan Service Centre), dan 9.000 outlet yang tersebar di seluruh Indonesia sehingga kami menjamin pengiriman yang cepat dan tepat. Bahkan sampai saat ini PT Propan Raya I.C.C telah merambah dunia Internasional yang dimulai dari Malaysia dan Vietnam.<br /><br /><strong>Ultran, Impra dan Propan</strong>&nbsp;merupakan merek-merek dari produk PT Propan Raya I.C.C yang sangat dikenal oleh kalangan professional, retail maupun industrial.<br /><br />Selain produk-produk di atas, PT Propan Raya I.C.C juga mengembangkan produk yang ramah lingkungan untuk mendukung gerakan peduli lingkungan sesuai dengan standar Internasional.<br /><br />Demi meraih kepuasan pelanggan dan menciptakan hubungan yang baik dengan para pelanggannya, PT Propan Raya I.C.C juga terus menerus menyelenggarakan berbagai pelatihan produk, pameran dan seminar agar merek-merek produknya semakin dikenal dan dapat membawanya menjadi perusahaan cat no.1 di Asia.</p>\r\n', 'facilities'),
 (5, '<p>\r\n	<img alt="" src="http://localhost/antikode/propan/upload/images/about-quality.jpg" /><br />The management and employees are committed to achieve customer satisfactionthrough:<br />&bull; Understanding customer&#39;s need<br />&bull; Doing the right things right<br />&bull; Continuous improvement<br />&bull; Striving for the best quality</p>\r\n', 'quality');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_about_lang`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_about_lang` (
-`id` int(11) NOT NULL,
-  `id_param` int(11) NOT NULL,
-  `fill` text NOT NULL,
-  `type` varchar(20) NOT NULL,
-  `language_code` varchar(5) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `tbl_about_lang`
---
-
-INSERT INTO `tbl_about_lang` (`id`, `id_param`, `fill`, `type`, `language_code`) VALUES
-(1, 2, '<p>\r\n	Menciptakan konsep &ldquo;good living&rdquo; &amp; tata ruangan yang indah adalah tujuan utama kami. Didasari filosofi akan kehidupan sehari hari dan fungsionalitas, kami mengkolaborasikan kualitas pengerjaan terbaik dan bahan-bahan alam, yang lalu diterjemahkan dalam estetika desain produk. Nagarey adalah wujud riil akan manifesto dari apresiasi dalam segala aspek yang terlibat : bahan baku hingga finished product, pengguna produk dan ruang yang dihiaskan, artisan yang mengerjakan hingga desainer yang merancangnya.</p>\r\n', 'about', 'ID'),
-(2, 4, '<p>\r\n	Untuk pemesanan khusus baik dari segi kuantitas produk ataupun proyek komersial, residensial, dan perhotelan yang membutuhkan perhatian ekstra dan atensi lebih, anda dapat menghubungi kami d sini.</p>\r\n', 'facilities', 'ID'),
-(3, 5, '<p>\r\n	Kesulitan berbelanja ? Hubungi kami.</p>\r\n', 'quality', 'ID');
 
 -- --------------------------------------------------------
 
@@ -108,60 +85,6 @@ CREATE TABLE IF NOT EXISTS `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id`, `role`, `username`, `email`, `password`, `level`) VALUES
 (1, 'super admin', 'admins', 'admin@antikode.com', '21232f297a57a5a743894a0e4a801fc3', '1');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_city`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_city` (
-`career_id` int(11) NOT NULL,
-  `career_name` varchar(50) NOT NULL,
-  `category` int(11) NOT NULL,
-  `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  `description` text NOT NULL,
-  `store_map` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `tbl_city`
---
-
-INSERT INTO `tbl_city` (`career_id`, `career_name`, `category`, `active`, `visibility`, `description`, `store_map`) VALUES
-(1, 'Propan Centre', 9, 1, 1, 'JL. Gatot Subroto Km. 8, Tangerang, Indonesia', 'https://maps.google.com/maps?ie=UTF-8&q=propan+raya&fb=1&hq=propan+raya&cid=0,0,3259338853540256765&ei=mGaMUqzOCMKPrgeu1YBA&ved=0CDYQrwswAA');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_color`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_color` (
-`color_id` int(11) NOT NULL,
-  `color_name` text NOT NULL,
-  `color_image` text NOT NULL,
-  `color_order` int(11) NOT NULL,
-  `color_active_status` varchar(10) NOT NULL,
-  `color_visibility_status` varchar(10) NOT NULL,
-  `color_delete` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
-
---
--- Dumping data for table `tbl_color`
---
-
-INSERT INTO `tbl_color` (`color_id`, `color_name`, `color_image`, `color_order`, `color_active_status`, `color_visibility_status`, `color_delete`) VALUES
-(1, 'White', 'files/uploads/color_image/color-lhau2-color-jz1hr-white.PNG', 1, 'active', 'yes', 0),
-(2, 'Black', 'files/uploads/color_image/color-color-color-color-color-color-ilgv5-color-xrupo-black.PNG', 2, 'active', 'yes', 0),
-(3, 'Red', 'files/uploads/color_image/color-l4fcz-color-dgr2e-Red_2012-07-22_14:04:03_red.png', 3, 'active', 'yes', 0),
-(4, 'Brown', 'files/uploads/color_image/color-nmipm-color-z7y89-Brown_2012-07-22_14:04:44_brown.png', 4, 'active', 'yes', 0),
-(5, 'Bluish', 'files/uploads/color_image/color-rzvbl-color-n951f-Blue_2012-07-22_14:04:33_blue.png', 5, 'active', 'yes', 0),
-(6, 'Silver', 'files/uploads/color_image/color-uqicx-color-rmtsd-Grey_2012-07-22_14:03:46_grey.png', 6, 'active', 'yes', 0),
-(7, 'Yellow', 'files/uploads/color_image/color-bbbdl-color-m5jqb-yellow.PNG', 7, 'active', 'yes', 0),
-(8, 'Natural', 'files/uploads/color_image/no-color.png', 8, 'active', 'yes', 0),
-(9, 'Green', 'files/uploads/color_image/no-color.png', 9, 'active', 'yes', 0);
 
 -- --------------------------------------------------------
 
@@ -317,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
   `email_warehouse` varchar(100) NOT NULL,
   `email_display` varchar(50) NOT NULL,
   `telephone` varchar(100) NOT NULL,
-  `fax` varchar(20) NOT NULL,
+  `fax` varchar(100) NOT NULL,
   `handphone` varchar(20) NOT NULL,
   `facebook` varchar(200) NOT NULL,
   `twitter` varchar(200) NOT NULL,
@@ -330,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
 --
 
 INSERT INTO `tbl_infos` (`info_id`, `email`, `email_cc`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
-(1, 'ritra.cargo@ritra.com', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '+62 21 797 0660', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
+(1, 'srt-ho@srt.co.id', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'srt-ho@srt.co.id', '+62 21 7982220, 7982215', '+62 21 7970227, 7982205, 7982188', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
 
 -- --------------------------------------------------------
 
@@ -354,9 +277,8 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
 
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
 (1, 'A-to-Z of Removals', 'Providing you with removal services that you can trust', '2014-08-16', 1, 1, 1),
-(3, 'Accessible to you', 'Serving you from major cities in Indonesia, with reputable agents and networks around the world. Our offices in Holland are always at your service to handle any inquiries in the region.', '2014-08-17', 1, 1, 4),
-(5, 'Services', 'Lorem ipsum dolor sit amet', '2014-08-18', 1, 1, 2),
-(10, 'Service Banner', 'Service banner', '2014-08-25', 1, 1, 6);
+(3, 'Locations', 'Serving you from major cities in Indonesia, with reputable agents and networks around the world. Our offices in Holland are always at your service to handle any inquiries in the region.', '2014-08-17', 1, 1, 4),
+(10, 'Side Banner', 'Service banner', '2014-08-25', 1, 1, 6);
 
 -- --------------------------------------------------------
 
@@ -406,10 +328,9 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-4873-copy.jpg', 1, 1, 1),
-(3, 3, 'files/uploads/inspiration_image/inspiration-0-img-location.jpg', 1, 1, 1),
-(5, 5, 'files/uploads/inspiration_image/inspiration-0-img-services.jpg', 1, 1, 1),
-(10, 10, 'files/uploads/inspiration_image/inspiration-0-img-home.jpg', 0, 1, 1);
+(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-5061-copy.jpg', 1, 1, 1),
+(3, 3, 'files/uploads/inspiration_image/inspiration-3-dsc-0078.jpg', 1, 1, 1),
+(10, 10, 'files/uploads/inspiration_image/inspiration-10-untitled-2.jpg', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -423,27 +344,6 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_tag` (
   `tag_description` text NOT NULL,
   `param` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_language`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_language` (
-`id_language` int(11) NOT NULL,
-  `language_name` varchar(50) NOT NULL,
-  `language_code` varchar(5) NOT NULL,
-  `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `tbl_language`
---
-
-INSERT INTO `tbl_language` (`id_language`, `language_name`, `language_code`, `active`, `visibility`) VALUES
-(1, 'Indonesia', 'ID', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -517,20 +417,6 @@ INSERT INTO `tbl_location_image` (`inspiration_image_id`, `param_inspiration_id`
 (12, 12, '116.867621/-1.257747', 1, 1, 1),
 (15, 15, '112.729910/-7.228557', 1, 1, 1),
 (16, 16, '110.390369/-6.974120', 1, 1, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_new_arrival`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_new_arrival` (
-`new_id` int(11) NOT NULL,
-  `new_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `new_start` date NOT NULL,
-  `new_end` date NOT NULL,
-  `new_type_id` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -635,56 +521,6 @@ CREATE TABLE IF NOT EXISTS `tbl_slideshow` (
   `flag` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_store`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_store` (
-`career_id` int(11) NOT NULL,
-  `career_name` varchar(50) NOT NULL,
-  `category` int(11) NOT NULL,
-  `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL,
-  `description` text NOT NULL,
-  `category_maps` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
-
---
--- Dumping data for table `tbl_store`
---
-
-INSERT INTO `tbl_store` (`career_id`, `career_name`, `category`, `active`, `visibility`, `description`, `category_maps`) VALUES
-(7, 'Ace Hardware Pondok Indah', 1, 1, 1, 'JL. Sultan Iskandar Muda No. 223, \r\nArteri Pondok Indah Kebayoran Lama (PIM), \r\nJakarta Selatan, Indonesia â€Ž\r\n+62 21 7227635', 'https://maps.google.com/maps?q=ace+hardware+pondok+indah&hl=en&sll=-6.193579,106.586308&sspn=0.006037,0.009645&hq=ace+hardware+pondok+indah&t=m&z=12'),
-(8, 'Ace Hardware Living World', 4, 1, 1, 'Living World Alam Sutera, No. 18, \r\nUpper Ground Floor & No. 20, 1st Floor, \r\nJL. Sutera Utama, Serpong, \r\nTangerang, Indonesia â€Ž\r\n+62 21 53128577', 'https://maps.google.com/maps?q=ace+hardware+living+world&hl=en&sll=-6.217582,106.68481&sspn=0.193178,0.308647&hq=ace+hardware+living+world&t=m&z=12&iwloc=B'),
-(10, 'Propan HQ', 4, 1, 1, 'JL.Gatot Subroto, Km.8\r\nTangerang 15810\r\nIndonesia â€Ž\r\n+62 21 5904694', 'https://www.google.com/maps/preview#!q=bionic+farm&data=!4m15!2m14!1m13!1s0x2e69fef9dd72b3f5%3A0xe0ab3a1416401dde!3m8!1m3!1d3166!2d-94.4273782!3d35.3337433!3m2!1i1133!2i747!4f13.1!4m2!3d-6.193782!4d106.586308');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_store_category`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_store_category` (
-`category_id` int(11) NOT NULL,
-  `category_name` varchar(100) NOT NULL,
-  `active` int(11) NOT NULL,
-  `visibility` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-
---
--- Dumping data for table `tbl_store_category`
---
-
-INSERT INTO `tbl_store_category` (`category_id`, `category_name`, `active`, `visibility`) VALUES
-(1, 'Jakarta', 1, 1),
-(2, 'Bogor', 1, 1),
-(3, 'Depok', 1, 1),
-(4, 'Tangerang', 1, 1),
-(5, 'Bekasi', 1, 1),
-(6, 'Cikarang', 1, 1);
-
 --
 -- Indexes for dumped tables
 --
@@ -693,12 +529,6 @@ INSERT INTO `tbl_store_category` (`category_id`, `category_name`, `active`, `vis
 -- Indexes for table `tbl_about`
 --
 ALTER TABLE `tbl_about`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tbl_about_lang`
---
-ALTER TABLE `tbl_about_lang`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -712,18 +542,6 @@ ALTER TABLE `tbl_account`
 --
 ALTER TABLE `tbl_admin`
  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tbl_city`
---
-ALTER TABLE `tbl_city`
- ADD PRIMARY KEY (`career_id`);
-
---
--- Indexes for table `tbl_color`
---
-ALTER TABLE `tbl_color`
- ADD PRIMARY KEY (`color_id`);
 
 --
 -- Indexes for table `tbl_contact`
@@ -798,12 +616,6 @@ ALTER TABLE `tbl_inspiration_tag`
  ADD PRIMARY KEY (`tag_id`);
 
 --
--- Indexes for table `tbl_language`
---
-ALTER TABLE `tbl_language`
- ADD PRIMARY KEY (`id_language`);
-
---
 -- Indexes for table `tbl_location`
 --
 ALTER TABLE `tbl_location`
@@ -820,12 +632,6 @@ ALTER TABLE `tbl_location_featured`
 --
 ALTER TABLE `tbl_location_image`
  ADD PRIMARY KEY (`inspiration_image_id`);
-
---
--- Indexes for table `tbl_new_arrival`
---
-ALTER TABLE `tbl_new_arrival`
- ADD PRIMARY KEY (`new_id`);
 
 --
 -- Indexes for table `tbl_notification`
@@ -858,18 +664,6 @@ ALTER TABLE `tbl_slideshow`
  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_store`
---
-ALTER TABLE `tbl_store`
- ADD PRIMARY KEY (`career_id`);
-
---
--- Indexes for table `tbl_store_category`
---
-ALTER TABLE `tbl_store_category`
- ADD PRIMARY KEY (`category_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -878,11 +672,6 @@ ALTER TABLE `tbl_store_category`
 --
 ALTER TABLE `tbl_about`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `tbl_about_lang`
---
-ALTER TABLE `tbl_about_lang`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_account`
 --
@@ -893,16 +682,6 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 ALTER TABLE `tbl_admin`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tbl_city`
---
-ALTER TABLE `tbl_city`
-MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tbl_color`
---
-ALTER TABLE `tbl_color`
-MODIFY `color_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `tbl_contact`
 --
@@ -964,11 +743,6 @@ MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 ALTER TABLE `tbl_inspiration_tag`
 MODIFY `tag_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `tbl_language`
---
-ALTER TABLE `tbl_language`
-MODIFY `id_language` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
 -- AUTO_INCREMENT for table `tbl_location`
 --
 ALTER TABLE `tbl_location`
@@ -983,11 +757,6 @@ MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 ALTER TABLE `tbl_location_image`
 MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
---
--- AUTO_INCREMENT for table `tbl_new_arrival`
---
-ALTER TABLE `tbl_new_arrival`
-MODIFY `new_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_notification`
 --
@@ -1013,16 +782,6 @@ MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 ALTER TABLE `tbl_slideshow`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `tbl_store`
---
-ALTER TABLE `tbl_store`
-MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT for table `tbl_store_category`
---
-ALTER TABLE `tbl_store_category`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

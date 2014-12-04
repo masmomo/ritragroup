@@ -228,5 +228,6 @@ function selectCategories(x){
 
 $(document).ready(function(e) {
    selectCategories(<?php echo $_REQUEST['cat'];?>);
+   navbarActive('location');
 });
 </script>

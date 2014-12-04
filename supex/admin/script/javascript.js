@@ -562,5 +562,14 @@ function closeEye(){
 }
 
 
+function navbarActive(page){
+   $('header li').each(function() {
+      $(this).removeClass('active');
+   });
+   
+   $('#id-navbar-'+page).addClass('active');
+}
+
+
 
 

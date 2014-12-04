@@ -40,7 +40,7 @@ include("custom/pages/about/control.php");
         <div class="content col-xs-9">
           <ul class="form-set">
             <li class="form-group row underlined">
-              <label class="control-label col-xs-12">Company</label><br /><br />
+              <label class="control-label col-xs-12">About</label><br /><br />
               <div class="col-xs-12">
                 
 				<?php
@@ -126,4 +126,10 @@ include("custom/pages/about/control.php");
             
 </form>
 
-<?php include("custom/pages/about/about.php");?>         
+
+<?php include("custom/pages/about/about.php");?> 
+    
+
+<script>
+navbarActive('pages');
+</script>        

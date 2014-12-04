@@ -71,8 +71,8 @@ $data_cordinate  = get_location();
 						}else{
 						   
 						   $row = 1;
-						   foreach($data_location as $data_location){
-							  
+						   foreach($data_location as $key=>$data_location){
+						      if($key == 0){
 						?>
                         
                         <div class="item clearfix" style="margin-bottom: 0px; padding-bottom: 0px;" onclick="selectLocation('<?php echo $row;?>')">
@@ -83,6 +83,7 @@ $data_cordinate  = get_location();
                         </div><!--//item-->
                         
                         <?php
+							  }
 						      $row++;
 						   }
 						}
@@ -101,7 +102,7 @@ $data_cordinate  = get_location();
 	var LocsA = [
 	
 	        <?php
-			$alphabet = array('A', 'B', 'C', 'D');
+			$alphabet = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I');
 			foreach($data_cordinate as $key=>$data_cordinate){
 			   
 			   # ----------------------------------------------------------------------
@@ -119,6 +120,11 @@ $data_cordinate  = get_location();
                lon: <?php echo str_replace('/', '', $longitude);?>,
 			   title: '<?php echo $data_cordinate['name'];?>',
                icon: 'http://maps.google.com/mapfiles/marker<?php echo $alphabet[$key];?>.png',
+			   <?php
+			   if($key == 1){
+			      echo 'visible: false,';
+			   }
+			   ?>
 			   zoom:15
 			}<?php if($key != $row){ echo ',';}?>
 			

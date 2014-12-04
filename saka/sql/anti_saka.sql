@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 01, 2014 at 05:56 AM
+-- Generation Time: Dec 04, 2014 at 10:36 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `anti_srt`
+-- Database: `anti_saka`
 --
 
 -- --------------------------------------------------------
@@ -353,7 +353,7 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
 --
 
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(1, 'A-to-Z of Removals', 'Providing you with removal services that you can trust', '2014-08-16', 1, 1, 1),
+(1, 'Home Banner', 'Providing you with removal services that you can trust', '2014-08-16', 1, 1, 1),
 (3, 'Ready to serve you from major cities in Indonesia', '', '2014-08-17', 1, 1, 4),
 (5, 'Services', 'Lorem ipsum dolor sit amet', '2014-08-18', 1, 1, 2),
 (10, 'Service Banner', 'Service banner', '2014-08-25', 1, 1, 6);
@@ -406,10 +406,10 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-4873-copy.jpg', 1, 1, 1),
+(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-5357-copy.jpg', 1, 1, 1),
 (3, 3, 'files/uploads/inspiration_image/inspiration-0-img-location.jpg', 1, 1, 1),
 (5, 5, 'files/uploads/inspiration_image/inspiration-0-img-services.jpg', 1, 1, 1),
-(10, 10, 'files/uploads/inspiration_image/inspiration-0-img-home.jpg', 0, 1, 1);
+(10, 10, 'files/uploads/inspiration_image/inspiration-10-saka-2.jpg', 1, 1, 1);
 
 -- --------------------------------------------------------
 

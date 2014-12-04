@@ -132,7 +132,11 @@ if($count_page_banner['rows'] > 0){
 </section><!--//promo-->
 
 
-<?php }else{?>
+<?php
+}elseif($page == 'map'){ 
+
+}else{
+?>
 
 
 <!-- ******VIDEO****** --> 

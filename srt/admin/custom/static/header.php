@@ -38,9 +38,15 @@ if(empty($act) ||
       <div class="navbar-brand"><img src="<?php echo $prefix_url.$general['logo'];?>" alt="logo" width="40" height="40"></div>
 
       <ul class="nav navbar-nav" role="navigation">
-        <li <?php echo $header_main;?>><a href="<?php echo $prefix_url;?>page-banner">Banner</a></li>
-        <li <?php echo $header_location;?>><a href="<?php echo $prefix_url;?>location">Locations</a></li>
-        <li <?php echo $header_location;?>><a href="<?php echo $prefix_url;?>page-service">Service</a></li>
+        <li id="id-navbar-banner"><a href="<?php echo $prefix_url;?>page-banner">Banner</a></li>
+        <li id="id-navbar-location"><a href="<?php echo $prefix_url;?>location">Locations</a></li>
+        <li id="id-navbar-service"><a href="<?php echo $prefix_url;?>page-service">Service</a></li>
+        <li id="id-navbar-pages"><a data-toggle="dropdown" href="#">Pages</a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="<?php echo $prefix_url;?>about">About</a></li>
+            <li><a href="<?php echo $prefix_url;?>contact">Contact</a></li>
+          </ul>
+        </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right" role="navigation">

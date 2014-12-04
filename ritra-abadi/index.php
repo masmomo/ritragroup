@@ -2,28 +2,13 @@
 include('admin/custom/static/general.php');
 include('admin/static/general.php');
 include('static/body_loader.php');
-
-function is_connected(){
-   $connected = @fsockopen("www.google.com", 80); 
-   
-   if ($connected){
-      $is_conn = true;
-	  fclose($connected);
-   }else{
-      $is_conn = false;
-   }
-   
-   return $is_conn;
-}
-
-$asd = is_connected();
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Ritra Abadi <?php echo $asd;?></title>
+    <title>Ritra Abadi</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -124,6 +109,9 @@ $asd = is_connected();
       </div><!--//bottom-bar-->
     </footer><!--//footer-->
     
+    <div id="gmap"></div>
+    <div id="controls"></div>
+    
  
     <!-- Javascript -->          
     <script type="text/javascript" src="<?php echo $prefix_url;?>assets/plugins/jquery-1.10.2.min.js"></script>
@@ -143,42 +131,42 @@ $asd = is_connected();
     <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
     <script src="<?php echo $prefix_url;?>script/map.js"></script>
     <script>
-	var LocsB = [
-        {
-                lat: 45.9,
-                lon: 10.9,
-                title: 'Title A1',
-                html: '<h3>Content A1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerA.png'
-        },
-        {
-                lat: 44.8,
-                lon: 1.7,
-                title: 'Title B1',
-                html: '<h3>Content B1</h3>',
-                icon: 'http://maps.google.com/mapfiles/markerB.png',
-                show_infowindow: false
-        },
-        {
-                lat: 51.5,
-                lon: -1.1,
-                title: 'Title C1',
-                html: [
-                        '<h3>Content C1</h3>',
-                        '<p>Lorem Ipsum..</p>'
-                ].join(''),
-                icon: 'http://maps.google.com/mapfiles/markerC.png'
-        }
-    ];
+	$(window).load(function(){
+	   var url   = window.location.href;
+	   var asd   = url.indexOf('#services');
+	   
+	   if(asd != -1){
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $('#nav-service').addClass('active');
+	   }
+	   
+	   $('#nav-service').on('click', function(){
+	      
+	      $('#navbar-collapse li').each(function() {
+		     $(this).removeClass('active');
+		  });
+		  
+	      $(this).addClass('active');
+	   });
+	   
+	});
+	
+	
 	new Maplace({
       locations: LocsA,
        map_div: '#gmap-menu',
        controls_type: 'list',
-       controls_on_map: false
+       controls_on_map: false,
+       show_markers: true
 	}).Load(); 
 	</script>
+    
     <?php
-    include('static/analytics.php');
+    /* --- GOOGLE ANALYTICS --- */
+	include('static/analytics.php');
 	?>
             
 </body>

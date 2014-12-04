@@ -139,7 +139,7 @@ include("control.php");
                         <a href="<?php echo $prefix_url."page-banner-detail/".$inspiration['inspiration_id'];?>">
 						  <?php echo $inspiration['name']; ?>
                         </a>
-                        <?php show_page($inspiration['category']);?>
+                        <?php //show_page($inspiration['category']);?>
                       </td>
                       <td width="135"><?php echo format_date($inspiration['date_created']);?></td>
                       <td width="135" class="hidden"><?php echo view_status('active', $loop_data['active']);?></td>
@@ -228,5 +228,6 @@ function selectCategories(x){
 
 $(document).ready(function(e) {
    selectCategories(<?php echo $_REQUEST['cat'];?>);
+   navbarActive('banner');
 });
 </script>

@@ -51,12 +51,11 @@ if($act == ''){
                     </div><!--//navbar-header-->            
                     <div class="navbar-collapse collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="<?php echo $nav_home;?> nav-item"><a href="<?php echo $prefix_url;?>">Home</a></li>
-                            <li class="<?php echo $nav_services;?> nav-item"><a href="<?php echo $prefix_url;?>#services">Services</a></li>
+                            <li class="<?php echo $nav_home;?> nav-item" id="nav-home"><a href="<?php echo $prefix_url;?>">Home</a></li>
+                            <li class="<?php echo $nav_services;?> nav-item" id="nav-service"><a href="<?php echo $prefix_url;?>#services">Services</a></li>
                             <!--<li class="<?php echo $nav_company;?> nav-item"><a href="<?php echo $prefix_url;?>about">Company</a></li>-->
-                            <li class="<?php echo $nav_locations;?> nav-item"><a href="<?php echo $prefix_url;?>locations">Contact Us</a></li>
-                            <!--<li class="<?php echo $nav_contact;?> nav-item"><a href="<?php echo $prefix_url.'contact';?>">Contact</a></li>-->
-                            
+                            <li class="<?php echo $nav_locations;?> nav-item" id="nav-contact"><a href="<?php echo $prefix_url;?>locations">Contact Us</a></li>
+                            <!--<li class="<?php echo $nav_contact;?> nav-item"><a href="<?php echo $prefix_url.'contact';?>">Contact</a></li>-->                            
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->           

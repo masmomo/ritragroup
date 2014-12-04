@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 01, 2014 at 05:56 AM
+-- Generation Time: Dec 04, 2014 at 10:33 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -4798,7 +4798,7 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
   `email_warehouse` varchar(100) NOT NULL,
   `email_display` varchar(50) NOT NULL,
   `telephone` varchar(100) NOT NULL,
-  `fax` varchar(20) NOT NULL,
+  `fax` varchar(100) NOT NULL,
   `handphone` varchar(20) NOT NULL,
   `facebook` varchar(200) NOT NULL,
   `twitter` varchar(200) NOT NULL,
@@ -4811,7 +4811,7 @@ CREATE TABLE IF NOT EXISTS `tbl_infos` (
 --
 
 INSERT INTO `tbl_infos` (`info_id`, `email`, `email_cc`, `email_warehouse`, `email_display`, `telephone`, `fax`, `handphone`, `facebook`, `twitter`, `instagram`, `pinterest`) VALUES
-(1, 'ritra.cargo@ritra.com', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'ritra.cargo@ritra.com', '+62 21 797 0660', '021 999888', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
+(1, 'supex.jkt@supex.co.id', 'wisnu.santoso@ritra.com', 'dimas.nuhputra@gmail.com', 'supex.jkt@supex.co.id', '+62 21 7970619', '+62 21 79192726', '0999 888 898', 'http://www.facebook.com/nagarey', 'http://www.twitter.com/_nagarey_', 'http://www.instagram.com/nagarey', 'http://www.pinterest.com/nagarey');
 
 -- --------------------------------------------------------
 
@@ -4836,9 +4836,7 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
 (1, 'On Time, Every Time', 'Providing on-time express delivery to meet your needs', '2014-08-16', 1, 1, 1),
 (3, 'Worry-free Connectivity', 'Ready to serve you with easy connectivity from our locations at major cities in Indonesia.', '2014-08-17', 1, 1, 4),
-(5, 'Services', 'Lorem ipsum dolor sit amet', '2014-08-18', 1, 1, 2),
-(8, 'Our little story', 'Our journey to serve you better', '2014-08-25', 1, 1, 3),
-(10, 'Service Banner', 'Service banner', '2014-08-25', 1, 1, 6);
+(10, 'Sidebar Banner', 'Service banner', '2014-08-25', 1, 1, 6);
 
 -- --------------------------------------------------------
 
@@ -4888,11 +4886,9 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-4873-copy.jpg', 1, 1, 1),
-(3, 3, 'files/uploads/inspiration_image/inspiration-0-img-location.jpg', 1, 1, 1),
-(5, 5, 'files/uploads/inspiration_image/inspiration-0-img-services.jpg', 1, 1, 1),
-(8, 8, 'files/uploads/inspiration_image/inspiration-8-company.jpg', 1, 1, 1),
-(10, 10, 'files/uploads/inspiration_image/inspiration-0-img-home.jpg', 0, 1, 1);
+(1, 1, 'files/uploads/inspiration_image/inspiration-1--mg-5387-copy.jpg', 1, 1, 1),
+(3, 3, 'files/uploads/inspiration_image/inspiration-3--mg-5423-copy.jpg', 1, 1, 1),
+(10, 10, 'files/uploads/inspiration_image/inspiration-10-side-banner-srt.jpg', 1, 1, 1);
 
 -- --------------------------------------------------------
 

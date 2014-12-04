@@ -65,3 +65,7 @@ include("control.php");
     </div><!--container main-->
 
 </form>      
+
+<script>
+navbarActive('service');
+</script>

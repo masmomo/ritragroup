@@ -45,7 +45,7 @@ include("custom/pages/contact/control.php");
                 <p class="help-block">Message from Contact Us page will be sent here.</p>
               </div>
             </li>
-            <li class="form-group row">
+            <li class="form-group row hidden">
               <label class="col-xs-3">Email cc <span>*</span></label>
               <div class="col-xs-9">
                 <input type="email" class="form-control" value="<?php echo $get_info['email_cc'];?>" name="email_cc">
@@ -64,10 +64,11 @@ include("custom/pages/contact/control.php");
                 <textarea class="form-control" name="telephone" rows="3"><?php echo $get_info['telephone'];?></textarea>
               </div>
             </li>
-            <li class="form-group row hidden">
-              <label class="col-xs-3">Tel. / Fax</label>
+            <li class="form-group row">
+              <label class="col-xs-3">Fax</label>
               <div class="col-xs-9">
-                <input type="text" class="form-control" value="<?php echo $get_info['fax'];?>" name="fax">
+                <!--<input type="text" class="form-control" value="<?php echo $get_info['fax'];?>" name="fax">-->
+                <textarea class="form-control" name="fax" rows="3"><?php echo $get_info['fax'];?></textarea>
               </div>
             </li>
             <li class="form-group row hidden">
@@ -81,6 +82,10 @@ include("custom/pages/contact/control.php");
       </div><!--box-->
 
     </div><!--container main-->
-</form>
+</form> 
+
+<script>
+navbarActive('pages');
+</script>
 
 <?php include("custom/pages/contact/contact.php");?>       

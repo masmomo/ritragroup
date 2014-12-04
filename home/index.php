@@ -29,8 +29,7 @@
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
-    <div class="loading">
-    </div>
+    <div class="loading"></div>
 
     <div class="visible-xs" style="background: #fff; height: 88px; ">
       <img src="<?php echo $prefix;?>assets/img/logo_ritralogistics.png" style="margin: auto; padding-top: 15px; width: 200px; display: block">
@@ -45,7 +44,7 @@
           <div class="cover ritra"></div>
         </div>
       </a>
-      <a class="srt" href="http://localhost/antikode/ritragroup/srt">
+      <a class="srt" href="<?php echo $prefix;?>srt">
         <div class="content">
           <div class="title">
             <img src="<?php echo $prefix;?>assets/img/logo_srt.png">
@@ -53,7 +52,7 @@
           <div class="cover ritra"></div>
         </div>
       </a>
-      <a class="supex" href="<?php echo $prefix;?>ritracargo">
+      <a class="supex" href="<?php echo $prefix;?>supex">
         <div class="content">
           <div class="title">
             <img src="<?php echo $prefix;?>assets/img/logo_supex.png">
@@ -66,7 +65,7 @@
           <img src="<?php echo $prefix;?>assets/img/logo_ritralogistics.png">
         </div>
       </div>
-      <a class="sakatrans">
+      <a class="sakatrans" href="<?php echo $prefix;?>saka">
         <div class="content">
           <div class="title">
             <img src="<?php echo $prefix;?>assets/img/logo_sakatrans.png">
@@ -74,7 +73,7 @@
           <div class="cover ritra"></div>
         </div>
       </a>
-      <a class="rkfc">
+      <a class="rkfc" href="<?php echo $prefix;?>rkfc">
         <div class="content">
           <div class="title">
             <img src="<?php echo $prefix;?>assets/img/logo_rkfc.png">
@@ -82,7 +81,7 @@
           <div class="cover ritra"></div>
         </div>
       </a>
-      <a class="ritraabadi">
+      <a class="ritraabadi" href="<?php echo $prefix;?>ritra-abadi">
         <div class="content">
           <div class="title">
             <img src="<?php echo $prefix;?>assets/img/logo_ritraabadi.png">

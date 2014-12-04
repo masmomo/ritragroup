@@ -16,7 +16,14 @@ function insert_contact($email, $email_display, $phone, $fax, $handphone){
 function update_contact($email, $email_display, $email_cc, $phone, $fax, $handphone){
    $conn = connDB();
 	
-   $sql    = "UPDATE `tbl_infos` SET `email` = '$email', `email_display` = '$email_display', `email_cc` = '$email_cc', `telephone` = '$phone', `fax` = '$fax', `handphone` = '$handphone' WHERE `info_id` = '1'";
+   $sql    = "UPDATE `tbl_infos` SET `email` = '$email', 
+                                     `email_display` = '$email_display', 
+									 `email_cc` = '$email_cc', 
+									 `telephone` = '$phone', 
+									 `fax` = '$fax', 
+									 `handphone` = '$handphone' 
+			  WHERE `info_id` = '1'
+			 ";
    $query  = mysql_query($sql, $conn);
 }
 ?>
